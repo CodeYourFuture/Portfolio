@@ -9,7 +9,26 @@
       content="The technical portfolio of trainee name"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- suppress FOUC-->
+    <style>
+      html {
+        animation: fade-in 1s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +47,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main tabindex="0">
       <section id="about">
         <header><h2>About Me</h2></header>
         <p>
@@ -79,6 +98,5 @@
         >
       </h3>
     </footer>
-    <script src="scripts.js" async defer></script>
   </body>
 </html>
