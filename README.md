@@ -12,7 +12,7 @@ Your starting portfolio, to iterate on.
 
 At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
 
-Every module, you will _iterate_ on your portfolio, adding a new projects and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
 
 ## Acceptance Criteria
 
