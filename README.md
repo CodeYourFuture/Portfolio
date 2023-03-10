@@ -21,6 +21,7 @@ Every module, you will _iterate_ on your portfolio, adding a new project and imp
 - [ ] Each project is linked to my code on Github and the deployed project
 - [ ] I have published my professional contact information on my portfolio
 - [ ] My Accessibility and SEO scores are 100 on Lighthouse
+- [ ] My portfolio is deployed
 - [ ] I have replaced this README with one that describes my own portfolio
 
 ## Resources
