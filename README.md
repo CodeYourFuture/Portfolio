@@ -2,6 +2,10 @@
 
 Module 1 iteration of your portfolio. We've got a lot of new concepts here so you might want to work through this in your study group, or bring to class for help.
 
+_Keep your changes simple!_
+
+We are using a different type of pull request workflow from your main coursework. We're doing this because we need lots of practice with Git to be ready to contribute to shared repos like professional developers. In previous cohorts, we only opened PRs to main all the way through the course, and then in Final Projects it was really hard to learn real branching and merging. So let's practice a different workflow now.
+
 ## Learning Objectives
 
 - [ ] Branch from a branch in Git
@@ -10,7 +14,9 @@ Module 1 iteration of your portfolio. We've got a lot of new concepts here so yo
 
 ## Requirements
 
-We are using a different type of pull request workflow from your main coursework. We're doing this because we need lots of practice with Git to be ready to contribute to shared repos like professional developers. In previous years, we only opened PRs to main all the way through the course, and then in Final Projects it was really hard to learn branching and merging. So let's practice a different workflow now.
+Your case study should be a short description of the project, including: the problem it solves, the technologies used, the approach taken, a link to the deployed project, and a link to the code on GitHub.
+
+Explain the problem and your solution in your own words, and don't just copy and paste the project brief. The point of a portfolio is to make _you stand out_, so write in your own voice. It's fine to choose something that you didn't work on all by yourself, but make sure you explain what part you did.
 
 ## Git Ready: Putting our code in the right place
 
@@ -31,10 +37,6 @@ The instructions here are given for the command line, but you could just as easi
 1. Add your files to the staging area `git add index.html style.css` . _Remember, don't `git add .` or you could add files you don't mean to._
 1. Commit your changes often `git commit -m "YOUR COMMIT MESSAGE"`
 
-Your case study should be a short description of the project, including: the problem it solves, the technologies used, the approach taken, a link to the deployed project, and a link to the code on GitHub.
-
-Explain the problem and your solution in your own words, and don't just copy and paste the project brief. The point of a portfolio is to make _you stand out_, so write in your own voice. It's fine to choose something that you didn't work on all by yourself, but make sure you explain what part you did.
-
 ## Git Go: Making a pull request
 
 1. Stage your files: `git add index.html style.css` . _Remember, don't `git add .` or you could add files you don't mean to._
@@ -45,7 +47,7 @@ Explain the problem and your solution in your own words, and don't just copy and
 ## Acceptance Criteria
 
 - [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
+- [ ] The design and code is my own, not a template or tutorial (you can use this code as a starting point)
 - [ ] Each project is linked to my code on Github and the deployed project
 - [ ] I have published my professional contact information on my portfolio
 - [ ] My Accessibility and SEO scores are 100 on Lighthouse
