@@ -1,0 +1,22 @@
+/* Basic image rules 
+Don't size images in css, size their containers
+Just make images take up the entire space you give them
+in every context
+*/
+svg {
+  height: 100%;
+  width: auto;
+  min-width: var(--fingertip);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+picture {
+  height: auto;
+  overflow: hidden;
+}

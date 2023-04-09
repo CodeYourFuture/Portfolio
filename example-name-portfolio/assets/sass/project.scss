@@ -1,0 +1,21 @@
+.project {
+  background-color: var(--paper);
+  box-shadow: var(--shadow) 0 0 var(--spacing-3) 0,
+    0 var(--spacing-3) var(--spacing-4) var(--shadow);
+  display: grid;
+  grid-template:
+    "picture picture picture" var(--box)
+    "....... ....... ......." var(--gap)
+    "....... details ......." min-content
+    "....... ....... ......." var(--gap) /
+    var(--gap) var(--box) var(--gap);
+}
+.project__picture {
+  grid-area: picture;
+}
+.project__details {
+  grid-area: details;
+}
+.project__heading {
+  display: inline-block;
+}

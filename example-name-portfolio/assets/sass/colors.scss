@@ -1,0 +1,15 @@
+:root {
+  --paper: hsla(244, 28%, 88%, 0.9);
+  --ink: hsla(244, 16%, 17%, 0.95);
+  --shadow: hsla(244, 16%, 42%, 0.087);
+  --brand: hsla(0, 79%, 63%, 0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: hsla(244, 28%, 8%, 0.95);
+    --ink: hsla(244, 16%, 80%, 0.95);
+    --shadow: hsla(244, 28%, 8%, 0.99);
+    --brand: hsla(0, 79%, 63%, 0.9);
+  }
+}

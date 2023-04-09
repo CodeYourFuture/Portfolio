@@ -1,0 +1,39 @@
+/* General site layout 
+
+You might want to start adding classes and breaking the pieces of this layout into components
+You have header, footer, main, and menu/nav */
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+}
+body {
+  display: grid;
+  margin: auto;
+  min-height: 100vh;
+  gap: var(--gap);
+  max-width: var(--container);
+}
+
+/* Site header and navigation 
+https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46
+*/
+body > header {
+  font-family: var(--font-display);
+  backdrop-filter: blur(var(--spacing-2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--gap);
+}

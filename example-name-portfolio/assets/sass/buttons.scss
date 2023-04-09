@@ -1,0 +1,19 @@
+button,
+.button {
+  appearance: none;
+  background: var(--brand);
+  border: 0;
+  color: var(--paper);
+  font-weight: 600;
+  line-height: 2;
+  min-width: var(--fingertip);
+  padding: var(--spacing-1) var(--spacing-3) 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: var(--ink);
+    color: var(--paper);
+  }
+}

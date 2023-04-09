@@ -1,0 +1,14 @@
+:root {
+  --spacing-1: 0.125rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 3rem;
+
+  --gap: var(--spacing-5);
+  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+  --box: clamp(280px, 50vw + 2px, 530px);
+  /* https://web.dev/accessible-tap-targets/ */
+  --fingertip: 48px;
+}

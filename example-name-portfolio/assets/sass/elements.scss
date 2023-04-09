@@ -1,0 +1,20 @@
+/* Text readability 
+https://baymard.com/blog/line-length-readability 
+*/
+section p {
+  line-height: 1.5;
+  max-width: 55ch;
+}
+/* targeted resets 
+We're resetting elements with a class - ANY class 
+- on the grounds that if you added a class, 
+you added your own styles
+*/
+h3[class] {
+  margin: 0 auto 0 0;
+}
+ul[class],
+li[class] {
+  margin: 0;
+  padding: 0;
+}
