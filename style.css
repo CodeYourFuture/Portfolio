@@ -3,8 +3,8 @@
   --paper: hsla(31, 18%, 90%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Roboto", system-ui, sans-serif;
-  --p-font: "Poppins", system-ui, sans-serif;
+  --display-font: "Roboto", system-ui, sans-serif;
+  --copy-font: "Poppins", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 }
@@ -14,7 +14,7 @@ body {
   scroll-behavior: smooth;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font);
+  font-family: var(--display-font);
   font-size: 1.1rem;
 }
 body {
@@ -25,7 +25,7 @@ body {
   max-width: var(--container);
 }
 p {
-  font-family: var(--p-font);
+  font-family: var(--copy-font);
 }
 
 a,
