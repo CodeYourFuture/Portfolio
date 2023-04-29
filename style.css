@@ -41,6 +41,7 @@ section {
 
 #project2, #project3 {
   display: none;
+  
 }
 
 .project {
@@ -49,17 +50,20 @@ section {
 
 }
 
+button {
+  background-color:hsla(120, 81%, 88%, 0.99);
+  border: none;
+}
+
 a,
 a:any-link {
-  color: currentColor;
-  text-decoration: none;
+  color: blue;
   border-bottom: 2px solid transparent;
   transition: border-color ease-in-out 0.3s;
 }
 a:hover,
 a:focus {
   color: var(--brand);
-  border-color: currentColor;
 }
 /* Site header and navigation */
 body > header {
