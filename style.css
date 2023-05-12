@@ -11,8 +11,8 @@
 html,
 body {
   scroll-behavior: smooth;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
   font-family: var(--font);
 }
 body {
@@ -36,7 +36,7 @@ a:focus {
 }
 /* Site header and navigation */
 body > header {
-  background: var(--paper);
+  background: var(--ink);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +48,7 @@ nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  color:var(--brand);
 }
 
 /* Text readability */
