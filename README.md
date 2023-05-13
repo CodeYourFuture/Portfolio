@@ -5,10 +5,10 @@ This is my portfolio and it is still in process.
 
 # My projects
 
-karma project
-tv show dom project
-cake shop project
-animation basic css project
+-karma project
+-tv show dom project
+-cake shop project
+-animation basic css project
 
 
 
