@@ -48,10 +48,15 @@ nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  color:var(--brand);
 }
 
 /* Text readability */
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+
+span{
+  color: firebrick;
 }
