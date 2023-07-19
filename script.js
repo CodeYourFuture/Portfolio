@@ -300,61 +300,27 @@ setInterval(() => {
 
 //desktop-code fact number
 
-// let fact = document.querySelector("#fact");
-// let factText = document.querySelector("#factText");
-// let numberInput = document.querySelector("#numberInput");
-// numberInput.addEventListener("input", getFactAjax);
-
-// function getFactAjax() {
-//   let number = numberInput.value;
-//   let url =
-//     "http://numbersapi.com/" + number;
-
-//   fetch(url)
-//     .then((response) => response.text())
-//     .then((data) => {
-//       if (number != "") {
-//         fact.style.display = "block";
-//         factText.innerText = data;
-//       }
-//     })
-//     .catch((err) => console.log(err));
-// }
-
 let fact = document.querySelector("#fact");
 let factText = document.querySelector("#factText");
 let numberInput = document.querySelector("#numberInput");
-let quotesData = []; // To store the fetched quotes data
+numberInput.addEventListener("input", getFactAjax);
 
-// Fetch quotes data from the server and handle clicks to display a random quote
-fetchQuotesData();
-
-function fetchQuotesData() {
-  let url = `https://tosin-quote-server.glitch.me/quotes`;
+function getFactAjax() {
+  let number = numberInput.value;
+  let url =
+    "http://numbersapi.com/" + number;
 
   fetch(url)
-    .then((response) => response.json())
+    .then((response) => response.text())
     .then((data) => {
-      quotesData = data; // Store the fetched quotes data
-      numberInput.addEventListener("click", displayRandomQuote);
-      displayRandomQuote(); // Display a random quote initially
+      if (number != "") {
+        fact.style.display = "block";
+        factText.innerText = data;
+      }
     })
     .catch((err) => console.log(err));
 }
 
-function displayRandomQuote() {
-  let randomQuote = getRandomQuote();
-  fact.style.display = "block";
-  factText.innerText = randomQuote;
-}
-
-function getRandomQuote() {
-  if (quotesData.length === 0) {
-    return "No quotes available.";
-  }
-  let randomIndex = Math.floor(Math.random() * quotesData.length);
-  return quotesData[randomIndex].quote;
-}
 
 //mobile-calendar-code
 const dates = document.getElementById("dates");
