@@ -307,7 +307,8 @@ numberInput.addEventListener("input", getFactAjax);
 
 function getFactAjax() {
   let number = numberInput.value;
-  let url = "http://numbersapi.com/" + number;
+  let url =
+    "https://quaint-artistic-cyclone.glitch.me/proxy?url=http://numbersapi.com/" + number;
 
   fetch(url)
     .then((response) => response.text())
