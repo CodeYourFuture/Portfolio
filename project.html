@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="super-container">
+        <div class="super-mobile-container">
+            <header class="mo-header-tosin">
+                <div class="mo-tosin-header">
+                    <p class="mo-tod">Tosin Odunuga</p>
+                </div>
+
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="./index.html ">About Me</a>
+                        <a href="./resume.html ">Resume</a>
+                        <a href="https://tosin-karma-project.netlify.app/">Project</a>
+                        <a href="./project.html">Project2</a>
+                    </div>
+
+                </div>
+                <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            </header>
+            <main class="mobile-projects-pjo">
+                <article>
+                    <h1 class="projects">Projects</h1>
+                    <p class="p-text">
+                        Here are some of my Project ,and you will find
+                        them interesting.
+                    </p>
+                    <div class="mo-build-images">
+                        <p class="carousel">
+                            Build an Image Carousel
+                        </p>
+                        <div class="mo-build-img">
+                            <img id="showing-image" src=" " width="352" height="370">
+                            <button class="mob-prev-btn" id="previous-btn">Previous</button>
+                            <button class="mob-next-btn" id="next-btn">Next</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="earn">Show Earnings and Expenses</p>
+                        <div class="earn-expen">
+                            <p class="value">input value<input id="input-mo" type="text"></input>
+                            </p>
+                            <p class="earn-total">Earnings:<span id="earn-total-mo">0</span></p>
+                            <ul class="earn-list" id="earnings-list-mo"></ul>
+                            <p class="exp-total">Expenses:<span id="expense-total-mo">0</span></p>
+                            <ul class="exp-list" id="expenses-list-mo"></ul>
+                            <p class="bal-total">Balance:<span id="balance-mo">0</span></p>
+                            <button class="mobile-submit-btn" id="button-mo">Submit</button>
+                        </div>
+
+                        <p>
+                        </p>
+                    </div>
+                    <p class="prod-shop">List of products and Shopping Lists</p>
+                    <div class="prod-shop-list">
+                        <ul id="products">
+                            <li class="egg-btn">Eggs <button id="btn-eggs">Add to list</button></li>
+                            <li class="bacon-btn"><span>Bacon</span> <span><button id="btn-bacon">Add to
+                                        list</button></span></li>
+                            <li class="bread-btn"><span>Bread</span> <span><button id="btn-bread">Add to
+                                        list</button></span></li>
+                            <li class="other"><span><input type="text" placeholder="Other Items"
+                                        id="input-ingredients"></input></span>
+                                <span><button id="btn-other">Add to list</button></span>
+                            </li>
+
+                        </ul>
+
+                        <p class="shopp-list">Shopping List</p>
+                        <i class="click-item">(Click item to Check off)</i>
+                        <ol class="list-list" id="shopping-list"></ol>
+                        <div class="center">
+                            <button class="remove-btn" id="btn-remove">Remove Last</button>
+                            <button class="reset-btn" id="btn-reset">Reset</button>
+                        </div>
+                    </div>
+                    <p class="mini-calendar">Mini-Calendar</p>
+                    <div class="calendar">
+                        <div class="left">
+                            <p id="dates">01</p>
+                            <p id="days">Sunday</p>
+                        </div>
+                        <div class="right">
+                            <p id="months">January</p>
+                            <p id="years">2020</p>
+                        </div>
+                    </div>
+
+
+
+
+                </article>
+
+            </main>
+
+
+
+
+
+
+            <footer>
+                <p class="conta">Contact</p>
+                <div class="mo-foot">
+                    <a href="https://facebook.com/Fowobi21_/ "><i class="fab fa-facebook-f"></a></i>
+                    <a href="https://twitter.com/fowobi21/ "><i class="fab fa-twitter fa-1x"></a></i>
+                    <a href="https://www.linkedin.com/in/tosin-odunuga-355054247/ "><i
+                            class="fab fa-linkedin-in fa-1x"></a></i>
+                    <a href="https://www.instagram.com/fowobi21_/ "><i class="fab fa-instagram fa-1x"></a></i>
+                    <a href="mailto:achiever317@gmail.com "><i class="fa-regular fa-envelope fa"></a></i>
+                </div>
+                <p class="odu">@2023 by Tosin Odunuga.</p>
+            </footer>
+            <!-- <script src="./script.js"></script> -->
+        </div>
+
+
+        <!-- Desktop-Version  -->
+
+        <div class="super-desktop-container">
+            <header class="desktop-header">
+                <div class="des-head">
+                    <h1 class="name">
+                        Tosin Odunuga
+                    </h1>
+                    <p class="web"> / Web Developer.</p>
+                </div>
+
+
+                <div class="d-header-nav-container">
+                    <nav class="d-nav-items-container">
+                        <ul class="d-nav-items-list">
+                            <span class="d-nav-list-item"><a href="./index.html">About Me</a></span>
+                            <span class="d-nav-list-item"><a href="./resume.html ">Resume</a></span>
+                            <span class="d-nav-list-item"><a
+                                    href="https://tosin-karma-project.netlify.app/">Projects</a></span>
+                            <span class="d-nav-list-item"><a href="./project.html">Project2</a></span>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <h1 class="projects">Projects</h1>
+                    <p class="project-text">
+                        Here are some of my Project ,and you will find
+                        them interesting.
+                    </p>
+                </section>
+                <section class="desk-build-image">
+                    <div class="desk-build">
+                        <h2 class="desk-pro-carou">Build an Image Carousel</h2>
+                        <p>An image carousel is a type of graphical<br>user interface (GUI) component that<br> allows
+                            users to browse through a series<br> of
+                            images or visual content,usually by<br> swiping or clicking through a series of slides.</p>
+                    </div>
+                    <div>
+
+                        <div class="desk-pro-container">
+                            <img class="mo-pro-carou-container"
+                                src="https://images.unsplash.com/photo-1679312995862-b6a43db982d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-a" class="slide active">
+                            <img src="https://images.unsplash.com/photo-1623491351896-073b656b4205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-b" class="slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1674049760153-144f4dc9208c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-c" class="slide">
+                            <img src="https://images.unsplash.com/photo-1670672950186-06319ae47429?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0N3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-d" class="slide">
+                            <img src="https://images.unsplash.com/photo-1665095111931-fc4fa813e21c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwN3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-e" class="slide">
+                            <img src="https://images.unsplash.com/photo-1654267288787-a571aecf0505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0M3xhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-f" class="slide">
+                            <img src="https://images.unsplash.com/photo-1588588256701-69dcfe4043c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5OHxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-g" class="slide">
+                            <img src="https://images.unsplash.com/photo-1646148707098-a27b818d5c95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcxOXxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                                alt="image-h" class="slide">
+                        </div>
+
+
+                        <div class="desk-pro-controls">
+                            <button class="control-btn" id="back">Back</button>
+                            <button class="control-btn" id="stop">Stop</button>
+                            <button class="control-btn" id="forward">Forward</button>
+                            <button class="control-btn" id="auto-back">Auto Back</button>
+                            <button class="control-btn" id="auto-forward">Auto Forward</button>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="desk-earn-exp-container">
+                    <div class="desk-earn-exp-cont">
+                        <h3 class="desk-pro-carou">Show Earnings and Expenses</h3>
+                        <p>Developers may also create algorithms and functions to<br> perform calculations, such as net
+                            income or profit,<br> based on the
+                            earning and expenses data.</p>
+                    </div>
+                    <div class="des-earn-expen">
+                        <p class="value">input value<input id="input" type="text"></input>
+                        </p>
+                        <p class="earn-total">Earnings:<span id="earn-total">0</span></p>
+                        <ul class="earn-list" id="earnings-list"></ul>
+                        <p class="exp-total">Expenses:<span id="expense-total">0</span></p>
+                        <ul class="exp-list" id="expenses-list"></ul>
+                        <p class="bal-total">Balance:<span id="balance">0</span></p>
+                        <button class="desk-submit-btn" id="button">Submit</button>
+                    </div>
+
+
+
+                </section>
+
+                <section class="clock-container">
+                    <div class="Number Fact">
+                        <h4 class="desk-clock">Number-Fact</h4>
+                        <p class="num-text-p">Developer used both AJAX and Fetch API, are<br> used for making
+                            asynchronous requests to a<br> server and retrieving data without requiring a
+                            page refresh.<br>However, Fetch API is a newer and more<br> modern approach that provides a
+                            promise-<br>based interface.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <div class="card-row">
+                                <p class="fact-p">Enter a number and get a random fact</p>
+                                <input type="number" class="form-control form-control-lg" id="numberInput"
+                                    placeholder="Enter any number...">
+
+                                <div id="fact" class="card-body">
+                                    <strong class="card-title">
+                                        Number Fact
+                                    </strong>
+                                    <p id="factText" class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="clock-container">
+                    <div class="digital-clock">
+                        <h5 class="desk-clock">Digital-Clock</h5>
+                        <p>Developers may create date and clock functionality in the web application.<br>
+                            This will display current-time and date-related operations.
+
+                        </p>
+                    </div>
+                    <div class="day-clock">
+                        <span id="date"></span>
+                        <span>,</span>
+                        <span id="hrs">00</span>
+                        <span>:</span>
+                        <span id="mins">00</span>
+                        <span>:</span>
+                        <span id="sec">00</span>
+                    </div>
+
+                </section>
+
+            </main>
+            <footer>
+                <div class="desktop-contact">
+                    <p class="des-conta">Contact</p>
+                    <div class="des-foot">
+                        <div>
+                            <a href="https://facebook.com/Fowobi21_/ "><i class="fab fa-facebook-f"></a></i>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/fowobi21/ "><i class="fab fa-twitter fa-1x"></a></i>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/tosin-odunuga-355054247/ "><i
+                                    class="fab fa-linkedin-in fa-1x"></a></i>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/fowobi21_/ "><i class="fab fa-instagram fa-1x"></a></i>
+                        </div>
+                        <div>
+                            <a href="mailto:achiever317@gmail.com "><i class="fa-regular fa-envelope fa"></a></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="des-odu">@2023 by Tosin Odunuga.</p>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

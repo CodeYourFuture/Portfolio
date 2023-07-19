@@ -1,102 +1,293 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
-    <meta
-      name="description"
-      content="The technical portfolio of trainee name"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
-    <style>
-      html {
-        animation: fade-in 1s;
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>My Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main tabindex="0">
-      <section id="about">
-        <header><h2>About Me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-    </main>
-    <footer>
-      <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
-          ><svg
-            focusable="false"
-            role="presentation"
-            viewbox="0 0 98 96"
-            width="48"
-            height="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-              fill="currentColor"
-            />
-          </svg>
-          Read me</a
-        >
-      </h3>
-    </footer>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <div class="super-container">
+    <div class="super-mobile-container">
+      <header class="mo-header-tosin">
+        <div class="mo-tosin-header">
+          <p class="mo-tod">Tosin Odunuga</p>
+        </div>
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="./index.html ">About Me</a>
+            <a href="./resume.html ">Resume</a>
+            <a href="https://tosin-karma-project.netlify.app/ ">Projects</a>
+            <a href="./project.html">Project2</a>
+          </div>
+
+        </div>
+        <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      </header>
+      <main>
+        <article class="mo-card">
+          <img class="mo-img" src="https://raw.githubusercontent.com/fowobi/ts/main/tspix.jpg" />
+          <h1 class="mo-tos">Tosin
+            <br>
+            Odunuga
+            <div class="mo-line">
+
+            </div>
+          </h1>
+
+          <div class="mo-btn">
+            <a href="./resume.html "><button class="mo-resume">Resume</a></button>
+            <a href="https://tosin-karma-project.netlify.app/"><button class="mo-project">Projects</a></button>
+          </div>
+
+          <nav class="mo-social-media">
+            <ol>
+              <div class="mo-media">
+                <div>
+                  <a href="https://facebook.com/Fowobi21_/ "><i class="fab fa-facebook-f"></a></i>
+                </div>
+                <div>
+                  <a href="https://twitter.com/fowobi21/ "><i class="fab fa-twitter fa-1x"></a></i>
+                </div>
+                <div>
+                  <a href="https://www.linkedin.com/in/tosin-odunuga-355054247/"><i
+                      class="fab fa-linkedin-in fa-1x"></a></i>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/fowobi21_/ "><i class="fab fa-instagram fa-1x"></a></i>
+                </div>
+                <div>
+                  <a href="mailto:achiever317@gmail.com "><i class="fa-regular fa-envelope fa"></a></i>
+                </div>
+
+              </div>
+
+            </ol>
+
+          </nav>
+        </article>
+        <article>
+          <p class="about">Hello! I'm Tosin.</p><br>
+          <p class="abt">
+            A highly skilled trainee of CodeYourFuture and motivated web developer with years of experience in designing
+            and
+            developing innovative websites and applications.<br><br>
+
+            In 2023, I was awarded a certificate from Code Your Future as a Software Developer.<br><br>
+            In 2023, I was awarded a certificte from Glasgow Kelvin College in Cybersecurity and Networking.<br><br>
+            In 2023, I was awarded a certificate from Cisco Networking Academy IT Essential in PC hardware and
+            Software.<br><br>
+            In 2004, I had my first degree in Banking and finance from Olabisi Onabanjo University Ogun State
+            Nigeria.<br><br>
+            My passion for Software Development, cybersecurity and Networking is unconditional and I have always had a
+            keen interest in knowing
+            what is happening in the Information technology business environment as a whole;that is why I have decided
+            to applied
+            for Code your future and Glasgow Kelvin College because I want to do career in this field and I am pretty
+            sure that this program will equip me with
+            lot of tools and skills required to do so;through this program i will have the chance to sink into the world
+            of economy
+            and profit of the high demand that is there currently for the IT graduates in the job market.<br><br>
+
+            I believe that my personal attributes,academic achievements and relevant work experience make me a suitable
+            candidate
+            for the course. As far as my personal experiences are concerned,they taught me to have patience,self emotion
+            control as
+            well as realize the importance of listening,respecting the opinions of others and the significance of being
+            versatile.<br><br>
+
+            I am a person who is always ready to or on a go to participate to take part in students and community events
+            and I
+            believe through that way I can contribute in my way in creating and promoting a healthy and better student
+            environment.<br><br>
+
+            In problem solving situations,I have a tireless eye for details and analyze the problem through several
+            techniques
+            before making any important decision.<br>
+
+
+          </p>
+        </article>
+      </main>
+      <footer>
+        <p class="conta">Contact</p>
+        <div class="mo-foot">
+          <a href="https://facebook.com/Fowobi21_/ "><i class="fab fa-facebook-f"></a></i>
+          <a href="https://twitter.com/fowobi21/ "><i class="fab fa-twitter fa-1x"></a></i>
+          <a href="https://www.linkedin.com/in/tosin-odunuga-355054247/"><i class="fab fa-linkedin-in fa-1x"></a></i>
+          <a href="https://www.instagram.com/fowobi21_/ "><i class="fab fa-instagram fa-1x"></a></i>
+          <a href="mailto:achiever317@gmail.com "><i class="fa-regular fa-envelope fa"></a></i>
+        </div>
+        <p class="odu">@2023 by Tosin Odunuga.</p>
+      </footer>
+      <!-- <script src="./script.js"></script> -->
+    </div>
+
+
+    <!-- Desktop-Version  -->
+    <div class="super-desktop-container">
+      <header class="desktop-header">
+        <div class="des-head">
+          <h1 class="name">
+            Tosin Odunuga
+          </h1>
+          <p class="web"> / Web Developer.</p>
+        </div>
+
+
+        <div class="d-header-nav-container">
+          <nav class="d-nav-items-container">
+            <ul class="d-nav-items-list">
+              <span class="d-nav-list-item"><a href="./index.html ">About Me</a></span>
+              <span class="d-nav-list-item"><a href="./resume.html">Resume</a></span>
+              <span class="d-nav-list-item"><a href="https://tosin-karma-project.netlify.app/">Projects</a></span>
+              <span class="d-nav-list-item"><a href="./project.html">Project2</a></span>
+
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="desktop-main-container">
+        <div class="desktop-card">
+          <article class="desk-card">
+            <img class="des-img" src="https://raw.githubusercontent.com/fowobi/ts/main/tspix.jpg" />
+            <div class="desk-name">
+              <h2 class="top-name">Tosin<br>
+                Odunuga
+              </h2>
+              <div class="desk-line">
+
+              </div>
+              <p class="desktop-web">Web Developer</p>
+            </div>
+
+            <nav class="des-social-media">
+              <ol>
+                <div class="des-media">
+                  <div class="des-face">
+                    <a href="https://facebook.com/Fowobi21_/ "><i class="fab fa-facebook-f"></a></i>
+                  </div>
+                  <div class="des-twitt">
+                    <a href="https://twitter.com/fowobi21/ "><i class="fab fa-twitter fa-1x"></a></i>
+                  </div>
+                  <div class="des-twitt">
+                    <a href="https://www.linkedin.com/in/tosin-odunuga-355054247/ "><i
+                        class="fab fa-linkedin-in fa-1x"></a></i>
+                  </div>
+                  <div class="des-twitt">
+                    <a href="https://www.instagram.com/fowobi21_/ "><i class="fab fa-instagram fa-1x"></a></i>
+                  </div>
+                  <div class="des-twitt">
+                    <a href="mailto:achiever317@gmail.com "><i class="fa-regular fa-envelope fa"></a></i>
+                  </div>
+
+                </div>
+
+              </ol>
+            </nav>
+
+          </article>
+        </div>
+        <article class="desk-hello">
+          <h3 class="desktop-hello">Hello! I'm Tosin.</h3><br>
+          <p class="desk-profile">
+            Here's My Profile.
+          </p>
+          <div class="desktop-button">
+            <button class="des-resume"><a href="./resume.html">Resume</a></button>
+            <button class="des-project"><a href="https://tosin-karma-project.netlify.app/">Project</a></button>
+          </div>
+          <p class="des-parag">
+            A highly skilled trainee of CodeYourFuture and motivated web developer with years of experience in designing
+            and
+            developing innovative websites and applications.<br><br>
+
+            In 2023, I was awarded a certificate from Code Your Future as a Software Developer.<br><br>
+            In 2023, I was awarded a certificte from Glasgow Kelvin College in Cybersecurity and Networking.<br><br>
+            In 2023, I was awarded a certificate from Cisco Networking Academy IT Essential in PC hardware and
+            Software.<br><br>
+            In 2004, I had my first degree in Banking and finance from Olabisi Onabanjo University Ogun State
+            Nigeria.<br><br>
+            My passion for Software Development, cybersecurity and Networking is unconditional and I have always had a
+            keen interest
+            in knowing
+            what is happening in the Information technology business environment as a whole;that is why I have decided
+            to applied
+            for Code your future and Glasgow Kelvin College because I want to do career in this field and I am pretty
+            sure that this
+            program will equip me with
+            lot of tools and skills required to do so;through this program i will have the chance to sink into the world
+            of economy
+            and profit of the high demand that is there currently for the IT graduates in the job market.<br><br>
+
+            I believe that my personal attributes,academic achievements and relevant work experience make me a suitable
+            candidate
+            for the course. As far as my personal experiences are concerned,they taught me to have patience,self emotion
+            control as
+            well as realize the importance of listening,respecting the opinions of others and the significance of being
+            versatile.<br><br>
+
+            I am a person who is always ready to or on a go to participate to take part in students and community events
+            and I
+            believe through that way I can contribute in my way in creating and promoting a healthy and better student
+            environment.<br><br>
+
+            In problem solving situations,I have a tireless eye for details and analyze the problem through several
+            techniques
+            before making any important decision.<br>
+          </p>
+
+        </article>
+      </main>
+      <footer>
+        <div class="desktop-contact">
+          <p class="des-conta">Contact</p>
+          <div class="des-foot">
+            <div>
+              <a href="https://facebook.com/Fowobi21_/ "><i class="fab fa-facebook-f"></a></i>
+            </div>
+            <div>
+              <a href="https://twitter.com/fowobi21/ "><i class="fab fa-twitter fa-1x"></a></i>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/tosin-odunuga-355054247/"><i
+                  class="fab fa-linkedin-in fa-1x"></a></i>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/fowobi21_/ "><i class="fab fa-instagram fa-1x"></a></i>
+            </div>
+            <div>
+              <a href="mailto:achiever317@gmail.com "><i class="fa-regular fa-envelope fa"></a></i>
+            </div>
+          </div>
+        </div>
+        <p class="des-odu">@2023 by Tosin Odunuga.</p>
+
+      </footer>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="./script.js"></script>
+
+</body>
+
 </html>
