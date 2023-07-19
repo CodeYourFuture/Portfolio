@@ -119,12 +119,7 @@ contact {
   font-size: 1.7rem;
 } */
 
-
-
-
-
-
-/* Design tokens */
+/* Design tokens
 :root {
   --paper: hsla(251, 28%, 88%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
@@ -134,7 +129,7 @@ contact {
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 } 
 /* General Styles */
- html,
+/* html,
 body {
   scroll-behavior: smooth;
   background: var(--paper);
@@ -161,7 +156,7 @@ a:focus {
   border-color: currentColor;
 } 
 /* Site header and navigation */
- body > header {
+/* body > header {
   background: var(--paper);
   display: flex;
   justify-content: space-between;
@@ -174,10 +169,18 @@ nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
-}
+} */
 
 /* Text readability */
-section p {
+/* section p {
   line-height: 1.5;
   max-width: 55ch;
-} 
+}  */
+
+.projects-grid {
+  height: 250px;
+  width: 150px;
+  margin-bottom: 15px;
+  margin-bottom: 15px;
+  align-items: left;
+}
