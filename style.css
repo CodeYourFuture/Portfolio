@@ -1,4 +1,4 @@
-/* body {
+body {
   font-family: "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
@@ -6,7 +6,8 @@
 
 #navbar {
   background-color: #fe3144;
-  position: fixed;
+
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -51,7 +52,7 @@ h1 {
   font-weight: 700;
 }
 
-#welcome-section>p {
+#welcome-section > p {
   color: #be3144;
   font-size: 2rem;
   font-style: italic;
@@ -70,7 +71,7 @@ h2 {
   color: white;
 }
 
-@media (max-width)h2 {
+@media (max-width) h2 {
   font-size: 2.5rem;
 }
 
@@ -98,8 +99,6 @@ h2 {
   margin-bottom: 6rem;
 }
 
-
-
 contact {
   background-color: #303841;
   width: 100%;
@@ -117,19 +116,18 @@ contact {
   font-weight: 100;
   text-align: center;
   font-size: 1.7rem;
-} */
+}
 
-/* Design tokens
-:root {
+Design tokens :root {
   --paper: hsla(251, 28%, 88%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
-} 
+}
 /* General Styles */
-/* html,
+html,
 body {
   scroll-behavior: smooth;
   background: var(--paper);
@@ -154,14 +152,14 @@ a:hover,
 a:focus {
   color: var(--brand);
   border-color: currentColor;
-} 
+}
 /* Site header and navigation */
-/* body > header {
+body > header {
   background: var(--paper);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 1;
 }
@@ -169,18 +167,10 @@ nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
-} */
+}
 
 /* Text readability */
-/* section p {
+section p {
   line-height: 1.5;
   max-width: 55ch;
-}  */
-
-.projects-grid {
-  height: 250px;
-  width: 150px;
-  margin-bottom: 15px;
-  margin-bottom: 15px;
-  align-items: left;
 }
