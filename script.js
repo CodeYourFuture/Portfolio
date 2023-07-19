@@ -300,6 +300,27 @@ setInterval(() => {
 
 //desktop-code fact number
 
+// let fact = document.querySelector("#fact");
+// let factText = document.querySelector("#factText");
+// let numberInput = document.querySelector("#numberInput");
+// numberInput.addEventListener("input", getFactAjax);
+
+// function getFactAjax() {
+//   let number = numberInput.value;
+//   let url =
+//     "http://numbersapi.com/" + number;
+
+//   fetch(url)
+//     .then((response) => response.text())
+//     .then((data) => {
+//       if (number != "") {
+//         fact.style.display = "block";
+//         factText.innerText = data;
+//       }
+//     })
+//     .catch((err) => console.log(err));
+// }
+
 let fact = document.querySelector("#fact");
 let factText = document.querySelector("#factText");
 let numberInput = document.querySelector("#numberInput");
@@ -307,19 +328,19 @@ numberInput.addEventListener("input", getFactAjax);
 
 function getFactAjax() {
   let number = numberInput.value;
-  let url =
-    "https://quaint-artistic-cyclone.glitch.me/proxy?url=http://numbersapi.com/1:11:1" + number;
+  let url = `https://quaint-artistic-cyclone.glitch.me/proxy?url=http://numbersapi.com/${number}`;
 
   fetch(url)
     .then((response) => response.text())
     .then((data) => {
-      if (number != "") {
+      if (number !== "") {
         fact.style.display = "block";
         factText.innerText = data;
       }
     })
     .catch((err) => console.log(err));
 }
+
 
 //mobile-calendar-code
 const dates = document.getElementById("dates");
