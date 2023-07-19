@@ -174,3 +174,8 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+.project-img {
+  height: 150px;
+  width: 250px;
+}
