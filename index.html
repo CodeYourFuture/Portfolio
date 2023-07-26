@@ -1,102 +1,345 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
-    <meta
-      name="description"
-      content="The technical portfolio of trainee name"
-    />
+    <title>Herish Turki | Portfolio</title>
+    <meta name="description" content="The technical portfolio of Herish Turki" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
-    <style>
-      html {
-        animation: fade-in 1s;
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <h1>My Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main tabindex="0">
-      <section id="about">
-        <header><h2>About Me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-    </main>
-    <footer>
-      <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
-          ><svg
-            focusable="false"
-            role="presentation"
-            viewbox="0 0 98 96"
-            width="48"
-            height="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-              fill="currentColor"
-            />
-          </svg>
-          Read me</a
-        >
-      </h3>
-    </footer>
-  </body>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="/path_to_your_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body id="top">
+    <!-- Arrow up -->
+    <a href="#top" id="arrow-up" class="fas fa-arrow-up"></a>
+
+    <!-- Arrow down -->
+    <a href="#contact" id="arrow-down" class="fas fa-arrow-down"></a>
+
+
+    <!-- Navigation bar -->
+
+
+    <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+
+        <!-- Navigation content here -->
+        <a class="navbar-brand" href="#">Herish Turki | Portfolio</a>
+
+        <div class="navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body" id="about">
+                        <h5 class="card-title">About Me</h5>
+                        <p class="card-text">
+                            As a driven, adaptable, and innovative professional, I've recently transitioned into the
+                            tech
+                            industry.
+                            My journey in software development began with an intensive program at Code Your Future
+                            Glasgow,
+                            where I
+                            graduated in ....
+                        </p>
+
+                        <div class="collapse" id="collapseDetails">
+                            <div class="card-body bg-when-show">
+
+                                "In the course of my professional journey, I have cultivated a
+                                diverse set of skills, ranging from office management to
+                                arc welding, extending to more complex fields like psychology and recently, I have
+                                developed a keen interest in powerful and promising AI tools.
+
+                                I am particularly
+                                adept at HTML, CSS, JavaScript,
+                                Node.js, React, and SQL databases. I have always been a passionate problem solver. I
+                                find joy in tackling challenges and
+                                delivering innovative solutions to real-world issues. This makes me highly creative and
+                                extends beyond just coding. I'm
+                                enthusiastic about leveraging my creativity to develop new functionalities, services,
+                                and solutions with real impact.
+
+                                As a multilingual professional, I add
+                                diversity to any team. I bring
+                                strong communication and leadership skills, a strong work ethic, and a commitment to
+                                excellence.
+
+                                My adaptability and organization enable me to function effectively within a team
+                                environment. Furthermore, my innovation
+                                drives me to continually seek opportunities to bring new and needed functionalities,
+                                services, or products to the real
+                                world through software development. I am always seeking ways to improve existing
+                                processes and systems.
+
+                                As a lifelong learner, I am passionate about staying at the forefront of new
+                                technologies. For instance, I've
+                                enthusiastically immersed myself in the AI sphere from its early public-access days,
+                                dedicating hours each day to
+                                exploring, learning, and mastering its tools. I firmly believe AI is poised to
+                                revolutionize the tech industry and
+                                coding environment, and mastering to use those tools and its potential is a valuable
+                                asset.
+
+                                My unwavering commitment to any project or pursuit I undertake is another key strength.
+                                I subscribe to the mantra of 'go
+                                big or go home.
+
+                                Above all, my enthusiasm for challenges motivates me. I enjoy overcoming obstacles and
+                                seeing challenging projects
+                                through to successful completion. Perhaps most importantly, I pride myself on my
+                                adaptability, mental resilience, and
+                                ability to thrive in any situation. I believe these qualities equip me well to make
+                                significant contributions in a
+                                dynamic, forward-thinking environment." </div>
+                        </div>
+                        <a href="/Herish Turki - CV.pdf" download="Herish Turki - CV.pdf">Download my CV</a>
+                        <br>
+                        <a href="/Herish Turki - Cover Letter.pdf" download="Herish Turki - Cover Letter.pdf">Download
+                            my cover
+                            letter</a>
+
+                        <a class="btn btn-link" id="more" data-toggle="collapse" href="#collapseDetails" role="button"
+                            aria-expanded="false" aria-controls="collapseDetails">
+                            More <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body" id="skills">
+                        <h5 class="card-title">Skills</h5>
+                        <p class="card-text">
+                            ● Skilled in software development with specific skills in HTML, CSS, JavaScript, Node.js,
+                            React, and SQL. <br>
+                            ● multilingual <br>
+                            ● Strong communication, leadership, and organizational skills. <br>
+                            ● Highly adaptable, committed to excellence, and a passionate problem solver. <br>
+                            ● Creative and innovative with a proven track record in overcoming challenges.
+                        </p>
+
+                        <div class="collapse" id="collapseDetails-skill">
+                            <div class="card-body bg-when-show">
+                                ● Software Development: Skilled in HTML, CSS, JavaScript,
+                                Node.js, React, and SQL databases. I have a passion for coding that extends beyond just
+                                creating code, and I strive to leverage this passion to
+                                develop new functionalities,
+                                services, and solutions with a real-world impact.
+                                <br>
+                                ● Multilingual: Fluent in Persian, Kurdish Sorani, and English, which enables effective
+                                communication in diverse
+                                environments.
+                                <br>
+                                ● Strong communication and leadership skills: I am well-versed in conveying ideas
+                                clearly and efficiently and possess
+                                the ability to guide teams towards common goals.
+                                <br>
+                                ● Highly adaptable and well-organized: I can quickly adjust to new situations and
+                                maintain productivity in dynamic
+                                environments. My organizational skills allow me to manage tasks effectively and
+                                contribute positively to team
+                                environments.
+                                <br>
+                                ● Strong work ethic and a commitment to excellence: I am dedicated to delivering
+                                high-quality work and always strive to
+                                surpass expectations.
+                                <br>
+                                ● Passionate Problem Solver: Problem-solving is not just a skill to me but a personal
+                                passion. I thrive on tackling
+                                challenges and finding innovative solutions to real-world issues.
+                                <br>
+                                ● Creativity: I am highly creative, seeking opportunities to use this skill in creating
+                                new functionalities and
+                                solutions beyond just coding.
+                                <br>
+                                ● Innovation: I am constantly seeking opportunities to bring new and needed
+                                functionalities, services, or products to
+                                the real world through software development. This includes finding ways to improve
+                                existing processes and systems.
+                                <br>
+                                ● Enthusiasm for Challenges: I am motivated by challenging projects and thrive in
+                                overcoming obstacles to deliver
+                                successful outcomes. My journey of learning to code from scratch to surpassing the
+                                competency of a typical junior
+                                developer within a year stands testament to this trait.
+                            </div>
+                        </div>
+
+
+                        <a class="btn btn-link" id="more-skill" data-toggle="collapse" href="#collapseDetails-skill"
+                            role="button" aria-expanded="false" aria-controls="collapseDetails-skill">
+                            More <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Experience -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body" id="experience">
+                        <h5 class="card-title">Experience</h5>
+                        <p class="card-text">
+                            Office Assistant, Iran, 2006-2009. I managed administrative tasks and demonstrated strong
+                            communication
+                            and teamwork skills while working collaboratively with colleagues.
+                        </p>
+
+                        <div class="collapse" id="collapseDetails-exp">
+                            <div class="card-body bg-when-show">
+                                I have experience in a variety of fields and have demonstrated my adaptability and
+                                capabilities across
+                                these diverse areas. While not directly related to programming, these experiences have
+                                provided me with a
+                                broad skill set and valuable perspectives. For a more detailed understanding of my
+                                varied
+                                background, please
+                                refer to my CV.
+                            </div>
+                        </div>
+
+
+                        <a class="btn btn-link" id="more-exp" data-toggle="collapse" href="#collapseDetails-exp"
+                            role="button" aria-expanded="false" aria-controls="collapseDetails-exp">
+                            More <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body" id="education">
+                        <h5 class="card-title">Education</h5>
+                        <p class="card-text">
+                            Studied Psychology, Iran, 2007. Graduated from the Software Development Course at
+                            Code Your Future, Glasgow, UK.
+                        </p>
+
+                        <div class="collapse" id="collapseDetails-edu">
+                            <div class="card-body bg-when-show">
+                                My educational background might seem diverse and not directly linked to programming,
+                                but it demonstrates my ability to excel in various fields. My academic journey is
+                                another
+                                testament to my adaptability and perseverance. For further details, please
+                                refer to my CV.
+                            </div>
+                        </div>
+
+                        <a class="btn btn-link" id="more-edu" data-toggle="collapse" href="#collapseDetails-edu"
+                            role="button" aria-expanded="false" aria-controls="collapseDetails-edu">
+                            More <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Projects -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body" id="projects">
+                        <h5 class="card-title">Projects</h5>
+                        <p class="card-text">
+                            My <a href="https://github.com/HereshT" target="_blank">GitHub</a> profile, as well
+                            as my
+                            portfolio website, stand as a testament to my development
+                            skills.
+                            <br><br>
+                            <strong class="projects-links">Direct links to some of my projects:</strong>
+                        </p>
+
+                        <div class="collapse" id="collapseDetails-Projects">
+                            <div class="card-body bg-when-show">
+                                Links to be updated ...
+
+                            </div>
+                        </div>
+
+                        <a class="btn btn-link" id="more-Projects" data-toggle="collapse"
+                            href="#collapseDetails-Projects" role="button" aria-expanded="false"
+                            aria-controls="collapseDetails-Projects">
+                            More <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body" id="contact">
+                        <h5 class="card-title">Contact</h5>
+                        <p class="card-text">
+                            Phone: <a href="tel:+447944559045" target="_blank">+447944559045</a>
+                            <br />
+                            Email: <a href="mailto:hiresh.turky@gmail.com" target="_blank">hiresh.turky@gmail.com</a>
+                            <br />
+                            LinkedIn: <a href="https://www.linkedin.com/in/herish-turki"
+                                target="_blank">https://www.linkedin.com/in/herish-turki</a>
+
+                            <br />
+                            GitHub: <a href="https://github.com/HereshT" target="_blank">https://github.com/HereshT</a>
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+</body>
+
 </html>
+
+//////

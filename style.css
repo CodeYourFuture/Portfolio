@@ -1,57 +1,159 @@
-/* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
-  --gap: 20px;
-  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
-}
-/* General Styles */
-html,
-body {
-  scroll-behavior: smooth;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--font);
-}
-body {
-  display: grid;
-  margin: auto;
-  min-height: 100vh;
-  gap: var(--gap);
-  max-width: var(--container);
-}
-a,
-a:any-link {
-  color: currentColor;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color ease-in-out 0.3s;
-}
-a:hover,
-a:focus {
-  color: var(--brand);
-  border-color: currentColor;
-}
-/* Site header and navigation */
-body > header {
-  background: var(--paper);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: var(--gap);
+  --primary-color: #61f4b0;
+  --secondary-color: #212121;
+  --light-color: #fafafa;
+  --dark-color: #424242;
 }
 
-/* Text readability */
-section p {
-  line-height: 1.5;
-  max-width: 55ch;
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding-top: 60px;
+}
+.col-lg-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex: 1; /* this will make the cards stretch to fill the available space */
+}
+
+.card-body a {
+  color: #000; /* Dark color for the text */
+  font-weight: bold; /* Bold font */
+  font-size: 80%;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Enable padding and margin on all sides */
+
+  margin-top: 10px; /* Space between the links */
+  padding: 10px; /* Space around the text */
+  background-color: #61f4b0; /* Background color from your gradient */
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.5s ease; /* Smooth color change */
+}
+
+.card-body a:hover {
+  background-color: #f9f50b; /* Color change on hover */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #dcd77c, #b3f2de, #b8cfea, #d1eee0);
+  padding: 10px 250px;
+  margin-bottom: 50px;
+}
+.navbar-brand,
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #080800; /* dark color */
+  margin: 0 10px; /* some space between the links */
+  padding: 5px 10px; /* space around the text */
+}
+.navbar-brand {
+  font-weight: bold !important;
+}
+
+.nav-link:hover {
+  color: #000 !important; /* color when hovered */
+  background: #f0dab3; /* white background when hovered */
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+#more,
+#more-edu,
+#more-exp,
+#more-skill,
+#more-Projects {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #f9f50b;
+}
+
+.collapse.show > .bg-when-show {
+  background: linear-gradient(to left, #dcd77c, #b3f2de, #b8cfea, #d1eee0);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--dark);
+  border-color: var(--dark);
+}
+
+.container {
+  max-width: var(--breakpoint-lg);
+  margin-top: 80px;
+}
+
+#arrow-up,
+#arrow-down {
+  font-size: 10px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  position: fixed;
+  right: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#arrow-up {
+  bottom: 90px;
+}
+
+#arrow-down {
+  top: 100px;
+}
+
+#arrow-up:hover,
+#arrow-down:hover {
+  color: var(--primary-color);
+  background-color: var(--light-color);
+}
+.projects-links {
+  color: #0f100f;
+  background: linear-gradient(to left, #dcd77c, #b3f2de, #b8cfea, #d1eee0);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* For tablets */
+@media (max-width: 992px) {
+  .nav-link {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  #arrow-up,
+  #arrow-down {
+    right: 10px; /* reduce right padding */
+    z-index: 999; /* make sure arrows are on top of other elements */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 12px;
+  }
+
+  #arrow-up,
+  #arrow-down {
+    font-size: 10px;
+    padding: 5px;
+    right: 5px; /* reduce right padding */
+  }
+}
+.contact a i {
+  color: #1b98e0;
 }
