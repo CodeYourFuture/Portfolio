@@ -925,9 +925,9 @@ footer {
 
   .des-project {
     margin-left: 1rem;
-    /* font-size: 20px; */
-    /* border-radius: 5rem; */
-    /* width: 6rem; */
+    font-size: 20px;
+    border-radius: 15rem;
+    width: 6rem;
     background-color: var(--White);
   }
 
