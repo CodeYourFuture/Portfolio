@@ -793,7 +793,7 @@ footer {
   }
   .project-drop{
     margin-left: 1rem;
-    color: lightblue;
+    color: var(--Royal-blue);
   }
 
   .project-drop:hover{
