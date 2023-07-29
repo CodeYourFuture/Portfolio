@@ -1247,18 +1247,11 @@ footer {
     margin-bottom: 1rem;
   }
 
-  #fact {
+  /* #fact {
     display: none;
   }
 
-  .row {
-    /* border: 5px solid blue; */
-    width: 55rem;
-    background: rgba(235, 0, 255, 0.11);
-    border-radius: 10px;
-    /* margin-top: 2rem; */
-
-  }
+  
 
   .form-control {
     margin-left: 7rem;
@@ -1284,15 +1277,15 @@ footer {
     font-weight: bolder;
   }
 
-  .num-text-p {
+   .num-text-p {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     /* border: 5px solid red; */
-    width: 22rem;
-    font-size: 17px;
+    /* width: 22rem; */
+    /* font-size: 17px;  */
 
-  }
+  /* }  */
     .pet-container {
       max-width: 400px;
         margin: 0 auto;
@@ -1316,6 +1309,7 @@ footer {
       border-radius: 5px;
       cursor: pointer;
       margin-top: 2rem;
+      margin-left: 10rem;
   }
     .random-btn:hover{
       background-color: #0056b3;
