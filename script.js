@@ -7,6 +7,18 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
+//drop option code for other project
+document.addEventListener("DOMContentLoaded", () => {
+  const projectDropdown = document.getElementById("projectDropdown");
+
+  projectDropdown.addEventListener("change", () => {
+    const selectedValue = projectDropdown.value;
+    if (selectedValue !== "#") {
+      window.open(selectedValue, "_blank");
+    }
+  });
+});
+
 //  Mobile-Carousel-Code
 
 var images, arrayimage;
@@ -367,3 +379,8 @@ dates.innerHTML = (today.getDate() < 10 ? "0" : "") + today.getDate();
 days.innerHTML = weekDays[today.getDay()];
 months.innerHTML = allMonths[today.getMonth()];
 years.innerHTML = today.getFullYear();
+
+
+
+
+

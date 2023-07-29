@@ -784,11 +784,20 @@ footer {
 
   .d-nav-list-item {
     margin-left: 1rem;
+    
   }
 
   .d-nav-list-item a:hover,
   a:focus {
+    color: red;
+  }
+  .project-drop{
+    margin-left: 1rem;
     color: var(--Royal-blue);
+  }
+
+  .project-drop:hover{
+    color: red;
   }
 
   .des-img {
