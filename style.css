@@ -1247,51 +1247,14 @@ footer {
     margin-bottom: 1rem;
   }
 
-  /* #fact {
-    display: none;
-  }
-
   
-
-  .form-control {
-    margin-left: 7rem;
-    font-size: x-large;
-    margin-top: 0.5rem;
-
-  }
-
-  .fact-p {
-    text-align: center;
-    margin-top: 0.5rem;
-    color: var(--Royal-blue);
-    font-size: larger;
-    font-weight: bolder;
-  }
-
-  .card-body {
-    color: var(--Royal-blue);
-    font-size: larger;
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: bolder;
-  }
-
-   .num-text-p {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    /* border: 5px solid red; */
-    /* width: 22rem; */
-    /* font-size: 17px;  */
-
-  /* }  */
     .pet-container {
       max-width: 400px;
         margin: 0 auto;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
+        /* overflow: hidden; */
     }
 
 
@@ -1300,7 +1263,14 @@ footer {
       height: auto;
       border-radius: 5px;
       margin-bottom: 10px;
+      /* object-fit: cover; */
+      transition: transform .3s ease-in-out;
+      /* overflow: hidden; */
   }
+     .pet-img:hover{
+      transform: rotate(5deg) scale(0.4);
+     }
+
   .random-btn{
       background-color: #007bff;
       color: #fff;
