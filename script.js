@@ -300,26 +300,35 @@ setInterval(() => {
 
 //desktop-code fact number
 
-let fact = document.querySelector("#fact");
-let factText = document.querySelector("#factText");
-let numberInput = document.querySelector("#numberInput");
-numberInput.addEventListener("input", getFactAjax);
+const petApiUrl = "https://learnwebcode.github.io/pet-adoption-data/pets.json";
 
-function getFactAjax() {
-  let number = numberInput.value;
-  let url =
-    "http://numbersapi.com/" + number;
+async function getRandomPet() {
+  try {
+    const response = await fetch(petApiUrl);
+    const data = await response.json();
 
-  fetch(url)
-    .then((response) => response.text())
-    .then((data) => {
-      if (number != "") {
-        fact.style.display = "block";
-        factText.innerText = data;
-      }
-    })
-    .catch((err) => console.log(err));
+    // Check if the necessary properties exist in the fetched data
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("No pet data found.");
+    }
+
+    // Get a random pet from the data array
+    const randomPet = data[Math.floor(Math.random() * data.length)];
+
+    const petImage = randomPet.photo;
+    const petDescription = randomPet.description;
+    const petName = randomPet.name;
+
+    document.getElementById("petImage").src = petImage;
+    document.getElementById("petName").textContent = petName;
+    document.getElementById("petDescription").textContent = petDescription;
+  } catch (error) {
+    console.error("Error fetching data:", error.message);
+  }
 }
+
+document.getElementById("randomButton").addEventListener("click", getRandomPet);
+
 
 
 //mobile-calendar-code
