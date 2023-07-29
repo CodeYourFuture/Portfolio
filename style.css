@@ -1293,40 +1293,33 @@ footer {
     font-size: 17px;
 
   }
-    /* .pet-container {
-      display: flex;
-      flex-direction: row;
-      /* Flex the children in a row */
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    } */
+    .pet-container {
+      max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 
 
   .pet-img{
-    max-width: 60%;
+    max-width: 100%;
       height: auto;
       border-radius: 5px;
       margin-bottom: 10px;
   }
-    /* .image-container {
-      flex: 1;
-      /* Make the image container take up available space */
-      padding-right: 20px;
-      /* Add spacing between image and description */
-      display: flex;
-      align-items: center;
+  .random-btn{
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 2rem;
+  }
+    .random-btn:hover{
+      background-color: #0056b3;
     }
-  
-    .description-container {
-      flex: 2;
-      /* Make the description container take up twice the space of the image container */
-      display: flex;
-      flex-direction: column;
-      /* Stack the pet name and description vertically */
-      justify-content: center;
-    } */
+   
 
 }
