@@ -775,7 +775,21 @@ footer {
   .web {
     margin-top: 0.5rem;
     font-size: 20px;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+
+    /* border-left: 3px solid #333; */
+      /* padding: 1.8px; */
+      /* margin-bottom: 10px; */
+      /* margin-right: 0.5rem; */
   }
+  .web::before{
+    border-left: 3px solid var(--Royal-blue);
+    content: "";
+    padding: 1.5px;
+    
+  }
+      
 
   .d-nav-items-container {
     margin-right: 4rem;
