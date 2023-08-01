@@ -778,10 +778,7 @@ footer {
     font-weight: bolder;
     margin-left: 0.5rem;
 
-    /* border-left: 3px solid #333; */
-      /* padding: 1.8px; */
-      /* margin-bottom: 10px; */
-      /* margin-right: 0.5rem; */
+    
   }
   .web::before{
     border-left: 3px solid var(--Royal-blue);
@@ -796,18 +793,24 @@ footer {
     margin-top: 0.5rem;
   }
 
+ 
+
   .d-nav-list-item {
     margin-left: 1rem;
+    font-weight: bolder;
+    color: var(--Royal-blue);
+    
     
   }
 
-  .d-nav-list-item a:hover,
-  a:focus {
+  .d-nav-list-item a:hover{
     color: red;
   }
   .project-drop{
     margin-left: 1rem;
     color: var(--Royal-blue);
+    font-weight: bolder;
+    cursor: pointer;
   }
 
   .project-drop:hover{
@@ -850,7 +853,6 @@ footer {
     background-color: var(--White);
     /* border: 5px solid blue; */
     display: flex;
-    /* margin-left: 5rem; */
     margin-top: 1rem;
     gap: 2rem;
     height: 2.8rem;
@@ -1019,6 +1021,7 @@ footer {
     font-size: 24px;
     font-weight: bolder;
   }
+   
 
   .desktop-down {
     margin-left: 24rem;
@@ -1044,19 +1047,30 @@ footer {
     margin-left: 19rem;
     margin-top: 2rem;
   }
-
+  
+    
   .resume-present {
-    margin-left: 2rem;
     font-size: 20px;
     font-weight: bolder;
     color: var(--Royal-blue);
+  
   }
+    .resume-present::before{
+      margin-left: 1rem;
+        content: "";
+        display: inline-block;
+        margin-right: 0.6rem;
+        background-color: var(--Royal-blue);
+        height: 0.7rem;
+        width: 0.7rem;
+    }
+  
 
   .re-par {
-    /* border: 5px solid black; */
     width: 20rem;
     margin-left: 10rem;
     margin-top: 1.5rem;
+    
   }
 
   .resu-job {
@@ -1067,6 +1081,13 @@ footer {
     font-weight: bold;
 
   }
+    .resu-job::before{
+      border-left: 3px solid var(--Royal-blue);
+        content: "";
+        padding: 1px;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
 
   .cop-name {
     margin-left: 2rem;
@@ -1092,22 +1113,34 @@ footer {
 
   .pros-skill {
     color: var(--Royal-blue);
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     font-size: 26px;
     font-weight: bolder;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
+  }
+
+  .pros-skill::before{
+    content: "*";
+    margin-left: 0.6rem;
+    margin-right: 0.5rem;
   }
 
   .honor {
     color: var(--Royal-blue);
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     font-size: 26px;
     font-weight: bolder;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+    .honor::before{
+      content: "*";
+        margin-left: 0.6rem;
+        margin-right: 0.5rem;
+    }
 
   .entre::before {
     margin-left: 1rem;
