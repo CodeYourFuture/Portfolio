@@ -46,16 +46,28 @@ const projects = [
     link: "https://cyf-annafyz-hotel-react.netlify.app/",
     gitlink: "https://github.com/AnnaFYZ/cyf-hotel-react",
   },
+  {
+    id: 4,
+    h3: "TV-Show-project",
+    img: {
+      src: "/images/TV-maze.png",
+      alt: "search for movies",
+    },
+    summary:
+      "This project was made with vanilla JavaScript but using API from TV-Maze project and asynchronous functions",
+    link: "https://cyf-annafyz-tv.netlify.app/",
+    gitlink: "https://github.com/AnnaFYZ/-tv-show-dom-project",
+  },
 ];
 
 function displayProjects (){
     let spanId = document.querySelector("#id");
-    let index = spanId.innerHTML;
+    let index = Number(spanId.innerHTML);
     let i;
-    if (index === "" || index === "3") {
+    if (index === "" || index === projects.length - 1) {
       i = 0;
     } else {
-      i = Number(index) + 1;
+      i = index + 1;
     } 
 
         let h3Elemet = document.querySelector("#title");
