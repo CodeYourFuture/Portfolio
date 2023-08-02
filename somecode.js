@@ -42,7 +42,7 @@ const projects = [
       alt: "three pictures with description",
     },
     summary:
-      "This project was aimed to develop skills in Beck-end (Node.js Express) and combine Front-End with Back-End",
+      "This project was aimed to develop skills in React and Back-end. So Front-End was build in React and Back-End built in Node.js Express",
     link: "https://cyf-annafyz-hotel-react.netlify.app/",
     gitlink: "https://github.com/AnnaFYZ/cyf-hotel-react",
   },
