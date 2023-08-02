@@ -1,5 +1,6 @@
 const projects = [
   {
+    id: 0,
     h3: "Personal Web-page",
     img: {
       src: "/images/ScreenshotMyPage.png",
@@ -11,41 +12,56 @@ const projects = [
     gitlink: "https://github.com/AnnaFYZ/homepage.git",
   },
   {
+    id: 1,
     h3: "Karma Module project",
     img: {
       src: "/images/ScreenshotKarmaPage.png",
-      alt: "",
+      alt: "form to fill in",
     },
     summary: "This project taught me to work with forms on the page",
     link: "https://karma-project-annafyz.netlify.app/",
     gitlink: "https://github.com/AnnaFYZ/HTML-CSS-Module-Project.git",
   },
   {
+    id: 2,
     h3: "Plants webshop",
     img: {
       src: "/images/ScreenshotKaktus.png",
-      alt: "",
+      alt: "image with cactuses",
     },
     summary:
       "This project became a real CSS challenge for me and taught a lot, especially about background pictures",
     link: "https://annafyz-kaktus-shop.netlify.app/",
     gitlink: "https://github.com/AnnaFYZ/HTML-CSS-Coursework-Week4.git",
   },
+  {
+    id: 3,
+    h3: "CYF-hotel-project",
+    img: {
+      src: "/images/hotel-project.png",
+      alt: "three pictures with description",
+    },
+    summary:
+      "This project was aimed to develop skills in Beck-end (Node.js Express) and combine Front-End with Back-End",
+    link: "https://cyf-annafyz-hotel-react.netlify.app/",
+    gitlink: "https://github.com/AnnaFYZ/cyf-hotel-react",
+  },
 ];
 
 function displayProjects (){
-    let index = document.querySelector("#title").innerText;
+    let spanId = document.querySelector("#id");
+    let index = spanId.innerHTML;
     let i;
-    if (index === "" || index === "Plants webshop") {
+    if (index === "" || index === "3") {
       i = 0;
-    } else if (index === "Personal Web-page") {
-      i = 1;
     } else {
-      i = 2;
-    }
+      i = Number(index) + 1;
+    } 
 
         let h3Elemet = document.querySelector("#title");
         h3Elemet.innerText = projects[i].h3;
+
+        spanId.innerText = projects[i].id;
         
         let image = document.querySelector("#projectImg");
         image.src = projects[i].img.src;
@@ -69,18 +85,19 @@ displayProjects();
 document.querySelector("#next").addEventListener("click", displayProjects)
 
 function displayProjectsBackwards() {
-  let index = document.querySelector("#title").innerText;
+  let spanId = document.querySelector("#id");
+  let index = Number(spanId.innerHTML);
   let i;
-  if (index === "" || index === "Karma Module project") {
-    i = 0;
-  } else if (index === "Personal Web-page") {
-    i = 2;
+  if (index === 0) {
+    i = projects.length - 1;
   } else {
-    i = 1;
-  }
+    i = Number(index) - 1;
+  } 
 
   let h3Elemet = document.querySelector("#title");
   h3Elemet.innerText = projects[i].h3;
+  
+  spanId.innerText = projects[i].id;
 
   let image = document.querySelector("#projectImg");
   image.src = projects[i].img.src;

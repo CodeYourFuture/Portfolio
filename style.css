@@ -44,6 +44,11 @@ section {
   
 }
 
+#id {
+  visibility: collapse;
+  
+}
+
 .project {
   max-width: 350px;
   margin: 10px;
