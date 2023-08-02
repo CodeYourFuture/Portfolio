@@ -15,48 +15,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body id="top">
-    <!-- Arrow up -->
-    <a href="#top" id="arrow-up" class="fas fa-arrow-up"></a>
-
-    <!-- Arrow down -->
-    <a href="#contact" id="arrow-down" class="fas fa-arrow-down"></a>
 
 
     <!-- Navigation bar -->
-
-
     <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
-
         <!-- Navigation content here -->
         <a class="navbar-brand" href="#">Herish Turki | Portfolio</a>
-
         <div class="navbar-collapse" id="navbarNav">
-
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#top"><i class="fas fa-arrow-up"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#contact"><i class="fas fa-arrow-down"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="https://github.com/HereshT" target="_blank"><i
+                            class="fab fa-github"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/herish-turki" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="/Herish Turki - CV.pdf" download="Herish Turki - CV.pdf"><i
+                            class="fas fa-download"></i> Download my CV</a>
                 </li>
             </ul>
         </div>
@@ -136,16 +125,13 @@
                                 dynamic, forward-thinking environment."
                             </div>
                         </div>
-                        <a href="/Herish Turki - CV.pdf" download="Herish Turki - CV.pdf">Download my CV</a>
-                        <br>
-                        <a href="/Herish Turki - Cover Letter.pdf" download="Herish Turki - Cover Letter.pdf">Download
-                            my cover
-                            letter</a>
+
 
                         <a class="btn btn-link" id="more" data-toggle="collapse" href="#collapseDetails" role="button"
-                            aria-expanded="false" aria-controls="collapseDetails">
-                            More <i class="fas fa-chevron-down"></i>
+                            aria-expanded="false" aria-controls="collapseDetails"><i class="fas fa-plus"></i><i
+                                class="fas fa-minus" style="display: none;"></i>
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -211,8 +197,8 @@
 
 
                         <a class="btn btn-link" id="more-skill" data-toggle="collapse" href="#collapseDetails-skill"
-                            role="button" aria-expanded="false" aria-controls="collapseDetails-skill">
-                            More <i class="fas fa-chevron-down"></i>
+                            role="button" aria-expanded="false" aria-controls="collapseDetails-skill"><i
+                                class="fas fa-plus"></i><i class="fas fa-minus" style="display: none;"></i>
                         </a>
                     </div>
                 </div>
@@ -243,8 +229,8 @@
 
 
                         <a class="btn btn-link" id="more-exp" data-toggle="collapse" href="#collapseDetails-exp"
-                            role="button" aria-expanded="false" aria-controls="collapseDetails-exp">
-                            More <i class="fas fa-chevron-down"></i>
+                            role="button" aria-expanded="false" aria-controls="collapseDetails-exp"><i
+                                class="fas fa-plus"></i><i class="fas fa-minus" style="display: none;"></i>
                         </a>
                     </div>
                 </div>
@@ -271,8 +257,8 @@
                         </div>
 
                         <a class="btn btn-link" id="more-edu" data-toggle="collapse" href="#collapseDetails-edu"
-                            role="button" aria-expanded="false" aria-controls="collapseDetails-edu">
-                            More <i class="fas fa-chevron-down"></i>
+                            role="button" aria-expanded="false" aria-controls="collapseDetails-edu"><i
+                                class="fas fa-plus"></i><i class="fas fa-minus" style="display: none;"></i>
                         </a>
                     </div>
                 </div>
@@ -302,8 +288,8 @@
 
                         <a class="btn btn-link" id="more-Projects" data-toggle="collapse"
                             href="#collapseDetails-Projects" role="button" aria-expanded="false"
-                            aria-controls="collapseDetails-Projects">
-                            More <i class="fas fa-chevron-down"></i>
+                            aria-controls="collapseDetails-Projects"><i class="fas fa-plus"></i><i class="fas fa-minus"
+                                style="display: none;"></i>
                         </a>
                     </div>
                 </div>
@@ -336,6 +322,7 @@
 
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -345,6 +332,21 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script>$(document).ready(function () {
+                $('#more, #more-skill, #more-exp, #more-edu, #more-Projects').on('click', function () {
+                    var plusIcon = $(this).find('.fa-plus');
+                    var minusIcon = $(this).find('.fa-minus');
+
+                    if (plusIcon.css('display') === 'none') {
+                        plusIcon.show();
+                        minusIcon.hide();
+                    } else {
+                        plusIcon.hide();
+                        minusIcon.show();
+                    }
+                });
+            });
+        </script>
 
 </body>
 

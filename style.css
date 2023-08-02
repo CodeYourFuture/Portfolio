@@ -17,25 +17,25 @@ body {
 }
 
 .card {
-  flex: 1; /* this will make the cards stretch to fill the available space */
+  flex: 1;
 }
 
 .card-body a {
-  color: #000; /* Dark color for the text */
-  font-weight: bold; /* Bold font */
+  color: #000;
+  font-weight: bold;
   font-size: 80%;
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Enable padding and margin on all sides */
+  text-decoration: none;
+  display: inline-block;
 
   margin-top: 10px; /* Space between the links */
   padding: 10px; /* Space around the text */
   background-color: #61f4b0; /* Background color from your gradient */
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px;
   transition: background-color 0.5s ease; /* Smooth color change */
 }
 
 .card-body a:hover {
-  background-color: #f9f50b; /* Color change on hover */
+  background-color: #f9f50b;
 }
 
 .navbar {
@@ -43,26 +43,31 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to left, #dcd77c, #b3f2de, #b8cfea, #d1eee0);
-  padding: 10px 250px;
-  margin-bottom: 50px;
-}
-.navbar-brand,
-.nav-link {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  color: #080800; /* dark color */
-  margin: 0 10px; /* some space between the links */
-  padding: 5px 10px; /* space around the text */
+  padding: 10px 70px;
+  margin-bottom: 80px;
 }
 .navbar-brand {
-  font-weight: bold !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #080800;
+  margin: 0 10px;
+  padding: 5px 10px;
 }
 
-.nav-link:hover {
-  color: #000 !important; /* color when hovered */
-  background: #f0dab3; /* white background when hovered */
+.navbar .nav-link,
+.navbar .nav-icon {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #02072a !important;
+  margin: 0 10px;
+  padding: 5px 10px;
 }
 
+.nav-link:hover,
+.nav-icon:hover {
+  color: #f20808 !important;
+  background: #c7fdd2;
+}
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
@@ -95,30 +100,6 @@ body {
   margin-top: 80px;
 }
 
-#arrow-up,
-#arrow-down {
-  font-size: 10px;
-  color: var(--light-color);
-  background-color: var(--primary-color);
-  position: fixed;
-  right: 20px;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-#arrow-up {
-  bottom: 90px;
-}
-
-#arrow-down {
-  top: 100px;
-}
-
-#arrow-up:hover,
-#arrow-down:hover {
-  color: var(--primary-color);
-  background-color: var(--light-color);
-}
 .projects-links {
   color: #0f100f;
   background: linear-gradient(to left, #dcd77c, #b3f2de, #b8cfea, #d1eee0);
@@ -129,15 +110,12 @@ body {
 
 /* For tablets */
 @media (max-width: 992px) {
-  .nav-link {
-    margin: 0;
-    padding: 10px 0;
+  .navbar {
+    flex-direction: column;
   }
-
-  #arrow-up,
-  #arrow-down {
-    right: 10px; /* reduce right padding */
-    z-index: 999; /* make sure arrows are on top of other elements */
+  .nav-link,
+  .nav-icon {
+    padding: 10px 0;
   }
 }
 
@@ -146,14 +124,13 @@ body {
   .nav-link {
     font-size: 12px;
   }
-
-  #arrow-up,
-  #arrow-down {
-    font-size: 10px;
-    padding: 5px;
-    right: 5px; /* reduce right padding */
-  }
 }
 .contact a i {
   color: #1b98e0;
+}
+#arrow-up,
+#arrow-down {
+  font-size: 10px;
+  padding: 5px;
+  right: 5px;
 }
