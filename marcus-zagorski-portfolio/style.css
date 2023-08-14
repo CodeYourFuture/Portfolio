@@ -1,57 +1,161 @@
-/* Design tokens */
-:root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
-  --gap: 20px;
-  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
-}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 /* General Styles */
-html,
-body {
-  scroll-behavior: smooth;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--font);
-}
-body {
-  display: grid;
-  margin: auto;
-  min-height: 100vh;
-  gap: var(--gap);
-  max-width: var(--container);
-}
-a,
-a:any-link {
-  color: currentColor;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color ease-in-out 0.3s;
-}
-a:hover,
-a:focus {
-  color: var(--brand);
-  border-color: currentColor;
-}
-/* Site header and navigation */
-body > header {
-  background: var(--paper);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: var(--gap);
+
+:root {
+  --background: #264653;
+  --font: "Ubuntu";
+  --brand: #d4dadd;
+  --page-width: 1200px;
+  --hover-text: #2a9d8f;
 }
 
-/* Text readability */
-section p {
-  line-height: 1.5;
-  max-width: 55ch;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  color: var(--brand);
+  width: var(--page-width);
+  font-family: var(--font);
+  background-color: var(--background);
+}
+
+/* This margin class is for the margin on top of each of the projects logos and description  */
+
+.margin {
+  margin-top: 0.6rem;
+}
+
+/* Navigation styles */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0.8rem;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+  transition: ease-in-out 0.3s;
+}
+
+a:hover,
+a:active {
+  color: var(--hover-text);
+}
+
+/* Main - Introduction styles */
+
+main {
+  display: grid;
+  margin-top: 4rem;
+}
+
+.intro-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.intro-logo {
+  width: 138px;
+  height: 138px;
+  border-radius: 100%;
+  background-image: url(/imgs/picture-of-me.jpg);
+  background-size: contain;
+  border: 2px solid #f8f9fa;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  letter-spacing: 1.2px;
+}
+
+/* About me styles */
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 3.2rem;
+  height: 38vh;
+  border-top: 4px solid var(--hover-text);
+  border-bottom: 4px solid var(--hover-text);
+  align-items: center;
+  justify-items: center;
+}
+
+.section-titles {
+  font-size: 6em;
+}
+
+.aboutme-textbox {
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Projects styles */
+
+.karma-logo {
+  transition: fill 0.3s;
+}
+
+.karma-logo:hover,
+.karma-logo:active {
+  fill: #f15b2a;
+}
+
+.section-titles-- {
+  font-size: 6em;
+  grid-row: span 4;
+}
+
+.sections-grid-- {
+  display: grid;
+  grid-template-columns: 50% repeat(2, 25%);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 3.2rem;
+  height: 36vh;
+  border-top: 4px solid var(--hover-text);
+  border-bottom: 4px solid var(--hover-text);
+  align-items: center;
+  justify-items: center;
+}
+
+.favicon-icon-karma {
+  margin-bottom: 0.4rem;
+}
+
+.project-1-row {
+  text-align: center;
+  padding-top: 1.2rem;
+}
+
+.karma-project {
+  color: #f8f9fad8;
+}
+
+/* Contact styles */
+
+.sections-grid--- {
+  display: grid;
+  margin-top: 3.2rem;
+  height: 14vh;
+  border-top: 4px solid var(--hover-text);
+  border-bottom: 4px solid var(--hover-text);
+  align-items: center;
+  justify-items: center;
 }

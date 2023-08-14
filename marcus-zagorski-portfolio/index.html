@@ -1,102 +1,61 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
-    <meta
-      name="description"
-      content="The technical portfolio of trainee name"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
-    <style>
-      html {
-        animation: fade-in 1s;
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>My Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main tabindex="0">
-      <section id="about">
-        <header><h2>About Me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
+    <!-- Navigation section -->
+
+    <nav class="nav-container">
+      <ol class="nav-links">
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Project</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ol>
+    </nav>
+
+    <!-- Main Section - Introduction -->
+
+    <main>
+      <div class="intro-box">
+        <img src="/marcus-zagorski-portfolio/imgs/picture-of-me.jpg" alt="" class="intro-logo" />
+        <p><span>Hi I'm,</span>
+        <h1>Marcus Zagorski</h1>
+        <em><span>"In life you get out what you put in"</span></em>
         </p>
-      </section>
-      <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
+      </div>
     </main>
-    <footer>
-      <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
-          ><svg
-            focusable="false"
-            role="presentation"
-            viewbox="0 0 98 96"
-            width="48"
-            height="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-              fill="currentColor"
-            />
+
+    <!-- About me section -->
+
+    <section class="sections-grid">
+      <p class="section-titles">About me</p>
+      <div class="aboutme-textbox">
+        With a background in graphic design, I have a unique skill set that makes me a great software engineer. By focusing on time efficiency and punctuality, I make sure projects get done on time. Further, my thirst for knowledge allows me to stay on top of the latest technological advancements. I'm a good listener, so I'm able to understand and meet clients' needs. Using my design background and technical expertise, I can develop innovative, visually appealing software solutions by blending my design and technical expertise.
+      </div>
+    </section>
+
+    <!-- Projects section -->
+
+    <section class="sections-grid--">
+      <p class="section-titles--">Projects</p>
+        <a href="https://karma-marcuszagorski.netlify.app/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 216" height="48px" width="48px"
+                    class="favicon-icon-karma margin">
+                    <path class="karma-logo" fill="#212529"
+                        d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z" />
           </svg>
-          Read me</a
-        >
-      </h3>
-    </footer>
+        </a>
+        <h5 class="karma-project margin">Karma Project - Explore Karma, my web showcase, to see responsive designs, interactive features, and my HTML/CSS/JavaScript skills in action. Let's collaborate on creating remarkable digital experiences!</h5>
+    </section>
+
+    <!-- Contacts section -->
+
+        <section class="sections-grid---">
+          
+    </section>
   </body>
 </html>
