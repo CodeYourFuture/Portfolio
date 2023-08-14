@@ -17,6 +17,8 @@
 }
 
 body {
+  padding-top: 1.2rem;
+  padding-bottom: 2.4rem;
   margin: 0 auto;
   color: var(--brand);
   width: var(--page-width);
@@ -33,10 +35,14 @@ body {
 /* Navigation styles */
 
 .nav-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   align-items: center;
-  justify-content: space-between;
-  padding-top: 2rem;
+}
+
+.marcus-zagorski {
+  justify-self: end;
+  font-size: 1.6rem;
 }
 
 .nav-links {
@@ -48,8 +54,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #f8f9fa;
-  transition: ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+  color: var(--brand);
 }
 
 a:hover,
@@ -76,7 +82,7 @@ main {
   border-radius: 100%;
   background-image: url(/imgs/picture-of-me.jpg);
   background-size: contain;
-  border: 2px solid #f8f9fa;
+  border: 2px solid var(--brand);
   margin: 0 auto;
   margin-bottom: 1.2rem;
 }
@@ -87,15 +93,19 @@ h1 {
 
 /* About me styles */
 
-.sections-grid {
+.aboutme-grid {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  margin-top: 3.2rem;
-  height: 38vh;
+  margin-top: 2rem;
   border-top: 4px solid var(--hover-text);
   border-bottom: 4px solid var(--hover-text);
   align-items: center;
   justify-items: center;
+  padding: 0.8rem 0;
+}
+
+.aboutme-ending {
+  margin-top: 1.4rem;
 }
 
 .section-titles {
@@ -110,7 +120,7 @@ h1 {
 /* Projects styles */
 
 .karma-logo {
-  transition: fill 0.3s;
+  transition: fill ease-in-out 0.3s;
 }
 
 .karma-logo:hover,
@@ -120,42 +130,40 @@ h1 {
 
 .section-titles-- {
   font-size: 6em;
-  grid-row: span 4;
 }
 
-.sections-grid-- {
+.projects-grid {
   display: grid;
-  grid-template-columns: 50% repeat(2, 25%);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 50% repeat(4, 1fr);
   margin-top: 3.2rem;
-  height: 36vh;
+  height: 24vh;
   border-top: 4px solid var(--hover-text);
   border-bottom: 4px solid var(--hover-text);
   align-items: center;
   justify-items: center;
-}
-
-.favicon-icon-karma {
-  margin-bottom: 0.4rem;
-}
-
-.project-1-row {
-  text-align: center;
-  padding-top: 1.2rem;
-}
-
-.karma-project {
-  color: #f8f9fad8;
 }
 
 /* Contact styles */
 
-.sections-grid--- {
+.contacts-grid {
   display: grid;
+  grid-template-columns: 50% repeat(4, 1fr);
   margin-top: 3.2rem;
-  height: 14vh;
+  height: 24vh;
   border-top: 4px solid var(--hover-text);
   border-bottom: 4px solid var(--hover-text);
   align-items: center;
   justify-items: center;
+}
+
+.icons {
+  width: 48px;
+  height: 48px;
+  fill: var(--brand);
+  transition: fill ease-in-out 0.3s;
+}
+
+.icons:hover,
+.icons:active {
+  fill: var(--hover-text);
 }
