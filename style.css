@@ -52,15 +52,17 @@ body {
   font-size: 22px;
 }
 
-a {
+.nav {
   text-decoration: none;
-  transition: color ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
   color: var(--brand);
 }
 
-a:hover,
-a:active {
+.nav:hover,
+.nav:active {
   color: var(--hover-text);
+  padding-bottom: 0.4rem;
+  border-bottom: 4px solid var(--hover-text);
 }
 
 /* Main - Introduction styles */
@@ -70,19 +72,13 @@ main {
   margin-top: 4rem;
 }
 
-.intro-box {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .intro-logo {
-  width: 138px;
-  height: 138px;
+  width: 16%;
+  height: 20vh;
   border-radius: 100%;
-  background-image: url(/imgs/picture-of-me.jpg);
-  background-size: contain;
-  border: 2px solid var(--brand);
+  /* box-shadow: 6px 6px 10px 0px rgb(0 0 0 / 23%); */
+  background-image: url("/imgs/me-on-jetski.png");
+  background-size: cover;
   margin: 0 auto;
   margin-bottom: 1.2rem;
 }
@@ -109,7 +105,10 @@ h1 {
 }
 
 .section-titles {
-  font-size: 6em;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: var(--hover-text);
+  text-shadow: 1px 2px 2px #00000096;
 }
 
 .aboutme-textbox {
@@ -126,10 +125,6 @@ h1 {
 .karma-logo:hover,
 .karma-logo:active {
   fill: #f15b2a;
-}
-
-.section-titles-- {
-  font-size: 6em;
 }
 
 .projects-grid {
