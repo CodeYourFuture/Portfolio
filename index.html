@@ -3,100 +3,158 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
+    <title>Abdihamid Ali's Portfolio</title>
     <meta
       name="description"
-      content="The technical portfolio of trainee name"
-    />
+      content="I'm Abdi an easy short name who is delight in piecing together code, 
+      design elements, and functionality to craft cohesive and captivating platforms, 
+      just like puzzles that I enjoy solving"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- suppress FOUC-->
-    <style>
-      html {
-        animation: fade-in 1s;
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
+   
+    <link rel="stylesheet" href="style.css" media="print"
+      onload="this.media='all'"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
   </head>
   <body>
-    <header>
-      <h1>My Name</h1>
+    <div class="bg">
+    <header class="header">
+      <a href="#">
+        <img src="images/myLogo.png" alt="Abdihamid logo" class="header_logo"></a>
+  
+      <!-- Navigation menu -->
       <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="navigation_list">
+          <li class="navigation_item"><a class="navigation_link" href="#about">About me</a></li>
+          <li class="navigation_item"><a class="navigation_link" href="#projects">Projects</a></li>
+          <li class="navigation_item"><a class="navigation_link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main tabindex="0">
-      <section id="about">
-        <header><h2>About Me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+      <section id="about"> 
+        <div class="about">
+         <h2 class="name">Abdihamid Ali</h2>
+         <p>
+           <img class="profile-img" src="images/abdi.jpeg" alt="Your Profile Image">
+           I'm Abdi, a passionate and dedicated front-end web developer. <br>
+           What draws me to front-end development is the opportunity to transform complex ideas into 
+           elegant and accessible digital solutions. Just like solving intricate puzzles that require 
+           logical thinking and creative problem-solving, I see frontend development as a series of 
+           puzzles that I enjoy solving. Just as assembling the pieces of a puzzle creates a beautiful 
+           picture, I delight in piecing together code, design elements, and functionality to craft 
+           cohesive and captivating platforms.</p>
+           <p>I consider myself a very responsible and dedicated person. I can overcome any obstacles to 
+           the best of my ability. I'm honest, resourceful, solution-oriented, and a perfectionist. 
+           As a hardworking self-starter, I thoroughly understand the essence of office work and 
+           strive to create flawless and user-centric web experiences.</p>
+       </div>
       </section>
       <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <h2 class="Projects-Showcase">Projects Showcase</h2>
+        <div class="project-box">
+        <div class="container">
+          <div class="item">
+            <a href="https://deploy-preview-51--cyf-module-html-css.netlify.app/wireframe/">
+            <img src="images/project1.png" alt="wireframe project image"></a>
+            <h2>Wireframe</h2>
+            <p style="text-align: left;">
+              This is a project I made using a sketch provided from 
+              CodeYourFuture to build a web page similar to the sketch.</p>
+          </div>
+          <div class="item">
+            <a href="https://home-town-abdi-project.netlify.app/">
+            <img src="images/project2.jpg" alt="My Hometown project image"></a>
+            <h2>My Hometown</h2>
+            <p style="text-align: left;">
+              A project that shows information about my hometown
+              and the places where I like to visit</p>
+          </div>
+          <div class="item">
+            <a href="https://deploy-preview-451--cyf-bfr.netlify.app/">
+            <img src="images/project3.png" alt="Bikes for Refugees project image"></a>
+            <h2>Bikes for Refugees</h2>
+            <p style="text-align: left;">
+              This is a project I made from instructions that were provided by 
+              CodeYourFuture to make style adjustments to the web page.</p>
+          </div>
+        </div>
+        </div>
       </section>
       <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
+        <div class="contact-box">
+          <h2 class="contact">Contact me</h2>
+          <p>
+            Thank you for the time that you took to view my Portfolio. I hope it was worth it.
+            if anything please feel free to leave a comment or contact me in any of the 
+            contact list below
+          </p>
+          <div class="contact-icons">
+            <div class="icons-container">
+              <div class="contact-item">
+                <a href="mailto:abdi747573@gmail.com">
+                  <img class="icon" src="images/Gmail.png" alt="Email"></a>
+              </div>
+              <div class="contact-item">
+                <a href="https://codeyourfuture.slack.com/team/U05JVC76QMQ"
+                target="_blank">
+                  <img class="icon"  src="images/slack.png" alt="Slack"></a>
+              </div>
+              <div class="contact-item">
+                <a href="https://github.com/AbdihamidAli"  target="_blank">
+                  <img class="icon"  src="images/GitHub.png" alt="GitHub"></a>
+              </div>
+            </div>
+          </div>
+          <div class="comment-section">
+            <form id="comment-form" action="mailto:abdi747573@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="comment">Comment:</label>
+                <div class="textarea-container">
+                  <textarea id="comment" name="comment" rows="4"></textarea>
+                  <button type="submit" class="comment-button">Comment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> 
     </main>
     <footer>
       <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
-          ><svg
-            focusable="false"
-            role="presentation"
+        <a href="https://github.com/CodeYourFuture/Portfolio">
+          <svg focusable="false" role="presentation"
             viewbox="0 0 98 96"
             width="48"
             height="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fill-rule="evenodd" clip-rule="evenodd"
               d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-              fill="currentColor"
-            />
+              fill="currentColor"/>
           </svg>
-          Read me</a
-        >
+          Read me
+        </a>
       </h3>
+      <div class="footer-logo">
+        <a href="#" class="myDIV"><img src="images/myLogo.png" alt="Abdihamid logo" ></a>
+        <div class="hide">
+          <img class="avatar" src="images/myPic.jpg" alt="my pic">
+          <div class="textReplac">
+            <h3>Abdihamid Ali</h3>
+            <p>Frontend Developer</p>
+            <h4>Birmingham, UK</h4>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="copy">© 2023 Abdihamid Ali</p>
+      </div>
     </footer>
+    </div>
   </body>
 </html>
