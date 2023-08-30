@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-gb">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>My Portfolio</title>
     <meta
       name="description"
-      content="The technical portfolio of trainee name"
+      content="I am an aspiring Web developer and I am open to connect and collaborate."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- suppress FOUC-->
     <style>
       html {
@@ -23,22 +23,16 @@
         }
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
   </head>
   <body>
-    <header>
-      <h1>My Name</h1>
+    <header class="top-bar">
+      <h1>Welcome on board!</h1>
       <nav>
         <ul>
           <li><a href="#about">About Me</a></li>
@@ -48,41 +42,56 @@
       </nav>
     </header>
     <main tabindex="0">
+      <div class="details">
+        <div class="home-pic">
+          <img src="Image/techie-woman.jpg" alt="animatedPicture">    
+        </div>
+        <div class="home-details">
+          <h2>Hi! My name is <span>Sariat Adenike Oyehan</span></h2>
+          <p>I am an aspiring Web Developer</p>
+        </div>        
+      </div>
+
       <section id="about">
-        <header><h2>About Me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <div class="about-class">
+          <header><h2 class="about-title">About Me</h2></header>
+          <div class="readAbout">
+            <p>
+              I graduated in Health Information Management and Bio-Statistics. Now, I'm switching to the Tech industry with a positive learning attitude. Thanks to Code Your Future, I'm creating a niche for myself and my personal brand.
+              Though I'm new to the Tech world, I'm staying positive. Challenges are chances for me to learn and grow, and I'm committed to always learning. I'm exploring different things to satisfy my curiosity.
+              I'm excited about gaining more skills to turn my dreams into reality. I'm a team player, always ready to contribute and collaborate.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <div class="project-class">
+          <header><h2 class="project-title">Projects Showcase</h2></header>
+          <ul class="project-list">
+            <li><a href="https://github.com/sariat0001?tab=repositories" target="_blank" rel="noopener">Repositories</a></li>
+            <li><a href="https://tech-office.netlify.app/" target="_blank" rel="noopener">Using code blocks to build a website.</a></li>
+            <li><a href="https://sariatadeniketownpage.netlify.app/" target="_blank" rel="noopener">My town Page.</a></li>
+          </ul>
+        </div>
       </section>
       <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <div class="contact-class">
+          <header><h2 class="contact-title">Contact me</h2></header>
+            <form class="contact-form">
+              <label for="message">Please leave a Message:</label><br>
+              <textarea id="message" name="message" rows="10" cols="50"></textarea><br><br>
+              <button class="btn" type="button">Submit</button>
+            </form>
+        </div>
       </section>
     </main>
     <footer>
       <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
+        <a href="https://github.com/sariat0001/Portfolio"
           ><svg
             focusable="false"
             role="presentation"
-            viewbox="0 0 98 96"
+            viewBox="0 0 98 96"
             width="48"
             height="48"
             xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +106,13 @@
           Read me</a
         >
       </h3>
+      <div class="icon-footer">
+          <span class="footer-right">&copy;2023 Adenike Sariat&trade;</span>
+          <a href="https://www.twitter.com/adenike_sariat" target="_blank" rel="noopener"><img src="https://i.postimg.cc/YqYp59V0/580b57fcd9996e24bc43c53e.png" height="20" width="25" alt="twitterLogo"></a>
+          <a href="mailto:adenike.sariat@gmail.com" target="_blank"><img src="https://i.postimg.cc/T1FmswKf/Gmail-Logo-PNG-Transparent-Image.png" height="20" width="25" alt="GmailLogo"></a>
+          <a href="mailto:adenike.sariat@outlook.com" target="_blank"><img src="https://i.postimg.cc/J4tL8Qhp/transparent-outlook-icon-2.png" height="20" width="25" alt="OutlookLogo"></a>
+          <a href="https://www.linkedin.com/in/sariat-oyehan/" target="_blank" rel="noopener"><img src="https://i.postimg.cc/7hpJg2Ws/Linked-In-logo-initials.png" height="20" width="25" alt="linkedinLogo"></a>
+      </div>
     </footer>
   </body>
 </html>
