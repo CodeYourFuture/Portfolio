@@ -15,6 +15,17 @@ body {
   font-family: var(--font);
   margin: 0;
 }
+html {
+  animation: fade-in 1s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   display: grid;
   grid-template-columns: 5rem 1fr 5rem;
