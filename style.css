@@ -13,6 +13,7 @@ body {
   scroll-behavior: smooth;
   background: var(--paper);
   font-family: var(--font);
+  margin: 0;
 }
 body {
   display: grid;
@@ -210,7 +211,7 @@ main {
   font-weight: 700;
   text-align: center;
   transition: 1s ease;
- backdrop-filter: invert(5%) blur(10px) sepia(5%);
+  backdrop-filter: invert(5%) blur(10px) sepia(5%);
 }
 .project-img {
   cursor: pointer;
@@ -255,21 +256,24 @@ main {
   background-size: contain;
 }
 footer {
+  position: sticky;
   grid-column: 1/-1;
   grid-row: 3/4;
-  height: 4.7rem;
+  height: 2.7rem;
   margin-top: 5rem;
   display: flex;
   align-items: end;
   justify-content: space-between;
-  background-color: rgb(223, 240, 233);
+  background-image: linear-gradient(to right, rgba(143, 236, 219, 0), rgb(225, 243, 240));
+  bottom: 0;
 }
 .logo-footer {
-  height: 5rem;
-  width: 5rem;
+  height: 3.7rem;
+  width: 3.7rem;
   background: url(/adniya.png) no-repeat;
   background-position: center;
   background-size: contain;
+  margin-bottom: -0.4rem;
 }
 li {
   list-style: none;
@@ -278,11 +282,11 @@ li {
   height: 3rem;
   display: flex;
   gap: 1rem;
-  align-items: center;
+  align-items: end;
   margin-right: 2rem;
 }
 .list-item-footer {
-  height: 2.5rem;
+  height: 2rem;
   list-style: none;
   color: rgb(118, 122, 122);
   font-weight: 600;
@@ -290,5 +294,5 @@ li {
   text-decoration: none;
 }
 .list-item-footer:hover {
-  color:var(--cyan);
+  color: var(--cyan);
 }
