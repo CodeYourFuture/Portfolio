@@ -5,6 +5,7 @@
   --Royal-blue: #0150FD;
   --Black: #000;
   --White: #FFF;
+  
 }
 
 * {
@@ -122,7 +123,7 @@ a {
 }
 
 .mo-card {
-  background-color: var(--Light-beige);
+  background-color: lightgrey;
   display: grid;
   width: 75vw;
   margin-left: 3.5rem;
@@ -868,7 +869,7 @@ footer {
   }
 
   .desktop-card {
-    background-color: var(--Dark-beige);
+    background-color:lightgrey;
     width: 30rem;
     margin-bottom: 2rem;
 
