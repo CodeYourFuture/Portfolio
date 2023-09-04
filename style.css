@@ -42,8 +42,8 @@ body {
   position: relative;
 }
 .logo {
-  height: 9rem;
-  width: 9rem;
+  width: 7rem;
+  aspect-ratio: 0.1/0.1;
 }
 
 .hero {
@@ -62,7 +62,6 @@ body {
   height: 3rem;
   width: 18rem;
   display: flex;
-  flex-direction: column;
   gap: var(--gap);
   margin-left: 12rem;
 }
@@ -218,19 +217,28 @@ main {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: rgb(127, 169, 165);
+  color:white;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  transition: 1s ease;
-  backdrop-filter: invert(5%) blur(10px) sepia(5%);
+  transition: .5s ease;
+  backdrop-filter: invert(5%) blur(10px) sepia(15%)  contrast(50%);
 }
-.project-img {
+.project-img{
+  width: 9;
+  height: 9;
+  aspect-ratio: 1.36/1;
+}
+.project-img img{
   cursor: pointer;
-  width: 100%;
-  height: 50%;
+  justify-content: center;
 }
-
+.portfolio{
+  object-fit: contain;
+}
+.project-card {
+  flex: 50%;
+}
 .project-heading {
   font-size: 2.5rem;
   font-weight: 600;
@@ -276,7 +284,11 @@ footer {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  background-image: linear-gradient(to right, rgba(143, 236, 219, 0), rgb(225, 243, 240));
+  background-image: linear-gradient(
+    to right,
+    rgba(143, 236, 219, 0),
+    rgb(225, 243, 240)
+  );
   bottom: 0;
 }
 .logo-footer {
