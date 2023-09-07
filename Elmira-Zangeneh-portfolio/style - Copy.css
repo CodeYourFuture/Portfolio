@@ -3,7 +3,7 @@ With tokens, stick to communicating the PURPOSE not the VALUE.
 Code should explain, not mystify, your design.
 */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
+  --paper: hsla(0, 0%, 100%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
@@ -38,18 +38,26 @@ body {
   min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
+  
+}
+.header{
+  width:5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 a,
 a:any-link {
   color: currentColor;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 5px solid transparent;
   transition: border-color ease-in-out 0.3s;
 }
 a:hover,
 a:focus {
   color: var(--brand);
-  border-color: currentColor;
+  border-color: rgb(0, 255, 191);
 }
 p a:any-link {
   border-color: var(--brand);
@@ -149,3 +157,13 @@ https://www.interaction-design.org/literature/article/the-power-of-white-space
 .project__blurb {
   grid-area: blurb;
 }
+.project_item{
+  width:15rem;
+}
+.project_container{
+  
+  
+
+}
+
+
