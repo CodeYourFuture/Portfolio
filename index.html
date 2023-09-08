@@ -10,6 +10,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/public/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
     <!-- suppress FOUC-->
     <style>
       html {
@@ -37,46 +39,86 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <h1>Welcome to Afsha's Portfolio !</h1>
-      <nav>
+  <body class="bg-cyan-100 m-5">
+    <header class="flex flex-col bg-white m-0">
+      <h1 class="text-lg font-bold mt-2 header-title">
+        Welcome to Afsha's Portfolio !
+      </h1>
+      <nav class="text-lg">
         <ul>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#about">More about Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main tabindex="0">
-      <section id="about" class="bg-red-400">
-        <header><h2>About Me</h2></header>
+      <section id="about" class="m-4">
+        <header class="font-semibold">
+          <h2>About Me</h2>
+        </header>
         <ul>
           <li>I live in London</li>
-          <li>I am a web designer and developer</li>
           <li>
             I am currently getting trained at Code Your Future to become a
-            software developer
+            software engineer.
           </li>
         </ul>
       </section>
-      <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+      <section id="projects" class="m-4">
+        <header class="font-semibold">
+          <h2>Here are some of my projects:</h2>
+        </header>
+        <div class="m-5">
+          <h3 class="font-semibold">CYF Hotel React</h3>
+          <p>A hotel website created using HTML, CSS, and React.</p>
+          <a href="https://github.com/Afsha10/cyf-hotel-react" target="_blank"
+            >GitHub</a
+          >
+          <a href="https://afsha-hotel-react.netlify.app/" target="_blank">
+            <img
+              src="images/cyfhotels.png" 
+              alt="CYF Hotel React Preview" class="w-64" 
+            />
+          </a>
+        </div>
+        <div class="m-5">
+          <h3 class="font-semibold">TV Show Webpage</h3>
+          <p>
+            A responsive TV show webpage created using HTML, CSS, and vanilla
+            JS.
+          </p>
+          <a
+            href="https://github.com/Afsha10/tv-show-dom-project"
+            target="_blank"
+            >GitHub</a
+          >
+          <a href="https://cyf-afsha10-tvv.netlify.app/" target="_blank">
+            <img
+              src="images/tvdom.png"
+              alt="TV Show Webpage Preview" class="w-64"
+            />
+          </a>
+        </div>
+        <div class="m-5">
+          <h3 class="font-semibold">HTML & CSS Coursework</h3>
+          <p>A website designed and created using HTML and CSS.</p>
+          <a
+            href="https://github.com/Afsha10/HTML-CSS-Coursework-Week3"
+            target="_blank"
+            >GitHub</a
+          >
+          <a href="https://cakes-co-project.netlify.app/" target="_blank">
+            <img
+              src="images/ResponsiveCakewebpage.png"
+              alt="HTML & CSS Coursework Preview" class="w-64"
+            />
+          </a>
+        </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="font-semibold">
         <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <p></p>
       </section>
     </main>
     <footer>
