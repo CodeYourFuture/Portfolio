@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #1f221f;
+  --second-color: #4e544d;
+  --background: #f5f6f5;
+  --main-background-color: #9ca89a;
+  --transition-motion: ease-in-out 0.3s;
+}
+
+@keyframes loadingPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: "Ubuntu";
+  color: var(--text-color);
+  background: var(--background);
+  animation: loadingPage;
+  animation-duration: 3s;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 1fr 950px 1fr;
+}
+
+header {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+body {
+  position: relative;
+}
+
+/* Hamburger styles */
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  background-color: var(--text-color);
+  width: 3rem;
+  height: 0.6rem;
+  border-radius: 2rem;
+  transition: transform var(--transition-motion);
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: absolute;
+  right: 0;
+  padding-right: 1rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.hamburger-menu input {
+  appearance: none;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+aside {
+  transition: all var(--transition-motion);
+}
+
+.hamburger-menu:has(input:checked) + aside {
+  width: 16rem;
+  opacity: 1;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  transform: rotate(-45deg) translate(-11px, 9px);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  transform: rotate(45deg) translate(-13px, -12px);
+}
+
+/* SideBar */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0.6rem;
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all var(--transition-motion);
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+nav ul li:nth-child(1):hover,
+nav ul li:nth-child(2):hover,
+nav ul li:nth-child(3):hover,
+nav ul li:nth-child(4):hover {
+  box-shadow: inset 0px -1px 5px 0px #00000024;
+  padding: 0.6rem;
+}
+
+.sidebar {
+  background-color: var(--main-background-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 100vh;
+  min-width: 22rem;
+  padding-top: 10rem;
+  opacity: 0;
+  z-index: 2;
+  box-shadow: -2px 1px 16px 0px #00000063;
+}
+
+.sidebar,
+.hamburger-menu:has(input:checked) {
+  position: fixed;
+}
+
+main {
+  background-color: #9ca89a;
+  margin-top: 12rem;
+  position: relative;
+}
+
+.card-component {
+  max-width: 22%;
+  min-height: 6.4rem;
+  background-color: #bac2b8;
+  scale: 400%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px 0.3px #00000026;
+  position: relative;
+  z-index: 1;
+}
+
+.card-component-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.card-component img {
+  min-width: 3.4rem;
+  max-height: 3.4rem;
+  border-radius: 50%;
+  margin-top: 0.4rem;
+}
+
+.card-component p {
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  transform: translate(0%, -50%);
+  gap: 0.2rem;
+}
+
+.social-icons svg {
+  min-width: 0.5rem;
+  transition: scale var(--transition-motion);
+  cursor: pointer;
+  fill: var(--text-color);
+}
+
+.social-icons svg:hover,
+.social-icons svg:active {
+  scale: 120%;
+}
+
+.card-myname {
+  font-size: 0.4rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0.8;
+}
+
+.last-name {
+  display: block;
+}
+
+hr {
+  width: 3rem;
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+.text-behind-main {
+  position: absolute;
+  top: 44%;
+}
+
+footer,
+.text-behind-main {
+  padding: 0 1.6rem;
+}
+
+.text-behind-main h1 {
+  font-size: 3.2rem;
+}
+
+.text-behind-main p {
+  line-height: 1.8;
+  padding-top: 1rem;
+  text-align: justify;
+}
+
+footer {
+  padding-top: 1rem;
+}
+
+.connect-footer {
+  font-weight: bold;
+}
+
+.social-icons-footer {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-icons-footer svg {
+  max-width: 2rem;
+  fill: var(--text-color);
+  padding-top: 1rem;
+}
+
+.copyright {
+  padding-top: 1rem;
+  text-align: center;
+}
