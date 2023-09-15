@@ -576,7 +576,8 @@ footer {
   gap: 5rem;
 }
 
-.mobile-submit-btn {
+.mobile-submit-btn ,
+.clear-btn{
   font-size: 16px;
   border-radius: 0.6rem;
   background-color: var(--Royal-blue);

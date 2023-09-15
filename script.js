@@ -121,7 +121,7 @@ balance = [];
 earning_total = 0;
 expenses_total = 0;
 
-// Desktop-code
+// Desktop-code continuation of earnings and expenses
 document.getElementById("button").addEventListener("click", (event) => {
   input_value = getNumberOrString(document.getElementById("input").value);
   if (input_value > 0) {
@@ -137,7 +137,7 @@ document.getElementById("button").addEventListener("click", (event) => {
   element_earn_total.innerText = earnings.reduce((a, b) => a + b, 0);
 });
 
-// mobile-code
+// mobile-code continuation of earnings and expenses
 
 document.getElementById("button-mo").addEventListener("click", (event) => {
   input_value = getNumberOrString(document.getElementById("input-mo").value);
@@ -155,7 +155,7 @@ document.getElementById("button-mo").addEventListener("click", (event) => {
   let element_earn_total = document.getElementById("earn-total-mo");
   element_earn_total.innerText = earnings.reduce((a, b) => a + b, 0);
 });
-//  Desktop-code
+//  Desktop-code continuation of earnings and expenses
 document.getElementById("button").addEventListener("click", (event) => {
   input_value = getNumberOrString(document.getElementById("input").value);
   if (input_value < 0) {
@@ -173,7 +173,7 @@ document.getElementById("button").addEventListener("click", (event) => {
   element_expense_total.innerText = expenses.reduce((a, b) => a + b, 0);
 });
 
-// mobile-code
+// mobile-code continuation of earnings and expenses
 
 document.getElementById("button-mo").addEventListener("click", (event) => {
   input_value = getNumberOrString(document.getElementById("input-mo").value);
@@ -192,7 +192,7 @@ document.getElementById("button-mo").addEventListener("click", (event) => {
   element_expense_total.innerText = expenses.reduce((a, b) => a + b, 0);
 });
 
-//  Desktop-Code
+//  Desktop-Code continuation of earnings and expenses
 
 document.getElementById("button").addEventListener("click", (event) => {
   balance.unshift(getNumberOrString(document.getElementById("input").value));
@@ -200,7 +200,7 @@ document.getElementById("button").addEventListener("click", (event) => {
   element_balance.innerText = balance.reduce((a, b) => a + b, 0);
 });
 
-// mobile-code
+// mobile-code continuation of earnings and expenses
 
 document.getElementById("button-mo").addEventListener("click", (event) => {
   balance.unshift(getNumberOrString(document.getElementById("input-mo").value));
@@ -208,6 +208,27 @@ document.getElementById("button-mo").addEventListener("click", (event) => {
   element_balance.innerText = balance.reduce((a, b) => a + b, 0);
 });
 
+document.getElementById("clear-btn-mo").addEventListener("click", () => {
+  // Clear input field value
+  document.getElementById("input-mo").value = "0";
+
+  // Clear earnings, expenses, and balance arrays
+  earnings = [];
+  expenses = [];
+  balance = [];
+
+  // Clear earnings and expenses lists
+  document.getElementById("earnings-list-mo").innerHTML = "";
+  document.getElementById("expenses-list-mo").innerHTML = "";
+
+  // Reset total values to 0
+  document.getElementById("earn-total-mo").innerText = "0";
+  document.getElementById("expense-total-mo").innerText = "0";
+  document.getElementById("balance-mo").innerText = "0";
+});
+
+
+//Shopping Code
 var shopping_array, item, custom_item;
 
 function getNumberOrString(value) {
