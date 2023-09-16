@@ -34,10 +34,9 @@ body {
 }
 body {
   display: grid;
-  margin: auto;
+  margin: 20px;
   min-height: 100vh;
   gap: var(--gap);
-  max-width: var(--container);
 }
 a,
 a:any-link {
@@ -57,17 +56,20 @@ p a:any-link {
 /* Site header and navigation 
 https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46
 */
-body > header {
+header {
   background: var(--paper);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
 }
+
+h1 {
+  text-align: center;
+}
+
 nav ul {
   display: flex;
+  justify-content: right;
   list-style: none;
   gap: var(--gap);
 }
@@ -109,6 +111,19 @@ img {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
+}
+
+.my-image {
+  width: 600px;
+  margin: 0 50px;
+  border: 2px skyblue none;
+  border-radius: 50%;
+}
+
+.about-me {
+  display: flex;
+  justify-content: start;
+  border: 2px blueviolet solid;
 }
 
 picture {
