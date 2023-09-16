@@ -331,7 +331,7 @@ setInterval(() => {
     (currentTime.getSeconds() < 10 ? "0" : "") + currentTime.getSeconds();
 }, 1000);
 
-//desktop-code fact number
+//desktop-code pet
 
 const petApiUrl = "https://learnwebcode.github.io/pet-adoption-data/pets.json";
 
