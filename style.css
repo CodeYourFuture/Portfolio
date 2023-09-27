@@ -5,15 +5,15 @@
   --brand: hsla(0, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
-  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 }
 /* General Styles */
 html,
 body {
   scroll-behavior: smooth;
-  background: var(--paper);
+  background: white;
   color: var(--ink);
   font-family: var(--font);
+  
 }
 body {
   display: grid;
@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
+  padding: 1%;
 }
 a,
 a:any-link {
@@ -43,6 +44,7 @@ body > header {
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: #f5f6fa;
 }
 nav ul {
   display: flex;
