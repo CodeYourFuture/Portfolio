@@ -1,6 +1,6 @@
 # Portfolio website! 😃
 
-<img src="./assets/github/wave2.gif" width="30px"> Hello everyone, this is my [portfolio website](https://PERicci.github.io/)!
+<img src="./assets/github/wave2.gif" width="30px"> Hello everyone, this is my [portfolio website](https://pericci.github.io/cyf-html-css-Portfolio/)!
 
 - :mortar_board: Licentiate degree in Physics
 '
