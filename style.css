@@ -1,7 +1,7 @@
 /* Design tokens */
 :root {
   --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
+  --ink: hsla(244, 16%, 17%, 0.949);
   --brand: hsla(0, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
@@ -131,6 +131,10 @@ main {
 .project {
   max-width: 30%;
   min-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project img {
@@ -142,4 +146,34 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-top: 0.5rem;
+}
+
+/* Contact */
+
+#contacts-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#contacts-info a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+svg image {
+  width: 100%;
+  height: 100%;
+}
+
+svg image {
+  fill: blue;
 }
