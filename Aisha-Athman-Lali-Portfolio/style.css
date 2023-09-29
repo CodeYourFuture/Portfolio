@@ -124,6 +124,19 @@ img {
   display: flex;
   justify-content: start;
   border: 2px blueviolet solid;
+  background-color: #edf6fa;
+}
+
+.aboutme-text {
+  text-align: center;
+  font-size: larger;
+  color: #0b0a0a;
+  margin-left: 130px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 picture {
