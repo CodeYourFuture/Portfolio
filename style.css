@@ -153,9 +153,11 @@ main {
   color: rgb(179, 182, 182);
 }
 .skills {
+  
   height: 30rem;
   margin-block: 2rem;
 }
+
 .headings {
   font-size: 3rem;
   font-weight: 700;
@@ -249,7 +251,7 @@ main {
   opacity: 1;
 }
 .arrow svg {
-  fill: rgb(129, 127, 127);
+  fill: rgb(246, 246, 246);
   height: 0.7em;
   margin-left: 0.5rem;
 }
