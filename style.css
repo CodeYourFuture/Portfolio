@@ -55,3 +55,25 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+main {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c b";
+  grid-template-rows: 250px 1fr;
+  grid-template-columns: 1fr 250px;
+  gap: 20px;
+}
+
+section.about {
+  grid-area: a;
+}
+
+section.contact {
+  grid-area: c;
+}
+
+section.projects {
+  grid-area: b;
+}
