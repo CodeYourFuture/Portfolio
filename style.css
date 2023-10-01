@@ -166,7 +166,7 @@ main {
   height: 5rem;
   font-size: large;
   font-weight: 500;
-  color: rgb(136, 136, 136);
+  color: rgb(140, 144, 144);
   line-height: 1.9rem;
   padding-bottom: 6rem;
   padding-top: 2rem;
@@ -183,7 +183,7 @@ main {
   list-style-image: url(/3.png);
   list-style-position: inside;
   padding-right: 9rem;
-  color: rgb(118, 122, 122);
+  color: rgb(94, 97, 97);
   font-weight: 600;
   font-size: 1.25rem;
 }
@@ -263,7 +263,7 @@ main {
   height: 5rem;
   font-size: large;
   font-weight: 500;
-  color: rgb(137, 138, 138);
+  color: rgb(140, 144, 144);
   line-height: 1.9rem;
 }
 .contact-link {
