@@ -104,7 +104,6 @@ body {
 
 .colored {
   color: var(--cyan);
-
   animation: fade 1s linear 1 backwards alternate;
 }
 @keyframes fade {
@@ -113,13 +112,13 @@ body {
     text-shadow: 10px 10px 10px rgb(158, 151, 151);
   }
   25% {
-    opacity: 0.5rem;
+    opacity: 0.7;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   100% {
     opacity: 1;
@@ -150,7 +149,7 @@ main {
   margin-block: auto;
   font-size: 2rem;
   padding: 2rem;
-  color: rgb(179, 182, 182);
+  color: rgb(140, 144, 144);
 }
 .skills {
   
@@ -167,7 +166,7 @@ main {
   height: 5rem;
   font-size: large;
   font-weight: 500;
-  color: rgb(137, 138, 138);
+  color: rgb(136, 136, 136);
   line-height: 1.9rem;
   padding-bottom: 6rem;
   padding-top: 2rem;
