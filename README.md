@@ -1,5 +1,5 @@
 # Portfolio
-![Desktop Design](/Adniya%20Yousafpng.png)
+
 ## Table of contents
 
 - [Overview](#overview)
