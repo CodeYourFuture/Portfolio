@@ -56,24 +56,42 @@ section p {
   max-width: 55ch;
 }
 
-main {
-  display: grid;
-  grid-template-areas:
-    "a b"
-    "c b";
-  grid-template-rows: 250px 1fr;
-  grid-template-columns: 1fr 250px;
-  gap: 20px;
+
+#about {
+ display: grid;
+  grid-template-columns: repeat(2,1fr);
+ grid-template-rows: repeat(4,auto);
+ gap: var(--gap);
+}
+.about-imgs{
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: right;
+  gap: var(--gap);
+
+}
+img{
+  height: 30vh;
+}
+.icon{
+  height: 48px;
+  width: 48px;
 }
 
-section.about {
-  grid-area: a;
+.projects {
+  
+}
+.contact {
+  
 }
 
-section.contact {
-  grid-area: c;
-}
-
-section.projects {
-  grid-area: b;
+footer {
+  background: var(--paper);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
