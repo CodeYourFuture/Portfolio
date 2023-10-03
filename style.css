@@ -1,6 +1,6 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
+  --paper: hsl(0, 0%, 100%);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
   --font: "League Spartan", sans-serif;
@@ -28,8 +28,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 a,
 a:any-link {
+  margin-top: 1rem;
   color: currentColor;
   text-decoration: none;
   border-bottom: 5px solid transparent;
@@ -76,4 +78,5 @@ footer {
   justify-content: space-between;
   align-content: baseline;
   align-items: end;
+  margin-bottom: 3rem;
 }
