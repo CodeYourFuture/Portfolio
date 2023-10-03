@@ -3,7 +3,9 @@
   --paper: hsla(251, 28%, 88%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
+    font-family: 'Courgette', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
   --gap: 20px;
 }
 /* General Styles */
@@ -13,7 +15,7 @@ body {
   background: white;
   color: var(--ink);
   font-family: var(--font);
-  
+  padding: 2%;
 }
 body {
   display: grid;
@@ -21,7 +23,6 @@ body {
   min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
-  padding: 1%;
 }
 a,
 a:any-link {
