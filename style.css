@@ -63,6 +63,7 @@ section p {
 .cards .card {
   position: relative;
   display: flex;
+  transition: all 1s ease-in-out;
 }
 
 .cards .card:hover {
