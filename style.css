@@ -27,7 +27,6 @@ body {
 .main-content {
   display: flex;
   justify-content: space-between;
-  align-items: ;
 }
 a,
 a:any-link {
