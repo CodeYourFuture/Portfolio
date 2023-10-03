@@ -55,3 +55,32 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.cards .card {
+  position: relative;
+  display: flex;
+}
+
+.cards .card:hover {
+  transform: rotate3d(0, 1, 0.5, 1turn);
+  position: relative;
+  z-index: 10;
+}
+
+.cards .card img {
+  width: 80%;
+}
+
+.cards .card span {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  background: rgba(180, 159, 182, 0.8);
+  text-align: center;
+  color: #0c0c0b;
+  font-size: 1rem;
+}
