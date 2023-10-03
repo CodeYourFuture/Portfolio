@@ -26,7 +26,7 @@ a,
 a:any-link {
   color: currentColor;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 5px solid transparent;
   transition: border-color ease-in-out 0.3s;
 }
 a:hover,
@@ -54,4 +54,22 @@ nav ul {
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+
+/* Project Showcase */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+  width: 300px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: baseline;
+  align-items: end;
 }
