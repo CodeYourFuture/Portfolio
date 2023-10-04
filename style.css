@@ -28,11 +28,11 @@ main {
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: 30vw 50vw;
-  gap: 20px;
+  gap: 70px;
   justify-content: center;
   align-items: start;
 }
-
+/*sections */
 #about {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
@@ -40,6 +40,8 @@ main {
 
 #about img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #projects {
@@ -47,8 +49,9 @@ main {
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(3, 30%);
-  gap: 20px;
+  gap: 30px;
 }
+
 #projects header {
   grid-row: 1 / span 1;
   grid-column: 1 / span 3;
@@ -63,9 +66,16 @@ main {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
 }
-#empty-section {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
+
+/* Add background color to sections */
+#about,
+#projects,
+#contact {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Add some spacing between sections */
 }
 
 a,
@@ -100,4 +110,6 @@ nav ul {
 section p {
   line-height: 1.5;
   max-width: 55ch;
+  text-align: left;
+  padding: 10px;
 }
