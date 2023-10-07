@@ -66,4 +66,6 @@ I would try to make this website even more advance using React once I learned it
 
 
 
-I am new codeg
+I am new code
+
+i am commit # 2
