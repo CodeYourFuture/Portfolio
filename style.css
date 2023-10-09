@@ -126,3 +126,7 @@ h2{
   transform: translateY(-10px);
 }
 
+footer{
+  text-align: center;
+  color: #e37dba;
+}
