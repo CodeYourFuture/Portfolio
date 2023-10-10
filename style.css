@@ -1,7 +1,7 @@
 /* Design tokens */
 :root {
   --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
+  --ink: hsla(250, 75%, 2%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
@@ -10,14 +10,14 @@
 /* General Styles */
 html,
 body {
-  scroll-behavior: smooth;
-  background: var(--paper);
-  color: var(--ink);
+  background-image: url("https://wallpapercave.com/wp/wp7453795.jpg");
+  color: white;
   font-family: var(--font);
 }
+
 body {
   display: grid;
-  margin: auto;
+  margin: 20px;
   min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
@@ -34,24 +34,62 @@ a:focus {
   color: var(--brand);
   border-color: currentColor;
 }
-/* Site header and navigation */
+
 body > header {
-  background: var(--paper);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+
   top: 0;
+  gap: 60px;
   z-index: 1;
 }
+
+nav {
+  padding-bottom: 18%;
+}
+
+ul p {
+  display: flex;
+  text-decoration: none;
+}
+
 nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
 }
 
+/*img*/
+img {
+  width: 90%;
+  height: 13rem;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Text readability */
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+
+/*Modules*/
+.modules {
+  padding-bottom: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.module__head {
+  padding-left: 2rem;
+}
+
+.main {
+  background-color: var(--orange-light);
+  border-left: 4px solid var(--orange-dark);
 }
