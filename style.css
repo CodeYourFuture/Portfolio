@@ -82,7 +82,7 @@ section p {
   padding-bottom: 0.1rem;
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 3em;
   flex-wrap: wrap;
 }
 .module__head {
