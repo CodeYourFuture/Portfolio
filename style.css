@@ -72,7 +72,6 @@ nav ul {
   list-style: none;
   gap: var(--gap);
 }
-
 /*img*/
 .my-img {
   width: 90%;
@@ -137,6 +136,15 @@ section p {
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    border: 15px solid coral;
+    animation: mymove 5s infinite;
+    padding-right: 100%;
+    position: static;
+    overflow: hidden;
+  }
+
   .modules {
     display: flex;
     flex-direction: column;
