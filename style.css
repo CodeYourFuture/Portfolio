@@ -26,7 +26,7 @@ body {
   min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
-  background-image: linear-gradient(rgb(148, 4, 4), rgb(251, 198, 92), rgb(244, 156, 179), rgb(241, 159, 99));;
+  background-image: linear-gradient(rgb(148, 4, 4), rgb(244, 193, 93), rgb(244, 156, 179), rgb(241, 159, 99));;
 }
 a,
 a:any-link {
