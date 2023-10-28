@@ -1,0 +1,323 @@
+/* Design tokens */
+:root {
+  --paper: hsla(0, 0%, 100%, 0.99);
+  --ink: hsla(244, 16%, 17%, 0.95);
+  --brand: hsla(0, 79%, 63%, 0.9);
+  --font: "Raleway", system-ui, sans-serif;
+  --gap: 20px;
+  --cyan: rgb(122, 157, 157);
+}
+/* General Styles */
+html,
+body {
+  scroll-behavior: smooth;
+  background: var(--paper);
+  font-family: var(--font);
+  margin: 0;
+}
+html {
+  animation: fade-in 1s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+.header {
+  grid-column: 2/3;
+  height: 50rem;
+}
+.navbar {
+  height: 9rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.logo {
+  width: 7rem;
+  aspect-ratio: 0.1/0.1;
+}
+
+.hero {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--gap);
+  padding-left: 5rem;
+  margin-bottom: 3rem;
+}
+
+.icons {
+  position: relative;
+  height: 3rem;
+  width: 18rem;
+  display: flex;
+  gap: var(--gap);
+  margin-left: 12rem;
+}
+.icons::before {
+  position: absolute;
+  content: " ";
+  left: -13rem;
+  top: 2rem;
+  height: 0.15rem;
+  width: 15rem;
+  background-color: var(--cyan);
+}
+.icon-item {
+  height: rem;
+  margin-left: 1rem;
+  transition: 1s ease-in-out;
+}
+.icon-item svg {
+  transition: transform 1s ease-in-out;
+}
+.icon-item svg:hover {
+  fill: var(--cyan);
+  transform: scale(1.1);
+}
+.heading-hero {
+  position: relative;
+  font-size: 5rem;
+  margin-top: 0;
+  margin-left: 4rem;
+}
+.heading-hero::before {
+  position: absolute;
+  content: "“";
+  left: -9rem;
+  top: -15rem;
+  color: var(--cyan);
+  font-size: 40rem;
+  opacity: 0.08;
+}
+
+.colored {
+  color: var(--cyan);
+  animation: fade 1s linear 1 backwards alternate;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+    text-shadow: 10px 10px 10px rgb(158, 151, 151);
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30rem;
+  margin-block-end: 8rem;
+}
+.main-img {
+  height: 30rem;
+  width: 40%;
+  background: url(/Light-Blue-Grey-White-Simple-Professional-Employment-LinkedIn-Profile-Picture.webp)
+    no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.intro__description {
+  width: 50%;
+  display: block;
+  margin-inline: auto;
+  margin-block: auto;
+  font-size: 2rem;
+  padding: 2rem;
+  color: rgb(140, 144, 144);
+}
+.skills {
+  
+  height: 30rem;
+  margin-block: 2rem;
+}
+
+.headings {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.description {
+  width: 60%;
+  height: 5rem;
+  font-size: large;
+  font-weight: 500;
+  color: rgb(140, 144, 144);
+  line-height: 1.9rem;
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0.8rem;
+}
+.list-item {
+  width: 10rem;
+  height: 2.5rem;
+  list-style-image: url(/3.png);
+  list-style-position: inside;
+  padding-right: 9rem;
+  color: rgb(94, 97, 97);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.list-item:hover {
+  font-weight: 700;
+}
+.project__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+}
+
+.project-item {
+  position: relative;
+  width: 23rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.project-link {
+  opacity: 0;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color:white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  transition: .5s ease;
+  backdrop-filter: invert(5%) blur(10px) sepia(15%)  contrast(50%);
+}
+.project-img{
+  width: 9;
+  height: 9;
+  aspect-ratio: 1.36/1;
+}
+.project-img img{
+  cursor: pointer;
+  justify-content: center;
+}
+.portfolio{
+  object-fit: contain;
+}
+.project-card {
+  flex: 50%;
+}
+.project-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-link:hover {
+  opacity: 1;
+}
+.arrow svg {
+  fill: rgb(246, 246, 246);
+  height: 0.7em;
+  margin-left: 0.5rem;
+}
+.contact {
+  height: 10rem;
+  margin-block: 4rem;
+}
+.contact-description {
+  width: 60%;
+  height: 5rem;
+  font-size: large;
+  font-weight: 500;
+  color: rgb(140, 144, 144);
+  line-height: 1.9rem;
+}
+.contact-link {
+  margin: 0;
+  color: rgb(77, 94, 96);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.portfolio-img {
+  background: url(/1.png) no-repeat center;
+  background-size: contain;
+}
+footer {
+  position: sticky;
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  height: 2.7rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to right,
+    rgba(143, 236, 219, 0),
+    rgb(225, 243, 240)
+  );
+  bottom: 0;
+}
+.logo-footer {
+  height: 3.7rem;
+  width: 3.7rem;
+  background: url(/adniya.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: -0.4rem;
+}
+li {
+  list-style: none;
+}
+.footer-list {
+  height: 3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+  margin-right: 2rem;
+}
+.list-item-footer {
+  height: 2rem;
+  list-style: none;
+  color: rgb(118, 122, 122);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.list-item-footer:hover {
+  color: var(--cyan);
+}
