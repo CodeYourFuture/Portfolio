@@ -96,15 +96,17 @@ section p {
 .modules {
   display: flex;
   flex-direction: column;
-  padding-left: 70%;
-  padding-top: 10%;
-  position: absolute;
 }
 
-.module__head {
-  padding-left: 2rem;
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+#about .about-content {
+  width: 60%;
+}
 .main {
   background-color: var(--orange-light);
   border-left: 4px solid var(--orange-dark);
