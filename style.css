@@ -1,11 +1,13 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
+  --paper: hsl(0, 0%, 100%);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
+  --font: "League Spartan", sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+
+  /* --paper: hsla(251, 28%, 88%, 0.99); */
 }
 /* General Styles */
 html,
@@ -22,11 +24,17 @@ body {
   gap: var(--gap);
   max-width: var(--container);
 }
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 a,
 a:any-link {
+  margin-top: 1rem;
   color: currentColor;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 5px solid transparent;
   transition: border-color ease-in-out 0.3s;
 }
 a:hover,
@@ -54,4 +62,21 @@ nav ul {
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+
+/* Project Showcase */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: baseline;
+  align-items: end;
+  margin-bottom: 3rem;
 }
