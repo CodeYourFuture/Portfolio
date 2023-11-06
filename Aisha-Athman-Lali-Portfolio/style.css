@@ -66,6 +66,9 @@ header {
 h1 {
   text-align: center;
 }
+h2 {
+  text-align: center;
+}
 
 nav ul {
   display: flex;
@@ -125,6 +128,7 @@ img {
   justify-content: start;
   border: 2px blueviolet solid;
   background-color: #edf6fa;
+  margin-bottom: 6rem;
 }
 
 .aboutme-text {
@@ -137,75 +141,33 @@ img {
 .project-card {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  gap: 0.5rem;
 }
-/* .card-aboutme {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
-  /* background-color: #F4ECE6; */
-  margin-top: 2rem;
-/* } */ 
-.wireframe-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
+
+.project-img {
+  display: block;
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
 }
-.cakes-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
+
+.card {
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 40%;
+  width: 100%;
   text-align: center;
   padding: 5px 8px;
-}
-.forms-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
-}
-.bicycle-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
-}
-.karma-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
-}
-.shopping-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
-}
-.space-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
-}
-.birthday-card {
-  box-shadow: 0px 4 8px 0px rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-  padding: 5px 8px;
+  height: 33em;
 }
 
 .card:hover {
-  box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 16px 32px 0 rgba(237, 241, 15, 0.2);
+}
+
+#contact {
+  margin-top: 5rem;
 }
 
 picture {
