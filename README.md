@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # Portfolio
 
 It is a simple Portfolio.
@@ -12,51 +13,44 @@ career in tech field.
 
 ## ShowCase
 
-Passenger-Account, Blackjack-game, Mobile-configure andBasic-calculator is my own project that I have created during my spare time.
+Passenger-Account, Blackjack-game, Mobile-configure and
+Basic-calculator are my own project that I have created during my
+spare time. However there are some projects from CYF as well. In CFY
+platform I have learned a whole bunch of foundational principles for
+front end. I have learned not only code but also how to deploy, how
+to interact with Github and may more. In addition to that I learned
+how to make websites responsive.
 
 ## Link to my Projects
 
 In this section, I have added my Github link regarding my Projects.
+Blackjack-game
+https://github.com/BakhatBegum/Blackjack-game
+Mobile-Configure
+https://github.com/BakhatBegum/Mobile-Scan-Error
+Basic-Calculator
+https://github.com/BakhatBegum/Basic-Calculater
+Passenger-Account
+https://github.com/BakhatBegum/Passenger-Account
+HTML-CSS-Module-Project
+https://github.com/BakhatBegum/HTML-CSS-Module-Project/tree/NW6/Bakhat-Begum
 
 ## My modules:
 
 I added my module netlify links.
+Blackjack-game
+https://loquacious-bienenstitch-82f317.netlify.app/
+Basic-Calculator
+https://easy-calculater.netlify.app/
+Passenger-Account
+https://passenger-account.netlify.app/
+HTML-CSS-Module-project with branches
+https://gilded-twilight-63d6c8.netlify.app/
 
 ## Resources
 
-- [Bakhat Begum on building my early career profile](https://github.com/BakhatBegum/Portfolio/tree/NW6/Bakhat-begum)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
-=======
-# Portfolio
+Gmail:
+https://mail.google.com/mail/u/0/#inbox
 
-Your starting portfolio, to iterate on.
-
-## Learning Objectives
-
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
-
-## Requirements
-
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
-
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
-
-## Acceptance Criteria
-
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
-
-## Resources
-
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
->>>>>>> origin/NW6/Bakhat-begum
+Contact:
+0785862975
