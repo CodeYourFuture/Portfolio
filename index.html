@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="The technical portfolio of trainee name"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- suppress FOUC-->
+    <style>
+      html {
+        animation: fade-in 1s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Zahra Khademi</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main tabindex="0">
+      <section id="about">
+        <h1>Hello !</h1>
+        <h3>My name is Zahra</h3>
+        <h3>and I am a Web Developer</h3>
+          <div class="social-links">
+          <a href="https://www.facebook.com/zahra.khademi.31/">
+          <i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/Zahra-k-b">
+          <i class="fab fa-github"></i></a>
+          <a href="www.linkedin.com/in/zahra-khademi-78567410b">
+          <i class="fab fa-linkedin-in"></i></a>
+      </div>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="portfolio-container">
+        <div class="portfolio-row">
+      <article class='card'>
+        <a href="https://zahra-personal-page.netlify.app/"><img src='images/PW.png' alt="page"></a>
+        <div class="text-container">
+          <a href="https://zahra-personal-page.netlify.app/">Personal Page</a>
+        </div>
+      </article>
+
+      <article class='card'>
+        <a href="https://homtown-zahra.netlify.app/"><img src='images/hometown.png' alt="app"></a>
+        <div class="text-container">
+          <a href="https://homtown-zahra.netlify.app/">Hometown</a>
+        </div>
+      </article>
+
+      <article class='card'>
+        <a href="https://deploy-preview-82--cyf-module-html-css.netlify.app/wireframe"><img src='images/wff.png' alt="page"></a>
+        <div class="text-container">
+          <a href="https://deploy-preview-82--cyf-module-html-css.netlify.app/wireframe">Wireframe</a>
+        </div>
+      </article>
+        </div>
+
+      <div class="portfolio-row">
+      <article class='card'>
+        <a href="https://zahra-k-b-form-controls.netlify.app/form-controls/"><img src='images/form.png' alt="app"></a>
+        <div class="text-container">
+          <a href="https://zahra-k-b-form-controls.netlify.app/form-controls/">Form</a>
+        </div>
+      </article>
+
+      <article class='card'>
+        <a href="https://deploy-preview-102--cyf-module-html-css.netlify.app/cakes-co//"><img src='images/cake.png' alt="app"></a>
+        <div class="text-container">
+          <a href="https://deploy-preview-102--cyf-module-html-css.netlify.app/cakes-co//">Cake.Co</a>
+        </div>
+      </article>
+
+      <article class='card'>
+        <a href="https://deploy-preview-635--cyf-module-project-html-css.netlify.app/store/"><img src='images/store.png' alt="app"></a>
+        <div class="text-container">
+          <a href="https://deploy-preview-635--cyf-module-project-html-css.netlify.app/store/">Store</a>
+        </div>
+      </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div id="background-contact">
+        <div class="contact">
+        <header><h2>Contact me</h2></header>
+          <form name="formulaire" method="POST" action="">
+            <div class="input">
+              <h3>*Name</h3>
+              <input type="text" name="nom" />
+            </div>
+            <div class="input">
+              <h3>*Email</h3>
+              <input type="email" name="email" />
+            </div>
+            <div class="input">
+              <h3>*Object</h3>
+              <input type="text" name="nom" />
+            </div>
+            <div class="input">
+              <h3>*Message</h3>
+              <textarea name="message"></textarea>
+            </div>
+            <div class="input">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    </main>
+      <footer>
+        <div class="footer">
+          <p>&copy; 2023 Zahra.k.b. All Rights Reserved!</p>
+        </div>
+      </footer>
+  </body>
+</html>
