@@ -34,10 +34,9 @@ body {
 }
 body {
   display: grid;
-  margin: auto;
+  margin: 20px;
   min-height: 100vh;
   gap: var(--gap);
-  max-width: var(--container);
 }
 a,
 a:any-link {
@@ -57,17 +56,23 @@ p a:any-link {
 /* Site header and navigation 
 https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46
 */
-body > header {
+header {
   background: var(--paper);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
 }
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
 nav ul {
   display: flex;
+  justify-content: right;
   list-style: none;
   gap: var(--gap);
 }
@@ -111,6 +116,65 @@ img {
   object-fit: cover;
 }
 
+.my-image {
+  width: 600px;
+  margin: 0 50px;
+  border: 2px skyblue none;
+  border-radius: 50%;
+}
+
+.about-me {
+  display: flex;
+  justify-content: start;
+  border: 2px blueviolet solid;
+  background-color: #edf6fa;
+  margin-bottom: 6rem;
+}
+
+.aboutme-text {
+  text-align: center;
+  font-size: larger;
+  color: #0b0a0a;
+  margin-left: 130px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  gap: 0.5rem;
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 0px 8px 16px 0 rgba(9, 9, 9, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  padding: 5px 8px;
+  height: 33em;
+}
+
+.card:hover {
+  box-shadow: 0px 16px 32px 0 blueviolet;
+}
+
+#contact {
+  margin-top: 5rem;
+}
+
+.contact-text {
+  font-size: larger;
+  
+}
+
 picture {
   height: auto;
   overflow: hidden;
@@ -118,11 +182,11 @@ picture {
 /* 
 I would start breaking this up into component files now btw! 
 */
-.showcase {
+/* .showcase {
   display: flex;
   flex-flow: row wrap;
   gap: var(--gap);
-}
+} */
 /*
 Here's an example of a grid layout. Notice there's no margin, padding, or sizes given on elements
 All the spacing and sizing is set on the template, and the elements
@@ -131,7 +195,7 @@ The little dots are how we precisely place and size white-space
 https://www.interaction-design.org/literature/article/the-power-of-white-space
 */
 
-.project {
+/* .project {
   display: grid;
   grid-template:
     "picture picture picture" var(--box)
@@ -148,4 +212,4 @@ https://www.interaction-design.org/literature/article/the-power-of-white-space
 }
 .project__blurb {
   grid-area: blurb;
-}
+} */

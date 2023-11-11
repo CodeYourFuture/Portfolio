@@ -46,7 +46,7 @@ The instructions here are given for the command line, but you could just as easi
 
 ## Acceptance Criteria
 
-- [ ] My portfolio introduces me and my work
+- [ ] My portfolio introduces me and my work - html
 - [ ] The design and code is my own, not a template or tutorial (you can use this code as a starting point)
 - [ ] Each project is linked to my code on Github and the deployed project
 - [ ] I have published my professional contact information on my portfolio
