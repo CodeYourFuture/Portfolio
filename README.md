@@ -1,31 +1,33 @@
-# Portfolio
+# Portfolio website! 😃
 
-Your starting portfolio, to iterate on.
+<img src="./assets/github/wave2.gif" width="30px"> Hello everyone, this is my [portfolio website](https://pericci.github.io/cyf-html-css-Portfolio/)!
 
-## Learning Objectives
+- :mortar_board: Licentiate degree in Physics
+'
+- :atom_symbol: Currently studying in CYF - Web Development Course
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+- :speech_balloon: Proficient in English, Spanish and Portuguese
 
-## Requirements
+- :necktie: Open to new job opportunities
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
+---
 
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+:books: View [all my repositories](https://github.com/PERicci?tab=repositories)
 
-## Acceptance Criteria
+---
 
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
+#### How to reach me:
 
-## Resources
+[![portfolio](./assets/github/portfolio120.png)][1]
+[![linkedin](./assets/github/linkedin.png)][2]
+[![mail](./assets/github/mail.png)][3]
 
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+[1]: https://pericci.github.io/cyf-html-css-Portfolio/
+[2]: https://www.linkedin.com/in/pedro-ricciardi/
+[3]: mailto:riccip@hotmail.com
+
+<br>
+
+Thank you for visiting!
+
+<img src="./assets/github/thanks.gif" width="130px">
