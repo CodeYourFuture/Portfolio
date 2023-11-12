@@ -1,6 +1,6 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
+  --paper: hsla(37, 40%, 77%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
   --brand: hsla(0, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
@@ -48,10 +48,81 @@ nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  justify-content: center;
 }
-
 /* Text readability */
 section p {
   line-height: 1.5;
-  max-width: 55ch;
+  max-width: 55ch; 
+  margin:0 auto;
+} 
+
+.project1{
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #d7afaf; 
+  margin-right:50rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+}
+.project2 {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #d7afaf;
+  margin-right: 50rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+}
+.project3 {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #d7afaf;
+  margin-right: 50rem;
+  border-radius: 10px;
+  box-shadow:2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project1 img {
+  max-width: 100%;
+  height: auto;
+}
+.project2 img {
+  max-width: 100%;
+  height: auto;
+}
+.project3 img {
+  max-width: 100%;
+  height: auto;
+} 
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--brand);
+  margin-bottom:10px;
+}
+
+
+.abt-me {
+  color: var(--ink);
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom:100px;
+}
+
+.abt-me::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--brand);
+  transition: height ease-in-out 0.3s;
+}
+
+.abt-me:hover::before,
+.abt-me:focus::before {
+  height: 80%;
 }

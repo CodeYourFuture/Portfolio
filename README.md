@@ -1,31 +1,25 @@
-# Portfolio
+# My portfolio
 
-Your starting portfolio, to iterate on.
+# about me
 
-## Learning Objectives
+i have included a brief description about myself and my background and hobbies and interests
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+## projects
 
-## Requirements
+i have included three projects that are deployed on Netlify and Github
+the projects are Bikes for Refugees Project, Karma Project and Wireframe Project
+tools used include: HTML, CSS, CSS Grid, flexbox, semantic tags
+users can navigate to the projects and have a look!
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
+### contact details
 
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+users can contact me via the email provided
+they can also jump to this README and read about my portfolio
 
-## Acceptance Criteria
-
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
+- [x] My portfolio introduces me and my work
+- [x] The design and code is my own, not a template or tutorial
+- [x] Each project is linked to my code on Github and the deployed project
+- [x] I have published my professional contact information on my portfolio
 - [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
-
-## Resources
-
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+- [x] My portfolio is deployed
+- [x] I have replaced this README with one that describes my own portfolio
