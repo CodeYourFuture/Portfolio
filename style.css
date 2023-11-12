@@ -50,6 +50,10 @@ nav ul {
   gap: var(--gap);
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Text readability */
 section p {
   line-height: 1.5;
