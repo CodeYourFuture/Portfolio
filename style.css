@@ -1,14 +1,16 @@
-/* =================
-  WRITE YOUR CSS HERE.
-  Check the ⌄ for help with formatting and validating your code.
-  You must write some CSS to complete this challenge.
-   ===================
-*/
+@import url("https://fonts.googleapis.com/css2?family=Foldit&display=swap");
+
+:root {
+  --primary-orange: #ff6700;
+  --secondary-orange: #ffa200;
+  --ff-fjalla: "Foldit";
+}
 html,
 body {
   margin: 0;
   height: 100%;
 }
+
 /* Utility Classes*/
 .bg1 {
   background: #060709;
@@ -17,10 +19,10 @@ body {
   background: hsl(180, 16%, 96%);
 }
 .bg3 {
-  background: #ff6700;
+  background: var(--primary-orange);
 }
 .color1 {
-  color: #ff6700;
+  color: var(--primary-orange);
 }
 .color2 {
   color: #c0c0c0;
@@ -29,7 +31,7 @@ body {
   color: white;
 }
 .color4 {
-  color: #ffa200;
+  color: var(--secondary-orange);
 }
 .center {
   display: flex;
@@ -97,7 +99,6 @@ body {
   width: 100vw;
   height: 100vh auto;
   font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
 }
 .c-site-header {
   display: flex;
@@ -120,6 +121,7 @@ body {
 }
 
 .aboutme {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -127,6 +129,7 @@ body {
   width: 70%;
   margin-top: 13rem;
 }
+
 .text {
   position: relative;
   display: block;
@@ -135,7 +138,19 @@ body {
   padding-top: 4rem;
 }
 .adniya {
+  position: relative;
   font-family: "Raleway", sans-serif;
+  height: 9rem;
+}
+.adniya::after{
+  position: absolute;
+  content: "WEB DESIGNER";
+  color: #121212;
+  top: 4rem;
+  left: 0;
+  font-size: 60px;
+  font-weight: 900;
+  z-index: 1000;
 }
 .typewriter {
   width: 12ch;
@@ -144,14 +159,12 @@ body {
   border-right: 4px solid white;
   animation: cursor 1s step-start infinite, text 4s steps(18) alternate infinite;
 }
-
 @keyframes cursor {
   0%,
   100% {
     border-color: white;
   }
 }
-
 @keyframes text {
   0% {
     width: 0;
@@ -160,18 +173,9 @@ body {
     width: 12ch;
   }
 }
-.adniya::before {
-  position: absolute;
-  content: "WEB DESIGNER";
-  color: #0f0f0f;
-  z-index: -1;
-  top: 11rem;
-  font-size: 60px;
-  font-weight: 900;
-}
 .dot {
   font-size: 30px;
-  color: #ff6700;
+  color: var(--primary-orange) 0;
 }
 .aboutme-p {
   padding-bottom: 3rem;
@@ -182,13 +186,14 @@ body {
 }
 
 .profile-pic {
-  cursor:pointer;
+  position: relative;
+  cursor: pointer;
   height: 27rem;
   width: 20rem;
   animation: scale 2s forwards;
   transition: 1s ease-in-out;
   margin-top: 2rem;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 @keyframes scale {
@@ -200,15 +205,18 @@ body {
   }
 }
 
-.text-link:hover::before {
-  transform: translateX(250%);
+.text-link:hover {
+  transform: translateX(0%);
+  font-weight: 700;
 }
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .skills-section {
   min-height: 40rem;
   max-width: 80%;
@@ -230,7 +238,7 @@ main {
   font-size: 20px;
 }
 .skills-detail p::first-letter {
-  color: #ffa200;
+  color: var(--secondary-orange);
   font-size: 27px;
   font-family: "Times New Roman", Times, serif;
 }
@@ -264,7 +272,10 @@ main {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.3rem;
+  padding-inline: 1rem;
+  height: 5rem;
 }
+
 .text-link::before {
   position: absolute;
   content: " ";
@@ -280,9 +291,9 @@ main {
   transition: transform 1s ease;
 }
 .text-link:hover::before {
-  transform: translateX(150%);
+  transform: translateX(170%);
 }
-
+/* Education */
 .education-section {
   height: 50rem auto;
   width: 90%;
@@ -309,7 +320,7 @@ main {
   width: 2rem;
   top: 3rem;
   left: 42.5%;
-  background-color: #ffa200;
+  background-color: var(--secondary-orange);
   animation: circle 2s alternate 1s infinite;
 }
 @keyframes circle {
@@ -342,19 +353,20 @@ main {
   color: #bebe88;
   font-size: 19px;
 }
+
+/* Biography */
 .biography-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   height: 40rem auto;
   min-width: 90%;
-  margin-top: 3rem;
+  margin-block: 10rem;
 }
 .bio-img {
   width: 40rem;
   height: 40rem;
-  background: url(https://images.pexels.com/photos/1572878/pexels-photo-1572878.jpeg);
+  background: url(/bioimage.jpeg);
   background-position: top;
   background-size: cover;
   opacity: 0.4;
@@ -371,71 +383,120 @@ main {
   margin-block: 2rem;
 }
 .bio-text::first-letter {
-  color: #ffa200;
+  color: var(--secondary-orange);
   font-size: 30px;
   font-family: "Times New Roman", Times, serif;
 }
+
+/* Contact Section */
 .contact-section {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 25rem auto;
-  width: 100%;
-  padding-bottom: 2rem;
-  padding-top: 5rem;
-}
-.contact-section h1 {
-  height: 5rem;
-  width: 85%;
-  font-size: 35px;
-  text-align: center;
+  height: auto;
+  width: 90%;
+  gap: 1rem;
+  margin-block: 2rem;
 }
 .form {
   display: flex;
+  flex: 50%;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: 100%;
 }
 .input-label {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin-block: 2.5rem;
+  width: 80%;
 }
 .label {
   word-spacing: 0.7rem;
   font-size: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .input {
-  width: 15rem;
   background: transparent;
   color: white;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 3px solid #8b3b05;
+  border-bottom: 1px solid var(--secondary-orange);
   font-size: 20px;
-}
-.input:hover {
-  border-bottom: 2px solid #ff6700;
+  width: 100%;
 }
 .input:active,
 .input:focus {
   outline: none;
-  border-bottom: 3px solid #ff6700;
+  border-bottom: 1px solid var(--primary-orange);
 }
 .button {
   cursor: pointer;
-  width: 12rem;
+  width: 80%;
   height: 4rem;
-  background: linear-gradient(to right, #ff6700, rgb(107, 65, 1));
-  font-size: 20px;
-  border-radius: 30px;
+  color: white;
+  font-size: 1.5rem;
+  border: 1px solid var(--primary-orange);
+  box-shadow: 
+    0 0 40px 40px var(--secondary-orange) inset,
+    0 0 0 0 var(--secondary-orange);
+  margin-top: 3rem;
+  background: none;
+  border-radius: 0.5rem;
+  transition: box-shadow 150ms ease-in-out;
 }
 .button:hover {
-  background: #8b3b05;
+  background: none;
+  box-shadow: 0 0 10px 0 var(--secondary-orange) inset,
+  0 0 10px 4px var(--secondary-orange);
+}
+.contact_description {
+  position: relative;
+  width: 50%;
+  text-align: left;
+  padding-inline: 6rem;
+  margin-bottom: 8rem;
+}
+.contact_description::after {
+  position: absolute;
+  content: "";
+  top: -6rem;
+  left: 5rem;
+  height: 34rem;
+  width: 70%;
+  background-color: transparent;
+  border: 0.5px solid var(--secondary-orange);
+  border-radius: 32% 68% 52% 48% / 24% 41% 59% 76%;
+  z-index: -1;
+  animation: move 3s infinite alternate;
+}
+@keyframes move {
+  0%{
+    border-radius: 32% 68% 52% 48% / 24% 41% 59% 76%;
+  }
+  50%{
+    border-radius: 39% 61% 49% 51% / 31% 37% 63% 69% ;;
+  }
+  100%{
+    border-radius:45% 35% 29% 71% / 31% 47% 53% 69% ;
+  }
+}
+.contact_description:hover::after {
+  border-radius: 43% 57% 37% 63% / 67% 49% 51% 33%;
+}
+.contact-section h4 {
+  width: 50%;
+  font-family: var(--ff-fjalla);
+  font-size: 6rem;
+  padding-bottom: 1rem;
+  z-index: 1000;
+}
+.contact-section p {
+  line-height: normal;
+  width: 70%;
+  margin-left: 4rem;
 }
 #msg {
   display: none;
@@ -444,9 +505,10 @@ main {
   display: flex;
   align-items: end;
   justify-content: center;
-  height: 5rem;
+  height: 15rem;
   width: 100%;
-  background: linear-gradient(0deg, transparent, #ff7600);
+  background-color: #1f1f1f;
+  margin-top: 10rem;
 }
 .icons {
   display: flex;
@@ -458,12 +520,12 @@ main {
 .icons i {
   height: 4rem;
   width: 4rem;
-  color: #c0c0c0;
+  color: var(--secondary-orange);
   transform: scale(1);
   transition: 1s ease;
 }
 .icons i:hover {
-  color: black;
+  color: white;
   cursor: pointer;
   transform: scale(1.2);
 }
