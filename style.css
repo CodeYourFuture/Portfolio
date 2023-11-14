@@ -55,3 +55,15 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+.project_link{
+  text-decoration: underline;
+}
+
+/* .gmail, .linkedin{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0px 50px;
+} */
+
