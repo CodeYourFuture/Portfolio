@@ -1,265 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Signika+Negative:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/ca13de009b.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Adniya Yousaf</title>
-    <meta
-      name="description"
-      content="The technical portfolio of trainee name"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,500;1,600&display=swap"
-      rel="stylesheet"
-    />
   </head>
-
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <img class="logo" src="/adniya.png" alt="logo" />
-      </nav>
-      <div class="hero">
-        <div>
-          <ul class="icons">
-            <li>
-              <a href="https://codepen.io/your-work/" class="icon-item" aria-label="Codepen icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
-                  viewBox="0 0 512 512"
-                >
-                
-                  <path
-                    d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/adniyaYousaf" class="icon-item" aria-label="Github icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
-                  viewBox="0 0 496 512"
-                >
-                  <style>
-                    svg {
-                      fill: #bababa;
-                    }
-                  </style>
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/adniya-yousaf-b39b2b164/"
-                class="icon-item"
-                aria-label="Linkedin icon"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
-                  viewBox="0 0 448 512"
-                >
-                  <style>
-                    svg {
-                      fill: #bababa;
-                    }
-                  </style>
-                  <path
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                  /></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="hero-intro">
-          <h1 class="heading-hero">
-            Hi<span class="colored">!</span> there, I am
-            <span class="colored">Adniya</span>.<br />
-            Front End <span class="colored">Developer</span> and Student.
+  <body class="bg1">
+    <header class="c-site-header center color3">
+      <div class="nav">
+        <nav aria-label="Main Site Links.">
+          <img
+            class="logo"
+            src="https://uploads-ssl.webflow.com/5b32655069229148933e1636/5b33702221d4b3baba40e16a_Asset%203.svg"
+            alt="logo"
+          />
+        </nav>
+      </div>
+      <div class="aboutme">
+        <div class="pi-1 text" data-aos="fade-up" data-aos-duration="1500">
+          <h2>Hello, it's me <span class="dot">.</span></h2>
+          <h1 class="typewriter adniya mb-2 fs-60px ff-sign">
+            Adniya <span class="color1">Yousaf</span>
           </h1>
+          <p class="aboutme-p">
+            An enthusiastic Web Developer currently shaping the future of
+            software development by coding smooth user-interfaces that promote
+            user interaction with information and data. While traveling around
+            the world.
+          </p>
+          <a href="#education-section" class="text-link color3">SCROLL DOWN</a>
         </div>
+        <img
+          class="profile-pic"
+          src="https://images.unsplash.com/photo-1532171875345-9712d9d4f65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80"
+          alt="main-pic"
+        />
       </div>
     </header>
     <main>
-      <section class="intro">
-        <p class="intro__description">
-          <span class="colored">" </span>An enthusiastic Web Developer currently
-          shaping the future of software development by coding smooth
-          user-interfaces that promote user interaction with information and
-          data. While traveling around the world. <span class="colored">"</span>
-        </p>
-        <div class="main-img"></div>
+      <section
+        class="skills-section color3 pi-2 animate\as"
+        data-aos="slide-right"
+        data-aos-duration="1500"
+      >
+        <div class="skills-heading">
+          <h5 class="color4 mb-1">MY SKILLSET</h5>
+          <h2 class="mb-1 fs-38px">
+            Graphic Design, Interface Design & User Experience
+          </h2>
+          <a class="mb-2 text-link color3" href="#">MY PROCESSES</a>
+        </div>
+        <div class="skills-detail">
+          <p>
+            I specialize in building complex web applications, leading front-end
+            teams, digital product design and developing visual design systems.
+            I enjoy creating effortless user experience and designing delightful
+            digital products. The entire process of going from a concept to
+            release and gathering user’s feedback on either client’s or my own
+            products is what makes me wake up everyday! I worked with numerous
+            clients from all around the world from early startups to
+            well-established companies. I always seek new opportunities for
+            cooperation on projects around interesting dashboards, design
+            systems or landing pages. Let’s create something awesome together!
+          </p>
+        </div>
       </section>
-      <section class="skills">
-        <h2 class="headings">My Skills</h2>
-       <div class="skill-flex">
-        <p class="description">
-          Through my dedication and hard work, I have gained a deep
-          understanding of Computer Science and Web Development. By applying my
-          skills to real-world situations, I have successfully created various
-          apps in my free time.
-        </p>
-        <ul class="list">
-          <li class="list-item">HTML5</li>
-          <li class="list-item">CSS</li>
-          <li class="list-item">Sass</li>
-          <li class="list-item">JavaScript</li>
-          <li class="list-item">Git</li>
-          <li class="list-item">GitHub</li>
-          <li class="list-item">PHP</li>
-          <li class="list-item">Bootstrap4</li>
-        </ul>
-       </div>
-      </section>
-
-      <section class="projects">
-        <h3 class="headings">My Most Recent Projects</h3>
-        <p class="description">
-          Feel free to take a look at the various applications, articles, and
-          companies I have dedicated my time to. I find great satisfaction in
-          keeping myself engaged and working on numerous projects.
-        </p>
-
-        <div class="project__container">
-          <div class="project-item">
-            <img
-              class="project-img"
-              src="/desktop-preview.webp"
-              alt="First Project desktop-preview"
-            />
-            <div class="project-card">
-              <h4 class="project-heading">Huddle landing page</h4>
-              <p class="project-description">
-                A tool design to help the musician to build their fan community.
-              </p>
-              <a
-                class="project-link"
-                href="https://papaya-sable-c7f3f7.netlify.app/"
-                >View Projects
-                <span class="arrow"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 448 512"
-                  >
-                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                    /></svg></span
-              ></a>
-            </div>
+      <section class="education-section" id="education-section">
+        <h3 class="education-heading color2">Education</h3>
+        <div class="education" data-aos="fade-up" data-aos-duration="1500">
+          <div class="card">
+            <h3 class="date color2">
+              <span><i class="fa-solid fa-calendar-days"></i></span>
+              March 2007-March 2009
+            </h3>
+            <h2 class="ff-sign color4 fw-400">Matriculation</h2>
+            <p></p>
+            <p class="mb-2 color2">
+              Farogh-e-taleem Girls High School Sargodha, Pakistan
+            </p>
           </div>
-          <div class="project-item">
-            <img
-              class="project-img"
-              src="/7.webp"
-              alt="Second project desktop-preview"
-            />
-            <div class="project-card">
-              <h4 class="project-heading">Insure landing page</h4>
-              <p class="project-description">
-                A landing page, nice and small project to practice handling user
-                interactions and updating the DOM.
-              </p>
-              <a
-                class="project-link"
-                href="https://grand-khapse-93aa1d.netlify.app/"
-                >View Project
-                <span class="arrow"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 448 512"
-                  >
-                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                    /></svg></span
-              ></a>
-            </div>
+          <div class="card">
+            <h3 class="date color2">
+              <span><i class="fa-solid fa-calendar-days"></i></span>
+              September 2009-March 2011
+            </h3>
+            <h2 class="ff-sign color4 fw-400">F.SC (Faculty of Science)</h2>
+            <p class="mb-2 color2">
+              GOV. College Frooq Qaloone, Sargodha, Pakistan
+            </p> 
           </div>
-          <div class="project-item">
-            <img
-              class="project-img portfolio"
-              src="/1.webp"
-              alt="Third project image-preview"
-            />
-            <div class="project-card">
-              <h4 class="project-heading">Portfolio</h4>
-              <a class="project-link" href="https://adniyayousaf.netlify.app/"
-                >View Project
-                <span class="arrow"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 448 512"
-                  >
-                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                    /></svg></span
-              ></a>
-            </div>
+          <div class="card">
+            <h3 class="date color2">
+              <span><i class="fa-solid fa-calendar-days"></i></span>
+              October 2012-June 2016
+            </h3>
+            <h2 class="ff-sign color4 fw-400">
+              Bachelor's Degree - Computer Science
+            </h2>
+            <p></p>
+            <p class="color2 mb-2">
+              Studies included fundamental computer science subjects such as
+              software & hardware architecture and development.
+            </p>
+            <p class="uni color2 ff-sign">University Of Sargodha, Pakistan</p>
           </div>
         </div>
       </section>
-      <section class="contact">
-        <h5 class="headings">Let's create something together.</h5>
-        <p class="contact-description">
-          If you're on the lookout for a developer, want to ask a question, or
-          simply want to connect, feel free to drop me a line anytime. I'm here
-          to help!
-        </p>
-        <a
-          class="contact-link"
-          href="mailto:adniyayousaf92@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          >adniyayousaf92@gmail.com</a
-        >
+      <section class="biography-section">
+        <div class="bio-img" data-aos="fade-left"></div>
+        <div data-aos="zoom-out" data-aos-duration="1500">
+          <h5 class="bio-heading color1 fs-38px">Biography</h5>
+          <p class="bio-text color2">
+            Adniya Yousaf was born in Pakistan and trilingual in Urdu, punjabi
+            and English. Adniya grew up in Sargodha city and move to Rabwah, a
+            small town of Punjab at age 20. At University of Sargodha, she got
+            her Bachelor's degree in Computer Science.<br />
+            <br />
+            In her free time, she enjoys reading books, journaling, singing,
+            practicing photography, traveling and playing chess.
+          </p>
+        </div>
+      </section>
+      <section class="contact-section color2" data-aos="fade-up">
+        <div id="block">
+          <h2>Get In Touch</h2>
+          <form class="form" action="get">
+            <div class="input-label">
+              <label class="label" for="first-name">First Name</label>
+              <input
+                class="input"
+                type="text"
+                name="First-name"
+                id="first-name"
+              />
+            </div>
+            <div class="input-label">
+              <label class="label" for="last-name">Last Name</label>
+              <input
+                class="input"
+                type="text"
+                name="last-name"
+                id="last-name"
+              />
+            </div>
+            <div class="input-label">
+              <label class="label" for="email">Email</label>
+              <input class="input" type="email" name="email" id="email" />
+            </div>
+            <input
+              id="send"
+              class="button color2 ff-sign"
+              type="button"
+              value="Send"
+            />
+          </form>
+        </div>
+        <div id="msg">
+          <p>Thank you! We will contact you soon.</p>
+        </div>
+      </section>
+      <section class="vedio mb-2">
+        <h6 class="fs-30px color2 mb-2">My home country culture</h6>
+        <iframe
+          width="727"
+          height="409"
+          src="https://www.youtube.com/embed/0Ful6y60HUI"
+          title="Travel Around Pakistan in 2 Minutes | A Culturally Diverse Country |Short Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </section>
     </main>
-    <footer>
-      <div class="logo-footer"></div>
-      <ul class="footer-list">
-        <li>
-          <a
-            class="list-item-footer"
-            href="http://https://codepen.io/your-work/"
-            >Codepen</a
-          >
-        </li>
-        <li>
-          <a
-            class="list-item-footer"
-            href="http://https://github.com/adniyaYousaf"
-            >GitHub</a
-          >
-        </li>
-        <li>
-          <a
-            class="list-item-footer"
-            href="http://https://www.linkedin.com/in/adniya-yousaf-b39b2b164/"
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
+    <footer class="c-site-footer">
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/adniya-yousaf-b39b2b164" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.github.com/Adniya92" target="_blank">
+          <i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://en-gb.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank">
+          <i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://codepen.io/Adniya92" target="_blank">
+          <i class="fa-brands fa-codepen"></i
+        ></a>
+      </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/ca13de009b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const button = document.getElementById("send");
+      const block = document.getElementById("block");
+      const msg = document.getElementById("msg");
+      button.addEventListener("click", masg);
+
+      function masg() {
+        block.style.display = "none";
+        msg.style.display = "block";
+      }
+    </script>
   </body>
 </html>
+
+<!-- Your test console.
+Don't delete!-->
+<aside
+  id="tests"
+  aria-label="Test Readout."
+  aria-live="polite"
+  style="overflow: auto"
+></aside>
