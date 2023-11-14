@@ -55,28 +55,29 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
-    /* project*/
-    .project-img{
-      width: 12em;
-      height: 12em;
-     }   
-     .project-article{
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-    
-     }
-     
-       
-  .project-section{
-    border: 3px solid red;
-    border-radius: 6px;
-    background-color: rgb(199, 195, 195);
-    transition: width 2s, height 4s;
-  }
-  .project-section:hover{
-    width: 16em;
-       height: 16em;
-  }
-  .p{ font-weight: bold;
-    color: red;}
+/* project*/
+.project-img {
+  width: 12em;
+  height: 12em;
+}
+.project-article {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.project-section {
+  border-radius: 6px;
+  background-color: rgb(175, 135, 135);
+  transition: width 2s, height 4s;
+  cursor: pointer;
+}
+.project-name {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1rem;
+}
+.p {
+  font-weight: bold;
+  color: red;
+}
