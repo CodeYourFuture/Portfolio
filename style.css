@@ -84,3 +84,79 @@
       left: 0;
     }  
 }
+
+.cont1 {
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, #484f68, #10b0dc,#03208a );
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items:center;
+
+}
+.cont2 {
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, #484f68, #10b0dc,#03208a );
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items:center; 
+
+}
+
+.hay-img {
+    
+
+}
+
+.hay-about {
+   
+    font-size: large;
+    color: #FFF;
+
+}
+img {
+    width: 250px;
+    border-radius: 50%;
+}
+@media screen and (min-width: 40em) {
+    .cont1 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 10px;
+    }
+    .cont2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+      }
+   
+ 
+}
+.listname {
+    color: #FFF;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.listitem {
+    font-size: large;
+    color: #FFF;
+}
+.skills {
+
+    /* border: 5px solid red; */
+}
+.projects {
+    /* border: 5px solid red; */
+
+}
