@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: #00BAF0;
-    background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea );
+    /* background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea ); */
+    background: linear-gradient(to left, #484f68, #10b0dc,#03208a );
     color: #FFF;
     height: 50px;
     padding: 1em;
@@ -92,7 +93,9 @@
     margin-top: 5px;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to left, #484f68, #10b0dc,#03208a );
+    /* background: linear-gradient(to left, #484f68, #10b0dc,#03208a ); */
+    background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea );
+
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -106,7 +109,9 @@
     margin-top: 5px;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to left, #484f68, #10b0dc,#03208a );
+    background: linear-gradient(to left, #484f68, #10b0dc,#03208a ); 
+    /* background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea ); */
+
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -159,4 +164,56 @@ img {
 .projects {
     /* border: 5px solid red; */
 
+}
+.activities {
+  border-radius: 20px;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, #484f68, #10b0dc,#03208a ); 
+    /* background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea ); */
+
+    /* align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items:center;  */
+    font-size: larger;
+    color: #FFF;
+    padding-left: 20px;
+
+
+}
+.experiance {
+  border-radius: 20px;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(to left, #484f68, #10b0dc,#03208a ); */
+    background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea );
+    /* justify-content: space-evenly; */
+    
+    /* align-content: center; 
+    align-items: center; 
+    justify-content: center;
+    justify-items:center;   */
+    font-size: larger;
+    color: #FFF;
+    padding-left: 20px;
+
+}
+li:hover {
+  color: red;
+}
+ol:hover {
+  color: rgb(255, 0, 166);
+}
+h2:hover {
+  color: rgb(255, 0, 166);
+}
+h2 {
+  text-decoration: underline;
 }
