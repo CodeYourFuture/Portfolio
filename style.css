@@ -217,3 +217,41 @@ h2:hover {
 h2 {
   text-decoration: underline;
 }
+.contact {
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(to left, #484f68, #10b0dc,#03208a ); */
+  background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea );
+  /* justify-content: space-evenly; */
+  
+  /* align-content: center; 
+  align-items: center; 
+  justify-content: center;
+  justify-items:center;   */
+  font-size: larger;
+  color: #FFF;
+  padding-left: 20px;
+}
+footer {
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(to left, #484f68, #10b0dc,#03208a ); */
+  background: linear-gradient(to left, #2f54ea, #10b0dc,#2f54ea );
+  
+  align-content: center; 
+  align-items: center; 
+  justify-content: center;
+  justify-items:center;   
+  font-size: larger;
+  color: #69070d;
+  padding-left: 20px;
+  text-decoration: underline;
+}
