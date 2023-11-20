@@ -4,12 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My Portfolio</title>
-    <meta
-      name="description"
-      content="The technical portfolio of trainee name"
-    />
+    <meta name="description" content="The technical portfolio of trainee name" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
+    <!-- suppress F-->
     <style>
       html {
         animation: fade-in 1s;
@@ -23,22 +20,15 @@
         }
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="style.css"
-      media="print"
-      onload="this.media='all'"
-    />
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>My Name</h1>
+      <h1>Zeliha Pala</h1>
+      <h3>Full Stack Developer</h3>
       <nav>
         <ul>
           <li><a href="#about">About Me</a></li>
@@ -48,70 +38,76 @@
       </nav>
     </header>
     <main tabindex="0">
-      <section id="about">
-        <header><h2>About Me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <ul class="showcase">
-          <li class="showcase__item project">
-            <h3 class="project__heading"><a href="https://github.com/CodeYourFuture/HTML-CSS-Challenges-Solution">T-Shirt Order Form</a></h3>
-            <div class="project__blurb">
-              <p>This was exactly as it says: a t-shirt order form, in HTML and CSS. This text is copy-pasted.</p>
-            <p>
-              In this project I learned a whole bunch of foundational principles
-              for front end: I learned how to structure data formally with
-              modern native form inputs, and how to <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">validate that data client-side</a> with HTML5
-              attributes. The brief was fairly open - the design is all mine,
-              but the Acceptance Criteria was strict: I had to deliver a perfect
-              score in <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a>, and meet some other validation constraints.
+      <section id="About-me">
+        <header>
+          <h2>About Me</h2>
+          <hr />
+        </header>
+        <div class="hero-info">
+          <p class="personal-info">I’m a Full Stack Developer.</p>
+        </div>
+        <div class="projects">
+          <img id="me-photo" src="/./image/marissa-grootes-ROlz8qgP2ms-unsplash.jpg" alt="" class="thumbnail" />
+          <div class="information">
+            <h2 class="title">Welcome to my portfolio page</h2>
+            <p class="text">
+              Who am I? I'm a full-stack developer who loves blending great designs with powerful technology. I create user-friendly digital experiences by combining creative front-end work with solid back-end
+              skills. My goal is to build scalable solutions that work smoothly while staying on top of the latest in tech.
             </p>
-            <p>
-              I spent a lot of time testing my code with <a href="https://developer.chrome.com/docs/devtools/">Devtools</a> and thinking
-              carefully about the semantics of the copy pasted DOM. I also explored the <a href="https://developer.chrome.com/docs/devtools/coverage/">
-              Coverage</a> evaluator and used it to improve my CSS: only delivering
-              precisely what my design needed and no excess code.
-            </p>
+            <div class="buttons">
+              <button class="btn-hero">Hire Me</button>
+              <button class="btn-hero">Resume</button>
             </div>
-            <picture class="project__picture">
-              <source
-                srcset="https://picsum.photos/seed/picsum/600/600"
-                type="image/webp"
-              />
-              <img
-                src="https://picsum.photos/seed/picsum/600/600"
-                alt="Screenshot of my page showing a form for ordering t-shirts"
-              />
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
+
       <section id="contact">
+        <header><h2>Projects Showcase</h2></header>
+        <hr />
+        <div class="projects">
+          <div class="information">
+            <h2 class="title">Projects Demonstrating Development Expertise</h2>
+            <p class="text">
+              In my portfolio, you'll find a collection of diverse projects showcasing my expertise. From e-commerce platforms to interactive web applications, each project demonstrates my ability to tackle
+              varying challenges across the full development spectrum. These endeavors highlight my dedication to delivering functional, user-centric solutions that prioritize both innovation and practicality.
+            </p>
+          </div>
+          <img src="/./image/andrea-de-santis-zwd435-ewb4-unsplash.jpg" alt="" class="thumbnail" />
+        </div>
+      </section>
+
+      <section id="projects">
         <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <hr />
+
+        <div class="projects">
+          <img src="/./image/annie-spratt-QckxruozjRg-unsplash.jpg" alt="" class="thumbnail" />
+          <div class="information">
+            <h2 class="title">Get in Touch: Let's Collaborate and Create Something Amazing!</h2>
+            <p class="text">
+              Feel free to reach out—I'm always excited to collaborate on new projects or discuss opportunities. Whether you have a question or a potential project in mind, drop me a line at [Your Email
+              Address] and let's connect!
+            </p>
+            <div class="email-box">
+              <form>
+                <textarea placeholder="Write your e-mail..." name="" id="textarea" cols="45" rows="6"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <hr />
     <footer>
+      <p>facebook</p>
+      <p>twitter</p>
+      <p>pinterest</p>
+
       <h3>
         <a href="https://github.com/CodeYourFuture/Portfolio"
-          ><svg
-            focusable="false"
-            role="presentation"
-            viewbox="0 0 98 96"
-            width="48"
-            height="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          ><svg focusable="false" role="presentation" viewbox="0 0 98 96" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"

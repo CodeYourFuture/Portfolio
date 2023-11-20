@@ -1,30 +1,13 @@
-/* Design tokens. 
-With tokens, stick to communicating the PURPOSE not the VALUE.
-Code should explain, not mystify, your design.
-*/
+/* Design tokens */
 :root {
   --paper: hsla(251, 28%, 88%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
+  --brand: hsla(0, 75%, 51%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
-  /* https://web.dev/accessible-tap-targets/ */
-  --tap-target: 48px;
-  --box: clamp(280px, 50vw + 2px, 530px);
 }
-
-/* Hey look, dark mode is
-so easy with design tokens done this way
-*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: hsla(252, 38%, 92%, 0.99);
-    --paper: hsla(244, 16%, 17%, 1);
-  }
-}
-
-/* General styles */
+/* General Styles */
 html,
 body {
   scroll-behavior: smooth;
@@ -39,6 +22,16 @@ body {
   gap: var(--gap);
   max-width: var(--container);
 }
+
+body > header {
+  background: var(--paper);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 a,
 a:any-link {
   color: currentColor;
@@ -51,101 +44,154 @@ a:focus {
   color: var(--brand);
   border-color: currentColor;
 }
-p a:any-link {
-  border-color: var(--brand);
-}
-/* Site header and navigation 
-https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46
-*/
-body > header {
-  background: var(--paper);
+nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  justify-content: flex-start;
 }
 nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  font-weight: bold;
 }
 
-/* Text readability 
-https://baymard.com/blog/line-length-readability 
-*/
-section p {
-  line-height: 1.5;
-  max-width: 55ch;
-}
-/* targeted resets 
-We're resetting elements with a class - ANY class 
-- on the grounds that if you added a class, 
-you added your own styles
-*/
-h3[class] {
-  margin: 0 auto 0 0;
-}
-ul[class],
-li[class] {
-  margin: 0;
-  padding: 0;
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Basic image rules 
-Don't size images in css, size their containers
-Just make images take up the entire space you give them
-in every context
-*/
-svg {
-  height: 100%;
-  width: auto;
-  min-width: var(--tap-target);
-}
-
-img {
+.hero--image {
   width: 100%;
   height: 100%;
-  max-width: 100%;
   object-fit: cover;
+
+  padding: 100px 0;
 }
 
-picture {
-  height: auto;
-  overflow: hidden;
+h1 {
+  font-size: 4rem;
+  color: var(--dark-grey);
+  margin-bottom: 0.785em;
+  position: relative;
 }
-/* 
-I would start breaking this up into component files now btw! 
-*/
-.showcase {
-  display: flex;
-  flex-flow: row wrap;
-  gap: var(--gap);
-}
-/*
-Here's an example of a grid layout. Notice there's no margin, padding, or sizes given on elements
-All the spacing and sizing is set on the template, and the elements
-are just slotted in.
-The little dots are how we precisely place and size white-space
-https://www.interaction-design.org/literature/article/the-power-of-white-space
-*/
 
-.project {
+h1::before {
+  content: "";
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  background: #333;
+  left: -135px;
+  top: 30px;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+.personal-info {
+  font-size: 1.5rem;
+  line-height: 155%;
+  padding-block: 1em;
+}
+
+.projects {
   display: grid;
-  grid-template:
-    "picture picture picture" var(--box)
-    "....... ....... ......." calc(var(--gap) / 2)
-    "....... heading ......." min-content
-    "....... blurb   ......." auto /
-    var(--gap) var(--box) var(--gap);
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5em;
+  gap: 4em;
 }
-.project__picture {
-  grid-area: picture;
+#me-photo {
+  height: 80%;
 }
-.project__heading {
-  grid-area: heading;
+.thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.1s ease;
+  transition-property: all;
+  transition-property: transform;
 }
-.project__blurb {
-  grid-area: blurb;
+
+.thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.title {
+  margin-top: 2em;
+  font-size: 2rem;
+  color: var(--dark-grey);
+  font-weight: bold;
+}
+.buttons {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.btn-hero {
+  align-items: center;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: larger;
+  background-color: #0056b3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.btn-hero:hover {
+  background-color: orangered;
+}
+
+.text {
+  padding-block: 2em;
+  line-height: 200%;
+  max-width: 55ch;
+}
+
+.email-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-box textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.email-box button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: orangered;
+
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.email-box button:hover {
+  background-color: #0056b3;
+}
+#textarea {
+  padding: 50px 50px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  font-weight: bold;
+}
+footer p:hover {
+  color: var(--brand);
 }
