@@ -5,10 +5,9 @@
   --secondary-orange: #ffa200;
   --ff-fjalla: "Foldit";
 }
-html,
-body {
+html {
   margin: 0;
-  height: 100%;
+  height: 100vh;
 }
 
 /* Utility Classes*/
@@ -101,6 +100,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 .c-site-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -142,7 +142,7 @@ body {
   font-family: "Raleway", sans-serif;
   height: 9rem;
 }
-.adniya::after{
+.adniya::after {
   position: absolute;
   content: "WEB DESIGNER";
   color: #121212;
@@ -434,23 +434,19 @@ main {
 }
 .button {
   cursor: pointer;
-  width: 80%;
+  width: 30%;
   height: 4rem;
   color: white;
   font-size: 1.5rem;
-  border: 1px solid var(--primary-orange);
-  box-shadow: 
-    0 0 40px 40px var(--secondary-orange) inset,
-    0 0 0 0 var(--secondary-orange);
+  border: 1px solid var(--secondary-orange);
   margin-top: 3rem;
   background: none;
-  border-radius: 0.5rem;
   transition: box-shadow 150ms ease-in-out;
 }
 .button:hover {
   background: none;
   box-shadow: 0 0 10px 0 var(--secondary-orange) inset,
-  0 0 10px 4px var(--secondary-orange);
+    0 0 10px 4px var(--secondary-orange);
 }
 .contact_description {
   position: relative;
@@ -473,14 +469,14 @@ main {
   animation: move 3s infinite alternate;
 }
 @keyframes move {
-  0%{
+  0% {
     border-radius: 32% 68% 52% 48% / 24% 41% 59% 76%;
   }
-  50%{
-    border-radius: 39% 61% 49% 51% / 31% 37% 63% 69% ;;
+  50% {
+    border-radius: 39% 61% 49% 51% / 31% 37% 63% 69%;
   }
-  100%{
-    border-radius:45% 35% 29% 71% / 31% 47% 53% 69% ;
+  100% {
+    border-radius: 45% 35% 29% 71% / 31% 47% 53% 69%;
   }
 }
 .contact_description:hover::after {
@@ -529,10 +525,4 @@ main {
   cursor: pointer;
   transform: scale(1.2);
 }
-/* don't edit this */
-.jest-lite-report__status--pass {
-  background: var(--color-pass);
-}
-.jest-lite-report__errors {
-  display: none;
-}
+
