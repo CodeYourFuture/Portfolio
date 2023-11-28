@@ -11,5 +11,3 @@ document.addEventListener('scroll', () => {
     contactMiniSection.className = "contact-mini-fixed";
   }
 })
-
-
