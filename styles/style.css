@@ -57,9 +57,8 @@ svg {
   fill: currentColor;
 }
 
-
 section {
-    scroll-margin-top: 4rem;
+  scroll-margin-top: 4rem;
 }
 
 /* Site header and navigation */
@@ -181,7 +180,7 @@ main {
 
 /* Footer */
 
-#contact-mini {
+.contact-mini-fixed {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -189,6 +188,23 @@ main {
 
   display: flex;
   flex-direction: column;
+
+  opacity: 1;
+
+  transition: right 0.2s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.contact-mini-hidden {
+  position: fixed;
+  bottom: 1rem;
+  right: -150%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  transition: right 0.2s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 #contact-mini svg {
@@ -251,7 +267,7 @@ main {
     height: 4rem;
   }
 
-  #contact-mini {
+  .contact-mini-fixed {
     width: 100%;
     left: 0;
     right: 0;
