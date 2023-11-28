@@ -57,6 +57,11 @@ svg {
   fill: currentColor;
 }
 
+
+section {
+    scroll-margin-top: 4rem;
+}
+
 /* Site header and navigation */
 body > header {
   background: var(--paper);
@@ -224,6 +229,10 @@ main {
     padding: 0;
     gap: initial;
     justify-content: space-around;
+  }
+
+  nav ul li:last-child {
+    display: none;
   }
 
   #contact {

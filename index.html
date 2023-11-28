@@ -8,23 +8,27 @@
   <meta name="description" content="The technical portfolio of trainee name" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'" />
+
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
 </head>
 
+<script type="text/javascript" src="scripts/goToSection.js"></script>
+
 <body>
   <header>
     <h1>Pedro Ricciardi</h1>
     <nav>
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" onclick="goToSection(event)">About Me</a></li>
+        <li><a href="#projects" onclick="goToSection(event)">Projects</a></li>
+        <li><a href="#contact" onclick="goToSection(event)">Contact</a></li>
       </ul>
     </nav>
   </header>
