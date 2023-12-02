@@ -48,6 +48,7 @@ nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  color:var(--brand);
 }
 
 /* Text readability */
