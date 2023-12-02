@@ -1,8 +1,8 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
+  --paper: hsla(190, 81%, 59%, 0.99);
+  --ink: hsla(240, 5%, 4%, 0.95);
+  --brand: hsla(201, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
@@ -55,3 +55,21 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+/* main {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "side content content"
+    "foot foot foot";
+    grid-template-rows: 30px auto 30px;
+}
+
+header { grid-area: head;}
+article{grid-area: content;}
+header { grid-area: side;}
+article{grid-area: foot;} */
+
+
+
+
