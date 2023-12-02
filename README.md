@@ -6,7 +6,8 @@ It is a simple Portfolio.
 
 Bakhat Begum,
 
-I am currently enrolled in a software development bootcamp at CodeYourFuture. As a dedicated and hardworking student, I am committed to pursuing my career goals as a software developer in the tech industry.
+I am currently enrolled in a software development bootcamp at CodeYourFuture.
+As a dedicated and hardworking student, I am committed to pursuing my career goals as a software developer in the tech industry hopefully.
 
 ## ShowCase
 
