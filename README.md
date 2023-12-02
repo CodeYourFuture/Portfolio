@@ -6,6 +6,8 @@ It is a simple Portfolio.
 
 # About Me
 
+Bakhat Begum,
+
 I am currently studying software development bootcamp at
 CodeYourFuture. I am a hardworking student who is committed to
 pursuing my goals in becoming a software developer and advancing my
@@ -13,13 +15,7 @@ career in tech field.
 
 ## ShowCase
 
-Passenger-Account, Blackjack-game, Mobile-configure and
-Basic-calculator are my own project that I have created during my
-spare time. However there are some projects from CYF as well. In CFY
-platform I have learned a whole bunch of foundational principles for
-front end. I have learned not only code but also how to deploy, how
-to interact with Github and may more. In addition to that I learned
-how to make websites responsive.
+I have created several projects during my spare time, including Passenger-Account, Blackjack-game, Mobile-configure, and Basic-calculator. Additionally, I have also worked on some projects offered by CYF. Through the CYF platform, I have learned a variety of foundational principles for front end development, including not only coding but also deploying and interacting with Github. Furthermore, I have gained valuable experience in creating responsive websites.
 
 ## Link to my Projects
 
