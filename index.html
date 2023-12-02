@@ -6,10 +6,10 @@
     <title>My Portfolio</title>
     <meta
       name="description"
-      content="The technical portfolio of trainee name"
+      content="The technical portfolio of AnnaFYZ"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
+    
     <style>
       html {
         animation: fade-in 1s;
@@ -35,50 +35,63 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
       rel="stylesheet"
     />
+    <script src="/somecode.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>My Name</h1>
+    <header class="main-header">
+      <h1>Anna</h1>
       <nav>
         <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="header-link" href="#projects">Projects</a></li>
+          <li><a class="header-link" href="/contacts.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main tabindex="0">
+    <main class="homepage" tabindex="0">
       <section id="about">
         <header><h2>About Me</h2></header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
+          Hi! My name is Anna. I am a persistent introvert who enjoys building and watching things from the beginning.
         </p>
+        <p>
+          The first language I was introduced to was Pascal at school when no one heard about C# or Phython yet &#x1F9D0 however the main principles of if statements are still the same. Unfortunately i was not able to continue my coding path that time.
+        </p>
+        <p>
+          My life path had brought to a point where I learnt about network architecture and loved it so much that decided to become a specialist in cybersecurity. So i entered the university where I learnt about C# and Java but only basics.
+        </p>
+        <p>
+          Unfortunately the war started in my country did not let me to continue the education. I tried to attend online courses but theory without practice is very weak skill. 
+        </p>
+        <p>
+          Code Your Future helped me to come back into IT world. I've learnt basics of HTML, CSS and JavaScript but the most important they taught me how to learn further correctly and constantly develope my skills. I still but in 20 years time this world is still magnificent to me and an every solved coding task for me is still as a huge victory which i enjoy every time &#x1F60A.
+        </p>
+        <p>
+          The most significant reward for me is when people like using things that i did.
+         </p>
       </section>
       <section id="projects">
         <header><h2>Projects Showcase</h2></header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
+          Here are some of my projects. They may look simple to build but each of them holds a small combat and a victory inside. 
+          Victory of making something work in a way the developer wants.
         </p>
+        <div id="container">
+          <button id="previous" type="button"> << </button>
+          <div id="project" class="project">
+            <h3 id="title"></h3><span id="id"></span>
+            <img id="projectImg">
+            <p id="description"></p>
+            <a id="gitlink"><img src="/images/GitHub_Logo.png" width="80px"></a><br>
+            <a id="projectlink"></a>
+          </div>
+          <button id="next" type="button"> >> </button>
+        </div>
       </section>
-      <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
+     
     </main>
     <footer>
       <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
+        <a href="https://github.com/AnnaFYZ"
           ><svg
             focusable="false"
             role="presentation"
@@ -94,9 +107,9 @@
               fill="currentColor"
             />
           </svg>
-          Read me</a
+          GitHub Link</a
         >
       </h3>
-    </footer>
+      </footer>
   </body>
 </html>
