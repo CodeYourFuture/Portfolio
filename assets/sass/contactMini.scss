@@ -1,5 +1,5 @@
 .contact-mini-fixed {
-  position: fixed;
+  position: sticky;
   bottom: 1rem;
   right: 1rem;
   z-index: 1;
@@ -13,7 +13,7 @@
 }
 
 .contact-mini-hidden {
-  position: fixed;
+  position: sticky;
   bottom: 1rem;
   right: -150%;
   z-index: 1;
