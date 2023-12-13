@@ -1,0 +1,33 @@
+.contact-mini-fixed {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 1;
+  transition: right 0.4s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.contact-mini-hidden {
+  position: fixed;
+  bottom: 1rem;
+  right: -150%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  transition: right 0.4s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+#contact-mini svg {
+  width: 1.5rem;
+}
+
+#contact-mini a {
+  border: none;
+}

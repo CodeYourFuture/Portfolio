@@ -1,0 +1,14 @@
+#personal-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: center;
+  max-height: min-content;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}

@@ -1,0 +1,16 @@
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+}
+body {
+  display: grid;
+  margin: auto;
+  min-height: 100vh;
+  gap: var(--gap);
+  max-width: var(--container);
+}

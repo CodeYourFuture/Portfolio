@@ -1,0 +1,72 @@
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  body > header {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    display: block;
+    width: 40%;
+    margin: 0.5rem 0;
+  }
+
+  nav {
+    justify-content: space-evenly;
+    width: 60%;
+  }
+
+  nav ul {
+    padding: 0;
+    gap: initial;
+    justify-content: space-around;
+  }
+
+  nav ul li:last-child {
+    display: none;
+  }
+
+  section {
+    scroll-margin-top: 4rem;
+  }
+
+  #contact {
+    visibility: hidden;
+  }
+
+  #contact header {
+    display: none;
+  }
+
+  #contacts-info {
+    display: none;
+  }
+
+  footer {
+    height: 4rem;
+  }
+
+  .contact-mini-fixed {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: var(--paper);
+    padding: 0.5rem 0;
+    margin: 0;
+
+    flex-direction: row;
+    gap: var(--gap);
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

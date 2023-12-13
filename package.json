@@ -5,10 +5,13 @@
   "license": "CC-BY-NC-SA-4.0",
   "author": "Sally McGrath",
   "scripts": {
-    "clean": "rm -rf temp",
-    "prepare": "mkdir -p temp",
+    "clean": "rmdir /s /q temp || exit 0",
+    "prepare": "mkdir temp",
     "compile-sass": "sass --no-source-map assets/sass:temp --style compressed",
-    "concat-css": "cat temp/*.css > assets/styles.css",
+    "compile-sass-dev": "sass --watch --update assets/sass:temp --style expanded",
+    "concat-css": "type temp\\*.css > assets\\styles.css",
+    "watch": "npm run clean && npm run prepare && npm run compile-sass-dev",
+    "sass-dev": "npm run concat-css && npm run clean",
     "build": "npm run clean && npm run prepare && npm run compile-sass && npm run concat-css && npm run clean"
   },
   "devDependencies": {
