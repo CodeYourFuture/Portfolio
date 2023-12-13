@@ -4,13 +4,20 @@ Just make images take up the entire space you give them
 in every context
 */
 svg {
+  fill: currentColor;
   height: 100%;
   width: auto;
   min-width: var(--fingertip);
 }
 
+.about__picture {
+  height: 70vh;
+  max-height: 450px;
+  min-height: 300px;
+}
+
 img {
-  width: 100%;
+  width: auto;
   height: 100%;
   max-width: 100%;
   object-fit: cover;

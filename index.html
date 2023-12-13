@@ -5,31 +5,40 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>My Portfolio</title>
-  <meta name="description" content="The technical portfolio of Pedro Ricciardi" />
+  <meta name="description" content="The technical portfolio of trainee name" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- suppress FOUC-->
+  <style>
+    html {
+      animation: fade-in 1s;
+    }
 
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/styles.css" media="print" onload="this.media='all'" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'" />
-
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap" rel="stylesheet" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
 </head>
 
-<script type="module" src="scripts/goToSection.js"></script>
 <script type="module" src="scripts/hideMiniContact.js"></script>
 
 <body>
   <header>
-    <h1>Pedro Ricciardi</h1>
+    <h1>My Name</h1>
     <nav>
       <ul>
-        <li><a href="#about" onclick="goToSection(event)">About Me</a></li>
-        <li><a href="#projects" onclick="goToSection(event)">Projects</a></li>
-        <li><a href="#contact" onclick="goToSection(event)">Contact</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -37,11 +46,15 @@
     <section id="about">
       <h2>About Me</h2>
       <article id="personal-info">
-        <img src="./assets/pedro.jpeg" alt="picture of Pedro Ricciardi" class="polaroid">
+        <picture class="about__picture">
+          <source srcset="./assets/pedro.jpeg" type="image/jpeg" />
+          <img src="./assets/pedro.jpeg" alt="picture of Pedro Ricciardi" />
+        </picture>
+
         <div id="about-text">
           <p>
             As a tech and science enthusiast, I have always loved knowing how the universe works and how I can help to
-            improve people's lives. This passion led me to choose a career as a science teacher (physics, mathematics
+            improve people's lives. This passion led me to choose a career as a science teacher (physics, mathematics,
             and
             robotics). After a few years of teaching, I realised that I had great potential to contribute to the tech
             industry. Confident that the skills and expertise I developed add really well to the tech career, I decided
@@ -49,14 +62,14 @@
             migrate to it.
           </p>
           <p>
-            I started my studies in front-end web development with the famous triad: HTML, CSS and
-            JavaScript. Nowadays, I am fully engaged in the CYF Course, keeping React, Next.js, and Typescript on my
+            I started my studies in front-end web development with the famous triad: HTML, CSS, and
+            JavaScript. Nowadays, I am fully engaged in the CYF Course, keeping React, Next.js, and TypeScript on my
             radar.
           </p>
           <p>
             Well, feel free to check out my portfolio. I'm still in the beginning, but there's already a lot of
             affection
-            and dedication involved. If you liked what you saw, get in touch. I am always available to help, share and
+            and dedication involved. If you liked what you saw, get in touch. I am always available to help, share, and
             learn.
           </p>
         </div>
@@ -66,52 +79,88 @@
       <header>
         <h2>Projects Showcase</h2>
       </header>
-      <section id="projects-list">
-        <article class="project polaroid">
-          <img src="assets/oldPortfolio.png" alt="old portfolio image preview" class="project-image">
-          <h3 class="project-name">Personal Page</h3>
-          <p class="project-description">Personal Page made for CYF Fundamentals Course using HTML, CSS and JavaScript
-          </p>
-          <section class="project-links">
-            <a href="https://github.com/PERicci/CYF-Pedro-Personal-Page" target="_blank"
-              rel="noopener noreferrer">Project</a>
-            <a href="https://pedro-ricciardi-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Live
-              Demo</a>
-          </section>
-        </article>
-        <article class="project polaroid">
-          <img src="assets/imageCarousel.png" alt="image Carousel image preview" class="project-image">
-          <h3 class="project-name">Image Carousel</h3>
-          <p class="project-description">A Image Carousel application built with HTMl, CSS and JavaScript</p>
-          <section class="project-links">
-            <a href="https://github.com/PERicci/CYF-Image-Carousel" target="_blank"
-              rel="noopener noreferrer">Project</a>
-            <a href="https://pedro-image-carousel.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-          </section>
-        </article>
-        <article class="project polaroid">
-          <img src="assets/form-control.png" alt="form control image preview" class="project-image">
-          <h3 class="project-name">Form Control</h3>
-          <p class="project-description">A form using semantic html, required fields, and styled elements using CSS</p>
-          <section class="project-links">
-            <a href="https://github.com/PERicci/cyf-Module-HTML-CSS/tree/feature/form-controls/" target="_blank"
-              rel="noopener noreferrer">Project</a>
-            <a href="https://deploy-preview-134--cyf-module-html-css.netlify.app/form-controls/" target="_blank"
-              rel="noopener noreferrer">Live Demo</a>
-          </section>
-        </article>
-        <article class="project polaroid">
-          <img src="assets/karma-page.png" alt="karma page image preview" class="project-image">
-          <h3 class="project-name">Karma Page</h3>
-          <p class="project-description">Page made using HTML and CSS, responsive design and semantic html.</p>
-          <section class="project-links">
-            <a href="https://github.com/PERicci/cyf-HTML-CSS-Module-Project/tree/NW6/PedroRicciardi" target="_blank"
-              rel="noopener noreferrer">Project</a>
-            <a href="https://pericci.github.io/cyf-HTML-CSS-Module-Project/" target="_blank"
-              rel="noopener noreferrer">Live Demo</a>
-          </section>
-        </article>
-      </section>
+      <ul class="showcase">
+        <li class="showcase__item project">
+          <details class="project__details">
+            <summary class="project__summary">
+              <h3 class="project__heading">
+                <a href="https://github.com/PERicci/CYF-Pedro-Personal-Page" target="_blank">
+                  Personal Page</a>
+              </h3>
+            </summary>
+            <div class="project__blurb">
+              <p>
+                My personal page built with HTML, CSS, and JavaScript, in the beginning of the CYF course.
+              </p>
+              <p>
+                This project was useful to learn and practice the HTML structure, the file organization,
+                and some simple JavaScript functions.
+              </p>
+              <p>
+                I could test some techniques to make the hamburger menu with CSS and JavaScript,
+                using 'querySelector' and 'querySelectorAll' to get the HTML tags and manipulate their
+                classes with 'toggle' and 'remove' methods.
+              </p>
+            </div>
+          </details>
+          <picture class="project__picture">
+            <source srcset="assets/oldPortfolio.png" type="image/png" />
+            <img src="assets/oldPortfolio.png" alt="Screenshot of my personal page" />
+          </picture>
+        </li>
+        <li class="showcase__item project">
+          <details class="project__details">
+            <summary class="project__summary">
+              <h3 class="project__heading">
+                <a href="https://github.com/PERicci/cyf-Module-HTML-CSS/tree/feature/form-controls/" target="_blank">
+                  Form Control</a>
+              </h3>
+            </summary>
+            <div class="project__blurb">
+              <p>
+                A form using semantic html, required fields, and styled elements using CSS.
+              </p>
+              <p>
+                I could learn more about responsive design, background images, and how to style
+                form elements.
+              </p>
+            </div>
+          </details>
+          <picture class="project__picture">
+            <source srcset="assets/form-control.png" type="image/png" />
+            <img src="assets/form-control.png" alt="Form control image preview" />
+          </picture>
+        </li>
+        <li class="showcase__item project">
+          <details class="project__details">
+            <summary class="project__summary">
+              <h3 class="project__heading">
+                <a href="https://github.com/PERicci/cyf-HTML-CSS-Module-Project/tree/NW6/PedroRicciardi"
+                  target="_blank">
+                  Karma Page</a>
+              </h3>
+            </summary>
+            <div class="project__blurb">
+              <p>
+                Page made using HTML and CSS, responsive design, and semantic HTML.
+              </p>
+              <p>
+                This page was especially challenging because I had to use flexbox and grid to create the layout.
+                I improved my knowledge about CSS custom properties and how to use them.
+              </p>
+              <p>
+                Besides that, this was the first project with more than one page.
+                So, I had to learn more about style organization, using CSS in multiple pages, and
+                creating new files for each specificity.
+              </p>
+            </div>
+          </details>
+          <picture class="project__picture">
+            <source srcset="assets/karma-page.png" type="image/png" />
+            <img src="assets/karma-page.png" alt="Karma page image preview" />
+          </picture>
+        </li>
+      </ul>
     </section>
     <section id="contact">
       <header>

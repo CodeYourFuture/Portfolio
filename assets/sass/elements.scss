@@ -5,6 +5,10 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+section {
+  scroll-margin-top: 6rem;
+}
 /* targeted resets 
 We're resetting elements with a class - ANY class 
 - on the grounds that if you added a class, 

@@ -1,69 +1,30 @@
-/* Design tokens */
-:root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.949);
-  --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
-  --gap: 20px;
-  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
-  --shadow: 2px 2px 5px 2px var(--ink);
-}
-/* suppress FOUC */
+/* General site layout 
+
+You might want to start adding classes and breaking the pieces of this layout into components
+You have header, footer, main, and menu/nav */
 html {
-  animation: fade-in 1s;
+  background: var(--paper);
+  color: var(--ink);
 }
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* General Styles */
 html,
 body {
   scroll-behavior: smooth;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--font);
+  font-family: var(--font-body);
 }
 body {
   display: grid;
   margin: auto;
+  min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
 }
-a,
-a:any-link {
-  color: currentColor;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: all ease-in-out 0.3s;
-}
-a:hover,
-a:focus {
-  color: var(--brand);
-  border-color: currentColor;
-  font-weight: bold;
-}
-.polaroid {
-  border: 0.75rem solid var(--paper);
-  box-shadow: var(--shadow);
-  box-sizing: border-box;
-}
 
-svg {
-  fill: currentColor;
-}
-
-section {
-  scroll-margin-top: 4rem;
-}
-
-/* Site header and navigation */
+/* Site header and navigation 
+https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46
+*/
 body > header {
-  background: var(--paper);
+  font-family: var(--font-display);
+  backdrop-filter: blur(var(--spacing-2));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,83 +38,19 @@ nav ul {
   gap: var(--gap);
 }
 
-h3 {
-  padding: 0;
-  margin: 0.75rem 0 0.5rem;
-}
-
-/* Text readability */
-p {
-  line-height: 1.5;
-  max-width: 55ch;
-  margin: 0;
-}
-
-/* Main */
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
-
-  padding: 0 var(--gap);
-}
-
-/* About Me */
-
 #personal-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--gap);
   align-items: center;
-
-  text-align: justify;
-
   max-height: min-content;
-}
-
-#about img {
-  height: 40vh;
-  max-height: 450px;
-  min-height: 300px;
-  width: auto;
 }
 
 #about-text {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-}
-
-/* Projects */
-
-#projects-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: calc(var(--gap) * 2);
-  row-gap: var(--gap);
-}
-
-.project {
-  max-width: 30%;
-  min-width: 350px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project img {
-  width: 100%;
-}
-
-.project-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 0.5rem;
 }
 
 /* Contact */
@@ -177,8 +74,6 @@ main {
   width: 2rem;
   height: auto;
 }
-
-/* Footer */
 
 .contact-mini-fixed {
   position: fixed;
@@ -249,6 +144,10 @@ main {
 
   nav ul li:last-child {
     display: none;
+  }
+
+  section {
+    scroll-margin-top: 4rem;
   }
 
   #contact {
