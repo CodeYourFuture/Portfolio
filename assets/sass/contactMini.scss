@@ -1,5 +1,5 @@
 .contact-mini-fixed {
-  position: sticky;
+  position: fixed;
   bottom: 1rem;
   right: 1rem;
   z-index: 1;
@@ -8,12 +8,11 @@
   flex-direction: column;
 
   opacity: 1;
-
   transition: right 0.4s ease-in-out, opacity 0.6s ease-in-out;
 }
 
 .contact-mini-hidden {
-  position: sticky;
+  position: fixed;
   bottom: 1rem;
   right: -150%;
   z-index: 1;

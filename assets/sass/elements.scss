@@ -11,9 +11,7 @@ section {
 }
 /* targeted resets 
 We're resetting elements with a class - ANY class 
-- on the grounds that if you added a class, 
-you added your own styles
-*/
+- on the grounds that if you added a class, you added your own styles */
 h3[class] {
   margin: 0 auto 0 0;
 }
