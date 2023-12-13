@@ -1,0 +1,19 @@
+#contacts-info {
+  display: grid;
+  grid-template-columns: 25vw 25vw;
+  justify-items: flex-start;
+}
+
+#contacts-info a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  border: none;
+}
+
+#contacts-info svg {
+  width: 2rem;
+  height: auto;
+}
