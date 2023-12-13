@@ -8,7 +8,10 @@
     "clean": "rmdir /s /q temp || exit 0",
     "prepare": "mkdir temp",
     "compile-sass": "sass --no-source-map assets/sass:temp --style compressed",
+    "compile-sass-dev": "sass --watch --update assets/sass:temp --style expanded",
     "concat-css": "type temp\\*.css > assets\\styles.css",
+    "watch": "npm run clean && npm run prepare && npm run compile-sass-dev",
+    "sass-dev": "npm run concat-css && npm run clean",
     "build": "npm run clean && npm run prepare && npm run compile-sass && npm run concat-css && npm run clean"
   },
   "devDependencies": {
