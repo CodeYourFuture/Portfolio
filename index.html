@@ -40,7 +40,7 @@
     />
   </head>
 
-  <body class="bg-cyan-100 mx-auto">
+  <body class="bg-white mx-auto">
 
     <header class="flex flex-col font-bold bg-white my-2 text-center p-1"
       <h1>
@@ -57,53 +57,165 @@
 
     <main tabindex="0">
 
-      <section id="about" class="mx-4 ">
+      <section id="about" class="mx-4 text-center">
         <header class="font-semibold">
           <h2>About Me</h2>
         </header>
 
         <ul class="text-justify">
-          <li> 
-            * A software developer living in London
+          <li class="text-center"> 
+            I am a software developer from London
           </li>
-          <li>
-            * Completed a one and half year full-stack software developer programme from Code Your Future
+          <li class="text-center">
+            I have completed a one and half year full-stack software developer programme from Code Your Future
           </li>
         </ul>
       </section>
 
-      <section id="projects" class="m-4">
+      <section id="projects" class="text-center m-4">
         <header class="font-semibold">
           <h2>Below are some of the projects I worked on...</h2>
         </header>
 
-        <div class="m-5">
-          <h3 class="font-semibold">Volunteer Booking App</h3>
-          <p class="text-justify">I have created this full-stack, responsive volunteer booking app where I have build a calendar from scratch using React instead of using a library so that I add my own styling to the calendar with icons. Also used Tailwind CSS for styling, Node JS to build the server and postgreSQL to create the database. I have also provided two calendar options for the users to use for booking purpose.</p>
-          <a href="https://github.com/Afsha10/volunteer-calendar" target="_blank"
-            >Link to GitHub repo</a
-          >
-          <a href="https://good-deeds-xnva.onrender.com/" target="_blank">
-            <img
-              src="images/volunteerBooking.png" 
-              alt="Afsha's volunteer booking app" class="w-64" 
-            />
-          </a>
+        <div class="m-5 text-justify">
+          <h3 class="font-semibold text-center m-3">YouTube Video Storage App (full-stack solo project)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>This is a responsive, full-stack app I have built to store YouTube videos I like, using React to build the front-end, Tailwind CSS for styling, Node JS to build the server and postgreSQL to create the database.
+              <div class="m-5">
+                <li>Created a video storage app from scratch in alignment with the given design brief</li>
+                <li>Studied React and Tailwind using online resources such as YouTube, Udemy, React Tutorial App and effective applied my React this knowledge to bring the project to life</li>
+                <li>Demonstrated adaptability by incorporating feedback from mentors and GitHub reviewers</li>
+                <li>Seamlessly integrated the front-end, back-end and database components, enabling them to work in unison for a fully functional application</li>
+              </div>
+              <a href="https://github.com/Afsha10/Full-Stack-Project-Assessment" target="_blank"
+                >Link to GitHub repo</a
+              >
+              </p>
+            </div>
+            <div class="mx-auto">
+              <a href="https://afsha-youtube-video-storage.netlify.app/" target="_blank">
+                <img
+                  src="images/videoStorageApp.png" 
+                  alt="Afsha's full stack video storage app" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="m-5">
-          <h3 class="font-semibold">YouTube Video Storage App</h3>
-          <p class="text-justify">This is a responsive, full-stack app I have built to store YouTube videos I like, using React to build the front-end, Tailwind CSS for styling, Node JS to build the server and postgreSQL to create the database.</p>
-          <a href="https://github.com/Afsha10/Full-Stack-Project-Assessment" target="_blank"
-            >Link to GitHub repo</a
-          >
-          <a href="https://afsha-youtube-video-storage.netlify.app/" target="_blank">
-            <img
-              src="images/VideoStorageApp.png" 
-              alt="Afsha's full stack video storage app" class="w-64" 
-            />
-          </a>
+        <div class="m-5 text-justify">
+          <h3 class="font-semibold text-center m-3">Spotify Playlist Sieve App (full-stack group project)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>Developed “Spotify Playlist Sieve” app for CodeYourFuture, introducing unique MVP features like track filtering, enhancing the app with functionalities not present in standard Spotify features.
+              <div class="m-5">
+                <li>I have collaborated in writing user stories and breaking them into tickets, creating issues on kanban board and having regular meetings to resolve merge conflicts</li>
+                <li>I took part in daily standups, code review, weekly presentations and retro session</li>
+                <li>I read Spotify documentation and successfully implemented PKCE flow for authentication in React for a very secure login for the client</li>
+                <li>I used Figma to design the user interface and styled the it using CSS and Tailwind</li>
+                <li>I used Spotify API to connect with the Spotify database for the users to access their playlists after authentication</li>
+                <li>I used Spotify API to build unique filtering features- filter playlist by tracks duration, filter by content type</li>
+                <li>I created and added records to the CYF recommendations database on ElephantSQL and connected the database with the back-end</li>
+              </div>
+              <a href="https://github.com/Afsha10/song-sieve" target="_blank"
+                >Link to GitHub repo</a
+              >
+              </p>
+            </div>
+            <div class="mx-auto">
+              <a href="https://song-sieve-frontend.onrender.com/" target="_blank">
+                <img
+                  src="images/spotifyPlaylistSieve.png" 
+                  alt="Afsha's Spotify Playlist Sieve app made with two other members" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
         </div>
+
+        <div class="m-5 text-justify">
+          <h3 class="font-semibold text-center m-3">Volunteer Booking App (full-stack solo project)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>I have developed this volunteer booking app to effectively connect volunteers with morning and evening sessions, achieving a seamless user experience, ensuring real-time information display and interaction for volunteer coordination.
+              <div class="m-5">
+                <li>Designed and developed a custom calendar entirely from scratch using React and Tailwind</li>
+                <li>Created an adaptable front-end calendar using Figma, React and Tailwind, offering users the flexibility to choose between monthly or weekly viewing modes</li>
+                <li>Implemented a robust SQL database  on Supabase using DBeaver, seamlessly connecting it to the server via Node express and successfully deployed the application on Render</li>
+                <li>Established a seamless connection between the database, server, and front-end</li>
+              </div>
+              <a href="https://github.com/Afsha10/volunteer-calendar" target="_blank"
+                >Link to GitHub repo</a
+              >
+              </p>
+            </div>
+            <div class="mx-auto">
+              <a href="https://good-deeds-xnva.onrender.com/" target="_blank">
+                <img
+                  src="images/volunteerBooking.png" 
+                  alt="Afsha's volunteer booking app" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5 text-justify">
+          <h3 class="font-semibold text-center m-3">Recommendations Tracker (work-in-progress full-stack project)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>I'm developing a recommendations-tracker app to address the need for efficiently tracking and managing recommendations for a single user
+              <div class="m-5">
+                <li>Designed the front-end using Figma, built it using React and tailwind, and deployed it on Render</li>
+                <li>Created a well-structured database on Supabase using dummy data based on features e.g. storing same recommendations tied to different media types</li>
+                <li>Integrated the database with the back-end using Node.js using the API endpoints</li>
+                <li>Connected the backend with the front-end using fetch API</li>
+              </div>
+              <a href="https://github.com/Afsha10/recommendations-tracker" target="_blank"
+                >Link to GitHub repo</a
+              >
+              </p>
+            </div>
+            <div class="mx-auto">
+              <a href="https://recommendations-tracker.netlify.app/" target="_blank">
+                <img
+                  src="images/recommendationsTracker.png" 
+                  alt="Afsha's recommendations tracker app" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5 text-justify">
+          <h3 class="font-semibold text-center m-3">TV Show Webpage</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>I have built this responsive TV show webpage created using HTML, CSS, and vanilla JS.
+              <div class="m-5">
+                <li>Used Figma and CSS to ensure a responsive and user-friendly design</li>
+                <li>Collaborated in pair programming sessions to meet project specifications efficiently</li>
+                <li>Continued refining the project implementing feedback from mentors and reviewers</li>
+                <li>Utilised a range of JavaScript techniques-  including callback functions, eventListeners, DOM (Document Object Mode) manipulation and fetch API to ensure site functionality</li>
+              </div>
+              <a href="https://github.com/Afsha10/tv-show-dom-project" target="_blank"
+                >Link to GitHub repo</a
+              >
+              </p>
+            </div>
+            <div class="mx-auto">
+              <a href="https://cyf-afsha10-tv.netlify.app/"  target="_blank">
+                <img
+                  src="images/tvDomShowMobile.png" 
+                  alt="Afsha's TV Show Webpage Preview" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row">
 
         <div class="m-5">
           <h3 class="font-semibold">CYF Hotel React</h3>
@@ -113,27 +225,8 @@
           >
           <a href="https://afsha-hotel-react.netlify.app/" target="_blank">
             <img
-              src="images/CyfHotel.png" 
+              src="images/cyfHotel.png" 
               alt="CYF Hotel React Preview" class="w-64" 
-            />
-          </a>
-        </div>
-
-        <div class="m-5">
-          <h3 class="font-semibold">TV Show Webpage</h3>
-          <p class="text-justify">
-            A responsive TV show webpage created using HTML, CSS, and vanilla
-            JS.
-          </p>
-          <a
-            href="https://github.com/Afsha10/tv-show-dom-project"
-            target="_blank"
-            >Link to GitHub repo</a
-          >
-          <a href="https://cyf-afsha10-tvv.netlify.app/" target="_blank">
-            <img
-              src="images/TvDom.png"
-              alt="TV Show Webpage Preview" class="w-64"
             />
           </a>
         </div>
@@ -148,11 +241,14 @@
           >
           <a href="https://cakes-co-project.netlify.app/" target="_blank">
             <img
-              src="images/ResponsiveCakeWebpageMobile.png"
+              src="images/responsiveCakeWebpageMobile.png"
               alt="HTML & CSS Coursework Preview" class="w-64"
             />
           </a>
         </div>
+
+        </div>
+
 
       </section>
 

@@ -26,13 +26,19 @@ body {
   gap: var(--gap);
   max-width: var(--container);
 }
-a,
-a:any-link {
-  color: currentColor;
+a {
+  color: red;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color ease-in-out 0.3s;
+  border-bottom: 2px solid blue;
+  /* transition: border-color ease-in-out 0.3s; */
 }
+
+/* a {
+    color: red;
+    text-decoration: none;
+    border-bottom: 1px solid green;
+} */
+
 a:hover,
 a:focus {
   color: var(--brand);
