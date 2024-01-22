@@ -55,3 +55,12 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+#main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#img {
+  width: 30em;
+}
