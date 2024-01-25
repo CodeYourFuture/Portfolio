@@ -1,31 +1,48 @@
 # Portfolio
 
-Your starting portfolio, to iterate on.
+It is a simple Portfolio.
 
-## Learning Objectives
+# About Me
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+Bakhat Begum,
 
-## Requirements
+I am currently enrolled in a software development bootcamp at CodeYourFuture.
+As a dedicated and hardworking student, I am committed to pursuing my career goals as a software developer in the tech industry hopefully.
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
+## ShowCase
 
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+I have created several projects during my spare time, including Passenger-Account, Blackjack-game, Mobile-configure, and Basic-calculator. Additionally, I have also worked on some projects offered by CYF. Through the CYF platform, I have learned a variety of foundational principles for front end development, including not only coding but also deploying and interacting with Github. Furthermore, I have gained valuable experience in creating responsive websites.
 
-## Acceptance Criteria
+## Link to my Projects
 
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
+In this section, I have added my Github link regarding my Projects.
+Blackjack-game
+https://github.com/BakhatBegum/Blackjack-game
+Mobile-Configure
+https://github.com/BakhatBegum/Mobile-Scan-Error
+Basic-Calculator
+https://github.com/BakhatBegum/Basic-Calculater
+Passenger-Account
+https://github.com/BakhatBegum/Passenger-Account
+HTML-CSS-Module-Project
+https://github.com/BakhatBegum/HTML-CSS-Module-Project/tree/NW6/Bakhat-Begum
+
+## My modules:
+
+I added my module netlify links.
+Blackjack-game
+https://loquacious-bienenstitch-82f317.netlify.app/
+Basic-Calculator
+https://easy-calculater.netlify.app/
+Passenger-Account
+https://passenger-account.netlify.app/
+HTML-CSS-Module-project with branches
+https://gilded-twilight-63d6c8.netlify.app/
 
 ## Resources
 
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+Gmail:
+https://mail.google.com/mail/u/0/#inbox
+
+Contact:
+0785862975

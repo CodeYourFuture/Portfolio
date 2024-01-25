@@ -1,102 +1,422 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en-gb">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
-    <meta
-      name="description"
-      content="The technical portfolio of trainee name"
-    />
+    <title>Bakhat-Begum</title>
+    <meta name="description" content="Bakhat Begum" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
-    <style>
-      html {
-        animation: fade-in 1s;
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
     <link
       rel="stylesheet"
       href="style.css"
       media="print"
       onload="this.media='all'"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
-    <header>
-      <h1>My Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <header>
+         <img src="Bakhat Begum.png" alt="" class="logo-bb">
+        <nav id="hamnav">
+          <div class="container">
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+
+          <div id="hamitems">
+            <a href="#showcase" class="current">Portfolio</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Showcase</a>
+            <a href="#footer">Contact</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main tabindex="0">
-      <section id="about">
-        <header><h2>About Me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-    </main>
-    <footer>
-      <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
-          ><svg
-            focusable="false"
-            role="presentation"
-            viewbox="0 0 98 96"
-            width="48"
-            height="48"
-            xmlns="http://www.w3.org/2000/svg"
+
+    <!-- showcase open-->
+    <div id="showcase">
+      <div class="container-1">
+        <div class="showcase-content">
+          <p>Hello my name is Bakhat Begum</p>
+          <h2>I am a <span class="text"></span></h2>
+          <p>
+            This is my portfolio which contains all the projects I have
+            developed during my journey as student in CodeYourFuture bootcamp.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1U_vLKbZxEYNiVsJUW1gIL7PzvWn6X-CiR_r8aTLdUfM/edit?usp=sharing"
+            class="btn"
+            >Dowload CV</a
           >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-              fill="currentColor"
-            />
-          </svg>
-          Read me</a
-        >
-      </h3>
-    </footer>
+        </div>
+        <div class="img">
+          <img src="main.jpg" alt="personal" class="my-img" />
+        </div>
+      </div>
+    </div>
+    <!-- showcase close -->
+    <!-- we are testing -->
+    <!-- about open -->
+    <div id="about">
+      <div class="container-2">
+        <img src="img.jpg" alt="" class="img-about" />
+        <div class="about-content">
+          <h2>Bakhat</h2>
+          <h3>A student in CodeYourFuture</h3>
+          <p>
+            I am currently studying software development boot camp at
+            CodeYourFuture. I am a hardworking student who is committed to
+            pursuing my goals in becoming a software developer and advancing my
+            career in this field. I have one year of beginner experience working
+            with programming languages such as HTML, CSS, JavaScript, and
+            Python. I am looking forward to utilizing my skills and passion in
+            the technology field.
+          </p>
+          <p>I enjoy learning how to code.</p>
+
+          <div class="social-btn">
+            <ul>
+              <li>
+                <a href="https://mail.google.com/mail/u/0/#inbox"
+                  ><i class="Gmail"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/4294/4294516.png"
+                      alt=""
+                      class="logo-img img-content" /></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/BakhatBegum"
+                  ><i class="Github"
+                    ><img
+                      src="https://icones.pro/wp-content/uploads/2021/06/icone-github-orange.png"
+                      alt="for contact"
+                      class="logo-img img-content" /></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://app.netlify.com/teams/bakhtbagum/sites"
+                  ><i class="Netlify"
+                    ><img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSlwoe24QK40zD4UAO0tHpQ13RZYNtnmITg&usqp=CAU"
+                      alt=""
+                      class="logo-img img-content" /></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/feed/"
+                  ><i class="Linkedin"
+                    ><img
+                      src="https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-orange.png"
+                      alt=""
+                      class="logo-img img-content" /></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn">Hire Me</a>
+          <a href="#footer" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- about close -->
+
+       <!-- Skills open -->
+    <h2 class="sub-title">My <span>Skills</span></h2>
+
+    <section>
+      <div class="containerOne" id="skills">
+      <h1 class="heading">Technical Skills</h1>
+      <div class="Technical-bars">
+        <div class="bar"><i style="color: rgb(211, 124, 11);"  class='bx bxl-html5'></i>
+          <div class="info">
+            <span>HTML</span>
+          </div>
+          <div class="progress-line html">
+            <span></span>
+          </div>
+
+        </div>
+        <div class="bar"><i style="color:blueviolet;"  class='bx bxl-css3'></i>
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line css">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: orange;"  class='bx bxl-javascript'></i>
+          <div class="info">
+            <span>JavaScript</span>
+          </div>
+          <div class="progress-line javascript">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: palevioletred;"  class='bx bxl-react'></i>
+          <div class="info">
+            <span>React</span>
+          </div>
+          <div class="progress-line react">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar"><i style="color: rgb(49, 100, 112);" class='bx bxl-nodejs'></i>        <!--  you can download any icon from Boxicons.com -->
+          <div class="info">
+            <span>Node</span>
+          </div>
+          <div class="progress-line node">
+            <span></span>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+     
+      <div class="containerOne" >
+          <h2 class="heading">Professional Skills</h2>
+          <div id="for-inline">
+        <div class="radial-bars">
+          <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy = "100" r = "80"></circle>
+            <circle class="path path-1" cx="100" cy = "100" r = "80"></circle>
+         </svg>
+            <div class="percentage">90%</div>
+            <div class="text">creativity</div>
+            </div>
+          </div>
+
+           <div class="radial-bars">
+            <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy = "100" r = "80"></circle>
+            <circle class="path path-2" cx="100" cy = "100" r = "80"></circle>
+         </svg>
+            <div class="percentage">95%</div>
+            <div class="text">communication</div>
+            </div>
+          </div>
+
+           <div class="radial-bars">
+            <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy = "100" r = "80"></circle>
+            <circle class="path path-3" cx="100" cy = "100" r = "80"></circle>
+         </svg>
+            <div class="percentage">70%</div>
+            <div class="text">Problem Solving</div>
+            </div>
+          </div>
+
+           <div class="radial-bars">
+            <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy = "100" r = "80"></circle>
+            <circle class="path path-4" cx="100" cy = "100" r = "80"></circle>
+         </svg>
+            <div class="percentage">85%</div>
+            <div class="text">TeamWork</div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+ </section>
+       <!-- Skills Close -->
+
+    <!-- services open -->
+
+    <div id="services">
+      <div class="container">
+        <div class="content-services">
+          <h2>My Showcase</h2>
+          <p class="lead">
+            Passenger-Account, Blackjack-game, Mobile-configure and
+            Basic-calculator are my own project that I have created during my
+            spare time. However there are some projects from CYF as well. In CFY
+            platform I have learned a whole bunch of foundational principles for
+            front end. I have learned not only code but also how to deploy, how
+            to interact with Github and may more. In addition to that I learned
+            how to make websites responsive.
+          </p>
+        </div>
+        <div class="for-layout" id="flex">
+          <div class="cards">
+            <img src="img1.png" alt="" class="zero" />
+            <div class="card-button">
+              <a
+                href="https://github.com/BakhatBegum/Blackjack-game"
+                class="btn"
+                >Github</a
+              >
+              <a href="https://passenger-account.netlify.app/" class="btn"
+                >Netlify</a
+              >
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="img2.png" alt="" class="zero" />
+            <div class="card-button">
+              <a
+                href="https://github.com/BakhatBegum/Module-HTML-CSS/tree/feature/Cakes-Co"
+                class="btn"
+                >Github</a
+              >
+              <a href="https://clever-paletas-dfbd63.netlify.app/" class="btn"
+                >Netlify</a
+              >
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="img3.png" alt="" class="zero" />
+            <div class="card-button">
+              <a
+                href="https://github.com/BakhatBegum/HTML-CSS-Module-Project/tree/NW6/Store/Bakhat"
+                class="btn"
+                >Github</a
+              >
+              <a href="https://gilded-twilight-63d6c8.netlify.app/" class="btn"
+                >Netlify</a
+              >
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="img7.png" alt="" class="zero" />
+            <div class="card-button">
+              <a href="https://github.com/BakhatBegum/Module-HTML-CSS/tree/feature/MultiPage-Clone" class="btn"
+                >Github</a
+              >
+              <a href="https://incredible-fox-da1c06.netlify.app/" class="btn"
+                >Netlify</a
+              >
+            </div>
+          </div>
+
+          <div class="cards">
+            <img src="img5.png" alt="" class="zero" />
+            <div class="card-button">
+              <a
+                href="https://github.com/BakhatBegum/Basic-Calculater"
+                class="btn"
+                >Github</a
+              >
+              <a href="https://easy-calculater.netlify.app/" class="btn"
+                >Netlify</a
+              >
+            </div>
+          </div>
+          <div class="cards">
+            <img src="img6.png" alt="" class="zero" />
+            <div class="card-button">
+              <a
+                href="https://github.com/BakhatBegum/bikes-for-refugees/tree/NW6/Bakhat-Begum"
+                class="btn"
+                >Github</a
+              >
+              <a href="https://genuine-bonbon-c92a16.netlify.app/" class="btn"
+                >Netlify</a
+              >
+            </div>
+          </div>
+
+
+         <div class="cards">
+            <img src="img4.png" alt="" class="zero" />
+            <div class="card-button">
+              <a href="https://github.com/BakhatBegum/form" class="btn"
+                >Github</a
+              >
+              <a href="https://incredible-fox-da1c06.netlify.app/" class="btn"
+                >Netlify</a
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- services close -->
+
+    <!-- hire me open-->
+    <div id="attachment" id="flex">
+      <div class="container-3">
+        <h3>Let's work Togather</h3>
+        <p>I am Available. Hire me and Get Your Projrct Done.</p>
+        <a href="#" class="btn"> Hire Me</a>
+      </div>
+    </div>
+    <!-- hire me close-->
+
+    <!-- footer open -->
+
+    <div id="footer">
+      <div class="container-4">
+        <div class="resources">
+          <!-- <h2>My resources</h2>
+          <p>You can contact me through any of this resources.</p> -->
+          <!-- <a href="https://github.com/BakhatBegum"
+            ><img
+              src="https://www.svgrepo.com/show/512317/github-142.svg"
+              alt=""
+              class="svg-2"
+          /></a>
+          <a href="https://www.linkedin.com/feed/"
+            ><img
+              src="https://www.svgrepo.com/show/16193/linkedin-logo.svg"
+              alt=""
+              class="svg-2"
+          /></a> -->
+        </div>
+        <div class="style-for-images">
+          <h1>GET IN TOUCH</h1>
+          <p><b>Location:</b></p>
+          <!-- <i class='bx bxs-location-plus'></i><a href="#"
+            >Manchester, UK</a
+          >  -->
+          <a href="#"
+            ><img
+              src="https://www.svgrepo.com/show/532539/location-pin.svg"
+              alt=" for link"
+              class="footer-logo"
+            />Manchester, UK</a
+          >
+          <p><b>Gmail:</b></p>
+          <a href="https://mail.google.com/mail/u/0/#inbox"
+            ><img
+              src="https://www.svgrepo.com/show/502648/email.svg"
+              alt=" for link"
+              class="footer-logo"
+            />bakhtbagum@gmail.com</a
+          >
+          <p><b>Contact:</b></p>
+          <a href="#"
+            ><img
+              src="https://www.svgrepo.com/show/533285/phone.svg"
+              alt=" for link"
+              class="footer-logo"
+            />0785862975</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- footer close -->
+    <script src="index.js"></script>
   </body>
 </html>
