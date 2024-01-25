@@ -1,5 +1,9 @@
 /* Utility section */
-
+body {
+  color: rgb(9, 9, 10);
+  background-color: #e6dcd3;
+  /* background: url("https://tse4.mm.bing.net/th?id=OIP.Hfx17CVvNiQDVE33apWIrAHaEK&pid=Api&P=0&h=180"); */
+}
 * {
   font-family: "roboto", sans-serif;
   padding: 0;
@@ -13,19 +17,29 @@ h2 {
 }
 
 .btn {
+  margin: 10px auto;
   display: inline-block;
-  padding: 12px 20px;
+  padding: 10px 18px;
   border: none;
-  background: #c9c2c2;
-  font-size: 16px;
+  background: #a09797;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
   border-radius: 3px;
-  color: rgb(118, 106, 106);
+  color: rgb(46, 34, 34);
   transform: 0.4s;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0s;
 }
 
 .btn:hover {
-  background: rgb(211, 124, 11);
+  font-weight: 600;
+  background: rgb(134, 92, 36);
   color: aliceblue;
+  box-shadow: 0 0 5px rgb(117, 87, 49), 0 0 25px rgb(108, 78, 40),
+    0 0 50px rgb(117, 80, 30), 0 0 100px rgb(133, 92, 38),
+    0 0 200px rgb(121, 82, 30);
 }
 
 a {
@@ -36,14 +50,33 @@ a {
   max-width: 1100px;
   margin: auto;
 }
+
 .container-1 {
   max-width: 1100px;
   margin: auto;
   display: flex;
 }
+
 /* navbar open */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo-bb {
-  width: 5.3%;
+  width: 4.8%;
+  margin-left: 30px;
+  border-radius: 30px;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+#hamnav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #hamnav label,
@@ -53,15 +86,28 @@ a {
 
 #hamitems {
   float: right;
+  margin-right: 20px;
 }
 #hamitems a {
   display: inline-block;
-  padding: 20px;
-  color: black;
+  padding: 18px;
+  color: white;
+  transition: 0.3s;
 }
 
-#hamitems a:hover,
-#hamitems a.current {
+@keyframes slideRight {
+  0% {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(30px);
+    opacity: 1;
+  }
+}
+/* #hamitems a.current   */
+
+#hamitems a:hover {
   background-color: rgb(211, 124, 11);
   color: aliceblue;
   transition: 0.4s;
@@ -71,7 +117,7 @@ a {
 
 /* Showcase start */
 #showcase {
-  background-color: lightgray;
+  background-color: #b4a79e;
   height: 600px;
 }
 #showcase .showcase-content {
@@ -84,10 +130,13 @@ a {
   font-size: 1.2rem;
   line-height: 1.4em;
   margin: 1.5em 0;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-duration: 0.7s;
 }
 
 .showcase-content span {
-  color: rgb(211, 124, 11);
+  color: rgb(150, 116, 71);
 }
 
 #showcase .img {
@@ -95,10 +144,23 @@ a {
 }
 
 .my-img {
-  width: 100%;
+  width: 90%;
+  border-radius: 1000px;
   object-fit: cover;
   height: 37.5rem;
   margin-left: 3em;
+  /* padding: 470px 10% 9; */
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /* about start */
@@ -126,7 +188,10 @@ a {
 #about h2 {
   padding: 0.2em 0;
   font-size: 4rem;
-  color: rgb(211, 124, 11);
+  color: rgb(150, 116, 71);
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0s;
 }
 
 #about h3 {
@@ -137,6 +202,8 @@ a {
 #about p {
   line-height: 1.5em;
   margin-bottom: 1.5em;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 #about a {
@@ -145,6 +212,9 @@ a {
 
 .logo-img {
   width: 6%;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-duration: 0.7s;
 }
 
 #about .social-btn {
@@ -161,22 +231,278 @@ a {
 
 #about .social-btn i:hover {
   color: #ddd;
-  background-color: rgb(169, 166, 162);
+  background-color: rgb(180, 168, 155);
   transform: 0.3s;
 }
 #about .social-btn i {
-  border: 1px solid rgb(211, 124, 11);
+  border: 1px solid rgb(88, 66, 38);
+  background: transparent;
+  box-shadow: 0 0 20px rgb(114, 86, 50);
   border-radius: 50%;
   align-items: center;
   padding: 2%;
   padding-top: 5%;
 }
 
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 /* about close */
+
+/* Skills open */
+
+.sub-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.sub-title span {
+  color: rgb(150, 116, 71);
+}
+section {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.containerOne {
+  width: 600px;
+  height: 500px;
+  padding: 60px 90px;
+  /* margin-left: 100px; */
+}
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 80px;
+}
+
+.bar {
+  font-size: 23px;
+}
+
+.Technical-bars .bar:first-child {
+  margin-top: 0;
+}
+.Technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+.Technical-bars .bar .info {
+  margin-bottom: 5px;
+}
+.Technical-bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  /* animation: shadowText 0.5s 1s linear forwards;
+  opacity: 0; */
+}
+.Technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(242, 232, 235);
+  animation: animate 1s cubic-bezier(1, 1, 0, 5, 1) forwards;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+@keyframes animate {
+  0% {
+    transform: scaleX(-0);
+    /* opacity: 0; */
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: rgb(114, 86, 50);
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 1, 0.5, 1) forwards;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.progress-line.html span {
+  width: 90%;
+}
+.progress-line.css span {
+  width: 85%;
+}
+.progress-line.javascript span {
+  width: 70%;
+}
+.progress-line.react span {
+  width: 75%;
+}
+.progress-line.node span {
+  width: 68%;
+}
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: azure;
+  color: red;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.progress-line.html span::after {
+  content: 90%;
+}
+.progress-line.css span::after {
+  content: 75%;
+}
+.progress-line.javascript span::after {
+  content: 50%;
+}
+.progress-line.react span::after {
+  content: 65%;
+}
+.progress-line.node span::after {
+  content: 68%;
+}
+
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: black;
+  top: 10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+#for-inline {
+  /* display: flex;
+  flex-direction: row;
+  justify-items: center;
+  gap: 10px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  position: relative;
+  /* margin-top: 130px; */
+}
+
+.radial-bars {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.radial-bars .radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+.radial-bars .radial-bar .progress-bar {
+  stroke-width: 10;
+  stop-color: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+.path {
+  stroke-width: 10;
+  stroke: aliceblue;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 175;
+  }
+}
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 120;
+  }
+}
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 70;
+  }
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText;
+}
+
+/* Skills close */
 
 /* start services */
 #services {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   height: 620px;
   margin-top: 3rem;
   text-align: center;
@@ -189,38 +515,46 @@ a {
 }
 
 .zero {
-  width: 80%;
+  width: 90%;
   height: 7em;
   object-fit: cover;
-  border: 5px solid rgb(211, 124, 11);
+  border: 5px solid rgb(151, 129, 100);
   background-color: antiquewhite;
 }
 
 #services .cards {
   margin-top: 2em;
-  border: 9px solid rgb(213, 114, 7);
+  border: 9px solid rgb(139, 115, 88);
   box-sizing: border-box;
   padding: 0.1em 0.6em;
-  width: 60%;
+  width: 80%;
   background-color: white;
-  animation: mymove 5s infinite;
+  animation: myMove 5s infinite;
+  position: relative;
 }
 
-@keyframes mymove {
+@keyframes myMove {
   50% {
     border-color: rgb(91, 43, 13);
+    border-color: rgb(59, 49, 44);
   }
 }
 
 .cards:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(164, 131, 131);
 }
 
 .for-layout {
-  display: grid;
-  grid-template-columns: repeat(3, 6fr);
+  /* display: grid;
+  grid-template-columns: repeat(4, 6fr);
   grid-template-rows: repeat(2, 6fr);
+  justify-items: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   justify-items: center;
+  position: relative;
+  /* gap: 10px; */
 }
 
 /* close services */
@@ -271,19 +605,20 @@ a {
   flex-direction: column;
 }
 
-.svg-2 {
+/* .svg-2 {
   padding-top: 1em;
-  width: 6%;
-}
-.footer-logo {
   width: 7%;
+} */
+.footer-logo {
+  width: 3%;
 }
 a {
-  color: rgb(202, 89, 19);
+  color: rgb(132, 91, 66);
   font-size: 1.2em;
+  font-weight: 600;
 }
 a:hover {
-  color: rgb(31, 26, 21);
+  color: rgb(159, 103, 112);
   background-color: 3px solid rgb(128, 63, 24);
 }
 
@@ -336,7 +671,7 @@ a:hover {
     flex-direction: column-reverse;
   }
   .my-img {
-    width: 82%;
+    width: 70%;
     object-fit: cover;
   }
   .about-content {
@@ -349,9 +684,18 @@ a:hover {
     margin: 0;
     padding: 0;
   }
+  /* #attachment .for-layout {
+    flex: 50%;
+  } */
+  #attachment {
+    margin-top: 60px;
+    /* position: relative; */
+  }
   .for-layout {
-    display: grid;
-    grid-template-columns: auto auto;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* position: relative; */
   }
   #services {
     height: 55rem;
@@ -362,12 +706,50 @@ a:hover {
     margin: 0;
     gap: 1em;
   }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .containerOne {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-left: -140px;
+  }
+  /* .Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(212, 18, 83);
+    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+    transform: scaleX(1);
+    transform-origin: left;
+  } */
+
+  .radial-bars .radial-bar {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 478px) {
   #hamnav label {
-    padding-top: 1px;
+    padding: 0px;
+    margin: 0px;
   }
+  /* #flex {
+    display: flex;
+    flex-direction: rowc;
+  } */
+  #attachment {
+    margin-top: 280px;
+  }
+  /* .for-layout { */
+  /* display: grid;
+    grid-template-columns: auto auto; */
+  /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+  /* } */
   #services {
     height: 73rem;
   }
