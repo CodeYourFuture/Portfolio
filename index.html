@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
+    <title>Afsha's Portfolio</title>
     <meta
       name="description"
       content="The technical portfolio of Afsha"
@@ -42,13 +42,13 @@
 
   <body class="bg-white mx-auto">
 
-    <header class="flex flex-col font-bold bg-white my-2 text-center p-1"
-      <h1>
+    <header class="flex flex-col font-bold bg-white my-2 text-center p-1">
+      <h1 class="text-xl">
         Welcome to Afsha's Portfolio !
       </h1>
       <nav>
         <div class="flex flex-row space-x-4 sm:space-x-10 justify-center m-2">
-          <button class="rounded-lg bg-blue-100 px-1"><a href="#about">More about me</a></button>
+          <button class="rounded-lg bg-blue-100 px-1"><a href="#about">About me</a></button>
           <button class="rounded-lg bg-blue-100 px-1"><a href="#projects">Projects</a></button>
           <button class="rounded-lg bg-blue-100 px-1"><a href="#contact">Contact</a></button>
         </div>
@@ -56,28 +56,39 @@
     </header>
 
     <main tabindex="0">
-
-      <section id="greetings" class="mx-4 text-center">
-        <header class="font-semibold">
-          <h2>Hello! My name is Afsha.</h2>
-        </header>
-
-        <ul class="text-justify">
-          <li class="text-center"> 
-            I am a software developer from London.
-          </li>
-          <li class="text-center">
-            I have completed a one year software developer programme with Code Your Future.
-          </li>
-        </ul>
-
-      </section>
-
+<!-- 
       <div class="text-center">  
         <h2 class="font-semibold">My skills: </h2>
         <p>HTML, CSS, JavaScript, React.JS, Node.JS, Express.JS, SQL, Tailwind, DBeaver, Postman, Linux, Git and GitHub</p>
-      </div>
+      </div> -->
         
+      <section id="about" class="mx-4 text-center">
+        <header class="font-semibold">
+          <h2>About me</h2>
+        </header>
+
+        <ul class="text-justify">
+          <li class="text-justify mx-1 my-4"> 
+            I am a software developer, equipped with comprehensive training on full-stack web development from CodeYourFuture. Actively seeking new opportunities focused on creating positive impact in the area of software engineering and data analysis. 
+          </li>
+          <li class="text-justify mx-1 my-4">
+            I have two degrees in economics, and experience as a maths teacher. My background in teaching has not only fostered my problem-solving skills, but also instilled in me the importance of collaborative teamwork. I have used my economics experience to analyse data in various forms (e.g. time-series and cross-sectional, primary and secondary, quantitative and qualitative data) to investigate topics related to the impact of women's empowerment on the economy.
+          </li>
+          <li class="text-justify mx-1 my-4">
+            My combined background in software, teaching, and data analytics give me unique perspectives when approaching new problems.
+          </li>
+          <li class="text-justify mx-1 my-4">
+            In my free time, I enjoy various forms of dancing and passionately support homeless charities through volunteering. I am enthusiastic about combining my creative skills, technical skills and my experience in collaborative problem-solving, to drive innovation and success in the field of software development.
+          </li>
+        </ul>
+      </section>
+
+      <div class="text-justify mx-4 my-4">  
+        <h2 class="text-center font-semibold">My technical skills: </h2>
+        <p><strong>FRONT-END:</strong> HTML, CSS, JavaScript, React, Tailwind, Figma</p>
+        <p><strong>BACK-END:</strong> Node.js, Express.js, PostgreSQL, Supabase, DBeaver</p>
+        <p><strong>DEVOPS:</strong> AWS (S3, EC2, RDS), GitHub Actions, Docker, Terraform</p>
+      </div>
 
         <!-- <div class="grid grid-cols-3 sm:grid-cols-12">
 
@@ -141,11 +152,7 @@
                 <p>Git</p>
             </div>    
 
-
         </div> -->
-
-      
-
 
 
       <section id="projects" class="text-center m-4">
@@ -163,10 +170,13 @@
                 <li>Studied React and Tailwind using online resources such as YouTube, Udemy, React Tutorial App and effectively applied my React knowledge to bring the project to life.</li>
                 <li>Demonstrated adaptability by incorporating feedback from mentors and GitHub reviewers.</li>
                 <li>Integrated the front-end, back-end and database components, enabling them to work in unison for a fully functional application.</li>
-              </>
-              <a href="https://github.com/Afsha10/Full-Stack-Project-Assessment" target="_blank"
+              </ul>
+              <button class="bg-blue-200 p-3 m-2 rounded-md">
+                <a href="https://github.com/Afsha10/Full-Stack-Project-Assessment" target="_blank"
                 >Link to GitHub repo</a
               >
+              </button>
+              
               </p>
             </div>
             <div class="mx-auto">
@@ -326,24 +336,6 @@
         </div>
 
 
-      </section>
-
-      <section id="about" class="mx-4 text-center">
-        <header class="font-semibold">
-          <h2>More about me</h2>
-        </header>
-
-        <ul class="text-justify">
-          <li class="text-justify mx-1 my-4"> 
-            I am a full-stack software development, equipped with comprehensive training from CodeYourFuture. My proficiency spans HTML, CSS, JavaScript, React, Node.js, and SQL, acquired within a dynamic Agile work environment.
-          </li>
-          <li class="text-justify mx-1 my-4">
-            My unique background as a maths teacher has not only fostered my problem-solving skills, but also instilled in me the importance of collaborative teamwork. I bring a fresh perspective, adaptability, and a keen ability to tackle challenges head-on, making me a valuable asset to any software development team.
-          </li>
-          <li class="text-justify mx-1 my-4">
-            In my free time, I enjoy various forms of dancing and passionately support homeless charities through volunteering. I am enthusiastic about combining my creative skills, technical skills and my experience in collaborative problem-solving, to drive innovation and success in the field of software development.
-          </li>
-        </ul>
       </section>
 
       <section id="contact" class="font-semibold">
