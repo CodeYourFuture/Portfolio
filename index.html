@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
+    <title>Afsha's Portfolio</title>
     <meta
       name="description"
-      content="The technical portfolio of trainee name"
+      content="The technical portfolio of Afsha"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/public/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
     <!-- suppress FOUC-->
     <style>
       html {
@@ -36,67 +39,437 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <h1>My Name</h1>
+
+  <body class="bg-white mx-auto">
+
+    <header class="flex flex-col font-bold bg-white my-2 text-center p-1">
+      <h1 class="text-xl">
+        Welcome to Afsha's Portfolio !
+      </h1>
       <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="flex flex-row space-x-4 sm:space-x-10 justify-center m-2">
+          <button class="rounded-lg bg-blue-100 px-1"><a href="#about">About me</a></button>
+          <button class="rounded-lg bg-blue-100 px-1"><a href="#projects">Projects</a></button>
+          <button class="rounded-lg bg-blue-100 px-1"><a href="#contact">Contact</a></button>
+        </div>
       </nav>
     </header>
+
     <main tabindex="0">
-      <section id="about">
-        <header><h2>About Me</h2></header>
+<!-- 
+      <div class="text-center">  
+        <h2 class="font-semibold">My skills: </h2>
+        <p>HTML, CSS, JavaScript, React.JS, Node.JS, Express.JS, SQL, Tailwind, DBeaver, Postman, Linux, Git and GitHub</p>
+      </div> -->
+        
+      <section id="about" class="mx-4 text-center">
+        <header class="font-semibold">
+          <h2>About me</h2>
+        </header>
+
+        <ul class="text-justify">
+          <li class="text-justify mx-1 my-4"> 
+            I am a software developer, equipped with comprehensive training on full-stack web development from CodeYourFuture. Actively seeking new opportunities focused on creating positive impact in the area of software engineering and data analysis. 
+          </li>
+          <li class="text-justify mx-1 my-4">
+            I have two degrees in economics, and experience as a maths teacher. My background in teaching has not only fostered my problem-solving skills, but also instilled in me the importance of collaborative teamwork. I have used my economics experience to analyse data in various forms (e.g. time-series and cross-sectional, primary and secondary, quantitative and qualitative data) to investigate topics related to the impact of women's empowerment on the economy.
+          </li>
+          <li class="text-justify mx-1 my-4">
+            My combined background in software, teaching, and data analytics give me unique perspectives when approaching new problems.
+          </li>
+          <li class="text-justify mx-1 my-4">
+            In my free time, I enjoy various forms of dancing and passionately support homeless charities through volunteering. I am enthusiastic about combining my creative skills, technical skills and my experience in collaborative problem-solving, to drive innovation and success in the field of software development.
+          </li>
+        </ul>
+      </section>
+
+      <div class="text-justify sm:text-center mx-4 my-4">  
+        <h2 class="text-center font-semibold">My technical skills: </h2>
+        <p><strong>FRONT-END:</strong> HTML, CSS, JavaScript, React, Tailwind, Material UI, Figma, Jest</p>
+        <p><strong>BACK-END:</strong> Node.js, Express.js, PostgreSQL, Postman, Supabase, DBeaver</p>
+        <p><strong>DEVOPS:</strong> AWS (S3, EC2, RDS), CI/CD with GitHub Actions, Docker, Terraform, CloudWatch</p>
+      </div>
+
+        <!-- <div class="grid grid-cols-3 sm:grid-cols-12">
+
+            <div class="flex flex-col">
+              <img src="./skillsImages/html5-original-wordmark.svg" title="HTML5" alt="HTML" width="40" height="40"/>
+                <p>HTML</p>
+            </div>
+            
+            <div class="flex flex-col">
+                <img src="./skillsImages/css3-original-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>
+                <p>CSS</p>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>
+                <p>React.JS</p>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/nodejs-colored.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>
+                <p>Node.JS</p>
+            </div>    
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/express-colored-dark.svg" title="ExpressJS" alt="ExpressJS" width="40" height="40"/>
+                <p>Express.JS</p>
+            </div>    
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/postgresql-original-wordmark.svg" title="PostgreSQL"  alt="PostgreSQL" width="40" height="40"/>
+                <p>PostgreSQL</p>
+            </div>    
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/tailwindcss-plain.svg" title="Tailwind"  alt="Tailwind" width="40" height="40"/>
+                <p>Tailwind</p>
+            </div>    
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/DBeaver_logo.png" title="DBeaver"  alt="DBeaver" width="40" height="40"/>
+                <p>DBeaver</p>
+            </div>   
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/linux-original.svg" title="Linux" alt="Linux" width="40" height="40"/>
+                <p>Linux</p>
+            </div>   
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/getpostman-icon.svg" title="Postman" alt="Postman" width="40" height="40"/>
+                <p>Postman</p>
+            </div>      
+
+            <div class="flex flex-col">
+                <img src="./skillsImages/git-scm-icon.svg" title="Git" alt="Git" width="40" height="40"/>
+                <p>Git</p>
+            </div>    
+
+        </div> -->
+
+
+      <section id="projects" class="text-center m-4">
+        <header class="font-semibold">
+          <h2>Below are some of the projects I worked on...</h2>
+        </header>
+
+        <div class="m-5 px-2 py-1 text-justify bg-blue-50">
+          <h3 class="font-semibold text-center m-3">YouTube Video Storage App (full-stack solo project; completed MVP)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>This is a responsive, full-stack app I have built to store YouTube videos I like, using React to build the front-end, Tailwind CSS for styling, Node JS to build the server and postgreSQL to create the database.
+                <ul class="list-disc mt-5 ml-5">
+                  <li>Created a video storage app from scratch in alignment with the given design brief.</li>
+                  <li>Studied React and Tailwind using online resources such as YouTube, Udemy, React Tutorial App and effectively applied my React knowledge to bring the project to life.</li>
+                  <li>Demonstrated adaptability by incorporating feedback from mentors and GitHub reviewers.</li>
+                  <li>Integrated the front-end, back-end and database components, enabling them to work in unison for a fully functional application.</li>
+                </ul>
+              </p>
+
+              <button class="bg-blue-200 p-3 m-2 rounded-md">
+                <a href="https://afsha-youtube-video-storage.netlify.app/" target="_blank"
+                >Live site</a>
+              </button>
+
+              <button class="bg-blue-200 p-3 m-2 rounded-md">
+                <a href="https://github.com/Afsha10/Full-Stack-Project-Assessment" target="_blank"
+                >GitHub repo</a
+              >
+              </button>
+ 
+            </div>
+            <div class="mx-auto">
+              <a href="https://afsha-youtube-video-storage.netlify.app/" target="_blank">
+                <img
+                  src="images/videoStorageApp.png" 
+                  alt="Afsha's full stack video storage app" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5 px-2 py-1 text-justify bg-blue-50">
+          <h3 class="font-semibold text-center m-3">Spotify Playlist Sieve App (full-stack group project; completed MVP)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>Developed “Spotify Playlist Sieve” app for CodeYourFuture, introducing unique features like track filtering, enhancing the app with functionalities not present in standard Spotify features.
+                <ul class="list-disc mt-5 ml-5">
+                  <li>Collaborated in writing user stories and breaking them down into tickets, creating issues on our kanban board and having regular meetings to resolve merge conflicts.</li>
+                  <li>Took part in daily standups, code reviews, weekly presentations and retrospectives.</li>
+                  <li>Read the RFC documentation alongside the Spotify documentation to successfully implement the PKCE Oauth flow in React for a very secure clientside login.</li>
+                  <li>Used Figma to design the user interface and styled the it using CSS and Tailwind.</li>
+                  <li>Used Spotify API to connect with the Spotify database for the users to access their playlists after authentication.</li>
+                  <li>Used Spotify API to build unique filtering features- filter playlist by tracks duration, filter by content type.</li>
+                  <li>Created and added records to the CYF recommendations database on ElephantSQL and connected the database with the back-end.</li>
+                </ul>
+              </p>
+
+              <button class="bg-blue-200 p-3 m-2 rounded-md ">
+                <a href="https://song-sieve-frontend.onrender.com/" target="_blank"
+                >Live site</a>
+              </button>
+
+              <button class="bg-blue-200 p-3 m-2 rounded-md">
+                <a href="https://github.com/Afsha10/song-sieve" target="_blank"
+                  >GitHub repo</a
+                >
+              </button>
+
+            </div>
+            <div class="mx-auto">
+              <a href="https://song-sieve-frontend.onrender.com/" target="_blank">
+                <img
+                  src="images/spotifyPlaylistSieve.png" 
+                  alt="Afsha's Spotify Playlist Sieve app made with two other members" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5 px-2 py-1 text-justify bg-blue-50">
+          <h3 class="font-semibold text-center m-3">Volunteer Real Time Booking App (full-stack solo project; completed MVP)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>I have developed this volunteer booking app to connect volunteers with morning and evening sessions, achieving a seamless user experience, ensuring real-time information is stored on the database.
+                <ul class="list-disc mt-5 ml-5">
+                  <li>Designed and developed a custom calendar entirely from scratch using React and Tailwind.</li>
+                  <li>Created an adaptable front-end calendar using Figma, React and Tailwind, offering users the flexibility to choose between monthly or weekly viewing modes.</li>
+                  <li>Implemented a robust SQL database on Supabase using DBeaver, connecting it to the server via Express js and successfully deployed the application on Render.</li>
+                  <li>Established a connection between the database, server, and front-end.</li>
+                </ul>
+              </p>
+
+              <button class="bg-blue-200 p-3 m-2 rounded-md">
+                <a href="https://good-deeds-xnva.onrender.com/" target="_blank"
+                >Live site</a>
+              </button>
+
+              <button class="bg-blue-200 p-3 m-2 rounded-md">
+                <a href="https://github.com/Afsha10/volunteer-calendar" target="_blank"
+                  >GitHub repo</a
+                >
+              </button>
+
+            </div>
+            <div class="mx-auto">
+              <a href="https://good-deeds-xnva.onrender.com/" target="_blank">
+                <img
+                  src="images/volunteerBooking.png" 
+                  alt="Afsha's volunteer booking app" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="m-5 px-2 py-1 text-justify bg-blue-50">
+          <h3 class="font-semibold text-center m-3">Media Recommendations Tracker App for books, films, music and events (full-stack; work-in-progress)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>I'm developing a recommendations-tracker app to address the need for efficiently tracking and managing recommendations for a single user.
+                <ul class="list-disc mt-5 ml-5">
+                  <li>Designed the front-end using Figma. I built it using React and tailwind, and deployed it on Render.</li>
+                  <li>Created a well-structured database on Supabase using dummy data based on features requirements e.g. storing same recommendations tied to different media types.</li>
+                  <li>Integrated the database with the back-end using Express.js.</li>
+                  <li>Connected the backend with the front-end using fetch API.</li>
+                </ul>
+              </p>
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a href="https://recommendations-tracker.netlify.app/" target="_blank"
+            >Live site</a>
+          </button>
+
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a href="https://github.com/Afsha10/recommendations-tracker" target="_blank"
+              >GitHub repo</a
+            >
+          </button>
+        </div>
+            <div class="mx-auto">
+              <a href="https://recommendations-tracker.netlify.app/" target="_blank">
+                <img
+                  src="images/recommendationsTracker.png" 
+                  alt="Afsha's recommendations tracker app" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-5 px-2 py-1 text-justify bg-blue-50">
+          <h3 class="font-semibold text-center m-3">TV Show Webpage (collaborated with colleagues)</h3>
+          <div class="sm:grid sm:grid-cols-2">
+            <div class="mb-5">
+              <p>I have built a responsive TV show webpage created using HTML, CSS, and vanilla JS.
+                <ul class="list-disc mt-5 ml-5">
+                  <li>Used Figma and CSS to ensure a responsive and user-friendly design.</li>
+                  <li>Collaborated in pair programming sessions to meet project specifications efficiently.</li>
+                  <li>Continued refining the project implementing feedback from mentors and reviewers.</li>
+                  <li>Utilised a range of JavaScript techniques-  including callback functions, eventListeners, DOM (Document Object Mode) manipulation and fetch API to ensure site functionality.</li>
+                </ul>
+              </p>
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a href="https://cyf-afsha10-tv.netlify.app/" target="_blank"
+            >Live site</a>
+          </button>
+
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a href="https://github.com/Afsha10/tv-show-dom-project" target="_blank"
+              >GitHub repo</a
+            >
+          </button>
+
+
+            </div>
+            <div class="mx-auto">
+              <a href="https://cyf-afsha10-tv.netlify.app/"  target="_blank">
+                <img
+                  src="images/tvDomShowMobile.png" 
+                  alt="Afsha's TV Show Webpage Preview" class="w-64" 
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:grid sm:grid-cols-2">
+
+        <div class="m-5 px-2 py-1 bg-blue-50">
+          <h3 class="font-semibold m-2">CYF Hotel React</h3>
+          <p class="text-justify sm:text-center m-2">I have built this hotel website using HTML, CSS, and React.</p>
+
+          <a href="https://afsha-hotel-react.netlify.app/" target="_blank">
+            <img
+              src="images/cyfHotel.png" 
+              alt="CYF Hotel React Preview" class="w-64 my-2 mx-auto" 
+            />
+          </a>
+          
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a href="https://afsha-hotel-react.netlify.app/" target="_blank"
+            >Live site</a>
+          </button>
+          
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a href="https://github.com/Afsha10/cyf-hotel-react" target="_blank" 
+              >GitHub repo</a
+            >
+          </button>
+
+        </div>
+
+        <div class="m-5 px-2 py-1 bg-blue-50">
+          <h3 class="font-semibold m-2">A Cake Shop Webpage</h3>
+          <p class="text-justify sm:text-center">I have designed this cake shop website on Figma and built it using HTML and CSS.</p>
+          
+            <a href="https://cakes-co-project.netlify.app/" target="_blank">
+              <img
+                src="images/responsiveCakeWebpageMobile.png"
+                alt="HTML & CSS Coursework Preview" class="w-64 my-2 mx-auto"
+              />
+            </a>
+          
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a href="https://cakes-co-project.netlify.app/" target="_blank"
+            >Live site</a>
+          </button>
+
+
+          <button class="bg-blue-200 p-3 m-2 rounded-md">
+            <a
+              href="https://github.com/Afsha10/HTML-CSS-Coursework-Week3"
+              target="_blank"
+              >GitHub repo</a
+            >
+          </button>
+        </div>
+
+        </div>
+
+
+      </section>
+
+      <section id="contact" class="font-semibold">
+        <header class="text-center">
+          <h2>Contact me</h2>
+        </header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
+
         </p>
       </section>
-      <section id="projects">
-        <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
-      <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
-      </section>
+
     </main>
-    <footer>
+    <footer >
+      <div class="flex flex-row justify-center gap-8 my-2">
       <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
-          ><svg
+        <a href="https://github.com/Afsha10"  target="_blank">
+          <svg
             focusable="false"
             role="presentation"
             viewbox="0 0 98 96"
             width="48"
             height="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
-              fill="currentColor"
-            />
+              fill="currentColor"/>
           </svg>
-          Read me</a
+          GitHub
+        </a>
+      </h3>
+
+      <h3>
+        <a href="https://www.linkedin.com/in/afsha-h" target="_blank">
+          <svg
+            focusable="false"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            width="48"
+            height="48">
+            <path
+              fill="currentColor"
+              d="M414.1 0H33.9C15.2 0 0 15.2 0 33.9v444.3C0 496.8 15.2 512 33.9 512h380.2c18.7 0 33.9-15.2 33.9-33.9V33.9C448 15.2 432.8 0 414.1 0zM135.5 416H67V193h68.5v223zM101.3 158.4c-22.5 0-40.7-18.2-40.7-40.6S78.8 77.1 101.3 77.1c22.4 0 40.6 18.2 40.6 40.7 0 22.4-18.2 40.6-40.6 40.6zm313.5 257.6H312V331c0-23.3-.4-53.3-32.4-53.3-32.5 0-37.5 25.4-37.5 51.7V416H175V193h64.7v27.5h.9c8.9-16.8 30.6-34.5 63.7-34.5 68.3 0 81.1 44.9 81.1 103.4v119.6z">
+            </path>
+          </svg>
+          LinkedIn
+        </a>
+      </h3>
+
+
+      <h3>
+        <a href="mailto:unityofbeing1@gmail.com" target="_blank"
+          ><svg
+            focusable="false"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="48"
+            height="48"
+          >
+            <path
+              fill="currentColor"
+              d="M21 4H3a2 2 0 00-2 2v12a2 2 0 002 2h18a2 2 0 002-2V6a2 2 0 00-2-2zm0 2l-9 5-9-5V6l9 5 9-5v6.47l-9 4.99-9-4.99V8l9 5 9-5v6.47l-9 5L3 14V6z"
+            ></path>
+          </svg>
+          Email</a
         >
       </h3>
+    </div>
+      <p class="text-center mb-2">Copyright © 2024 Afsha</p>
+
     </footer>
   </body>
 </html>
