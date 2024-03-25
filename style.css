@@ -9,6 +9,7 @@
 
   /* --paper: hsla(251, 28%, 88%, 0.99); */
 }
+
 /* General Styles */
 html,
 body {
@@ -17,6 +18,7 @@ body {
   color: var(--ink);
   font-family: var(--font);
 }
+
 body {
   display: grid;
   margin: auto;
@@ -24,6 +26,7 @@ body {
   gap: var(--gap);
   max-width: var(--container);
 }
+
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -37,13 +40,24 @@ a:any-link {
   border-bottom: 5px solid transparent;
   transition: border-color ease-in-out 0.3s;
 }
+
 a:hover,
 a:focus {
   color: var(--brand);
   border-color: currentColor;
 }
+
+.github-href:link,
+.github-href:visited {
+  background-color: var(--brand);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
 /* Site header and navigation */
-body > header {
+body>header {
   background: var(--paper);
   display: flex;
   justify-content: space-between;
@@ -52,6 +66,7 @@ body > header {
   top: 0;
   z-index: 1;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -66,9 +81,24 @@ section p {
 
 /* Project Showcase */
 
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
+  row-gap: 2rem;
+}
+
+.project-pair {
+  display: block;
+}
+
+.project-pair p {
+  font-weight: bold;
+  color: var(--brand);
 }
 
 /* Footer */
