@@ -51,9 +51,9 @@ a:focus {
 .github-href:visited {
   background-color: var(--brand);
   color: white;
-  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  padding: 0.2rem;
 }
 
 /* Site header and navigation */
@@ -84,6 +84,7 @@ section p {
 #projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
 
 .project-list {
