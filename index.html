@@ -17,26 +17,45 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
+     <div class="header-container">
       <div class="logo">
         <h2>APO</h2>
       </div>
+      
+      <!-- Menu Icon (Hamburger) -->
+      <div class="menu-icon" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <!-- Navigation -->
       <nav class="nav-lists">
         <ul>
-          <li><a href="#">Home</li></a>
-          <li><a href="#">About</li></a>
-          <li><a href="#">Projects</li></a>
-          <li><a href="#">Hire Me</li></a>
-          <li><a href="#">Contact</li></a>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Hire Me</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Social Media Icons -->
       <div class="social-media-icons">
-          <div><i class="fa-brands fa-instagram"></i></div>
-          <div><i class="fa-brands fa-facebook"></i></div>
-          <div><i class="fa-brands fa-linkedin-in"></i></div>
+        <div><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+        <div><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
       </div>
-      </div>
-    </header>
+    </div>
+  </header>
+
+  <!-- JavaScript for the menu toggle -->
+  <script>
+    function toggleMenu(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+
     <main>
       <section class="profile-section">
         <div>
@@ -150,23 +169,24 @@ I don't play any sports or do much physical activity (I guess you could say I'm 
 
 
       <footer>
-        <div>
+        <div class="footer-section">
           <p>GET IN TOUCH</p>
           <p><span><i class="fa-regular fa-envelope"></i></span>preciousafere@gmail.com</p>
           <p><span><i class="fa-solid fa-phone"></i></span>(+34) 632587728</p>
         </div>
-        <div>
-          <a href="">Contact Me</a>
-          <div>
-            <i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-linkedin-in"></i>
+        <div class="footer-anchor">
+          <a href="#">Contact Me</a>
+           </div>
+           <div>
+          <div class="footer-social-media-icon">
+         <div> <a href="#"><i class="fa-brands fa-instagram"></i></a></div>  
+       <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+      <div><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+      </div>
+       <div class="footer-text"> <p>Copyright @ APO</p></div>
           </div>
-          <p>Copyright @ APO</p>
-        </div>
-        <div>
 
-        </div>
+       
       </footer>
     </main>
   </body>

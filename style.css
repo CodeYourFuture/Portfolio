@@ -38,6 +38,14 @@ body {
   padding: 0.6rem 2rem;
 }
 
+/* Logo styles */
+.logo h2 {
+  font-size: var(--logo);
+  font-family: var(--heading-text);
+  color: var(--background-color);
+}
+
+/* Navigation Menu */
 .nav-lists ul {
   display: flex;
   justify-content: space-evenly;
@@ -56,23 +64,61 @@ body {
   color: var(--medium-grey);
 }
 
-.logo {
-  font-size: var(--logo);
-  font-family: var(--heading-text);
-  color: var(--background-color);
+/* Container for the menu icon */
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
 }
 
+/* Each bar in the menu icon */
+.menu-icon div {
+  display: none;
+  width: 35px;
+  height: 4px;
+  background-color: var(--dark-grey-text);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-icon:hover div {
+  background-color: var(--medium-grey);
+}
+
+/* Rotate the first bar */
+.menu-icon.change .bar1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+/* Hide the second bar */
+.menu-icon.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate the third bar */
+.menu-icon.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Social Media Icons */
 .social-media-icons {
   display: flex;
   align-items: center;
   gap: 0.7rem;
 }
 
+.social-media-icons a {
+  color: var(--background-color);
+}
+
+.social-media-icons a:hover {
+  color: var(--light-gray);
+}
+
 /* Main Section */
 
 /* Profile Section */
 .profile-section {
-  background-image: url(https://i.pinimg.com/564x/7a/4c/eb/7a4ceb1cd0cff641d54b310fccb80537.jpg);
+  background-image: url(https://i.pinimg.com/control/564x/c4/a8/b6/c4a8b698daa2a900d9d69df770274ace.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -354,9 +400,46 @@ textarea {
 /*footer*/
 footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  background: linear-gradient(90deg, var(--dark-grey-text), var(--medium-grey));
+  color: var(--text-color);
+}
+.footer-section p:nth-child(1) {
+  margin-bottom: 15px;
+}
+.footer-section p:nth-child(2) {
+  margin-bottom: 8px;
+}
+.footer-anchor a {
+  text-decoration: none;
+  border: 2px solid var(--dark-grey-text);
+  background-color: var(--dark-grey-text);
+  color: var(--text-color);
+  padding: 8px 20px;
 }
 
-/* Responsive Styles */
+.footer-anchor a:hover {
+  transition: color 0.3s ease;
+  color: var(--medium-grey);
+}
+.footer-social-media-icon {
+  display: flex;
+  gap: 10px;
+}
+.footer-social-media-icon a {
+  color: var(--background-color);
+}
+.footer-social-media-icon a:hover {
+  transition: background 0.3s ease;
+  color: var(--light-gray);
+}
+.footer-text {
+  margin-top: 8px;
+  margin-right: 3px;
+}
+/* Responsive Styles for Tablets and Small Laptops (max-width: 768px) */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -364,41 +447,156 @@ footer {
   }
 
   .nav-lists ul {
-    flex-direction: row; /* Stack nav items vertically */
+    flex-direction: column; /* Stack nav items vertically */
     align-items: flex-start; /* Align nav items to the start */
     gap: 1rem; /* Adjust gap */
   }
 
+  /* Adjust Profile Section for smaller screens */
   .profile-section {
     flex-direction: column; /* Stack profile content vertically */
     height: auto; /* Allow height to adjust */
     padding: 3rem 1rem; /* Adjust padding */
   }
 
+  .profile-section h3 {
+    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    text-align: center;
+  }
+
+  .profile-section p {
+    font-size: 1.5rem; /* Adjust paragraph size */
+    text-align: center;
+  }
+
+  /* About Me Section */
   .about-me-section {
     grid-template-columns: 1fr; /* Stack sections on small screens */
   }
 
+  .about-me-section p {
+    font-size: 1.3rem; /* Adjust font size */
+    text-align: justify;
+  }
+
+  /* Adjust Skills Section */
   .skill-section p {
     width: 90%; /* Increase width for smaller screens */
     font-size: 1.2rem; /* Adjust font size */
+    text-align: justify;
   }
 
+  /* Project Section Adjustments */
   .project-grid {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(100px, 1fr)
+      minmax(150px, 1fr)
     ); /* Responsive grid */
+  }
+
+  /* Form Section Adjustments */
+  .grid-layout {
+    grid-template-columns: 1fr; /* Stack form fields vertically */
+    gap: 15px;
+  }
+
+  .input-field input,
+  .input-field textarea {
+    font-size: 1rem; /* Adjust input font size for smaller screens */
+  }
+
+  .hire-me-btn {
+    font-size: 1rem; /* Adjust button font size */
+  }
+
+  /* Footer Adjustments */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section p {
+    margin: 10px 0;
+  }
+
+  .footer-social-media-icon {
+    justify-content: center;
   }
 }
 
+/* Responsive Styles for Smartphones (max-width: 480px) */
 @media (max-width: 480px) {
-  .contact-btn a,
-  .download-resume-btn a {
-    padding: 10px 15px; /* Adjust padding for buttons */
+  /* Adjust Profile Section for smartphones */
+  .profile-section {
+    padding: 2rem 1rem; /* Reduce padding */
   }
 
-  .project-section h3 {
-    font-size: 1.5rem; /* Adjust heading size */
+  .profile-section h3 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .profile-section p {
+    font-size: 1.2rem; /* Reduce paragraph size */
+  }
+
+  /* About Me Section */
+  .about-me-section {
+    grid-template-columns: 1fr; /* Stack sections vertically */
+  }
+
+  .about-me-section h2 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  .about-me-section p {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  /* Skill Section */
+  .skill-section h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .skill-section p {
+    width: 100%; /* Take full width */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  /* Project Section */
+  .project-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(120px, 1fr)
+    ); /* Reduce grid item size */
+  }
+
+  .project-item {
+    padding: 1rem;
+  }
+
+  /* Form Section Adjustments */
+  .grid-layout {
+    grid-template-columns: 1fr; /* Stack form fields vertically */
+  }
+
+  .hire-me-btn {
+    font-size: 1rem; /* Adjust button size */
+  }
+
+  /* Footer Section */
+  footer {
+    padding: 1rem; /* Reduce padding */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section p {
+    font-size: 0.9rem; /* Reduce footer text size */
+  }
+
+  .footer-social-media-icon a {
+    font-size: 0.8rem; /* Reduce social icon size */
   }
 }
