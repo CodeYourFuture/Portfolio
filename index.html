@@ -22,13 +22,15 @@
         <h2>APO</h2>
       </div>
       
-      <!-- Menu Icon (Hamburger) -->
-      <div class="menu-icon" onclick="toggleMenu(this)">
+<!-- Menu Icon (Hamburger) -->
+      <!-- Label to act as the menu icon -->
+      <label for="menuToggle" class="menu-icon">
+        <a href="menu.html">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-      </div>
-
+        </a>
+      </label>
       <!-- Navigation -->
       <nav class="nav-lists">
         <ul>
@@ -49,15 +51,8 @@
     </div>
   </header>
 
-  <!-- JavaScript for the menu toggle -->
-  <script>
-    function toggleMenu(x) {
-      x.classList.toggle("change");
-    }
-  </script>
-
     <main>
-      <section class="profile-section">
+      <section class="profile-section" id="home">
         <div>
        <h3> Afere Precious Onome </h3>
        <p>Web Developer</p>
@@ -66,7 +61,7 @@
        </div>
       </div>
       </section>
-      <section class="about-me-section">
+      <section class="about-me-section" id="#about-me">
         <div>
 <h2>About Me</h2>
 </div>
@@ -120,7 +115,7 @@ I don't play any sports or do much physical activity (I guess you could say I'm 
           </div>
         </div>
       </section>
-      <section class="project-section">
+      <section class="project-section" id="projects">
         <h3>My Projects</h3>
         <div class="project-grid">
          <div class="project-item"><a href="https://preciousbakerycakcoproject.netlify.app/">Cake-co</a>
@@ -137,7 +132,7 @@ I don't play any sports or do much physical activity (I guess you could say I'm 
          </div>
         </div>
       </section>
-    <section class="personal-data-form">
+    <section class="personal-data-form" id="hire-me">
       <h2>Hire Me</h2>
     <h3>Personal Data</h3>
     <form action="#" method="post">
@@ -175,7 +170,7 @@ I don't play any sports or do much physical activity (I guess you could say I'm 
           <p><span><i class="fa-solid fa-phone"></i></span>(+34) 632587728</p>
         </div>
         <div class="footer-anchor">
-          <a href="#">Contact Me</a>
+          <a href="#" id="contact-me">Contact Me</a>
            </div>
            <div>
           <div class="footer-social-media-icon">

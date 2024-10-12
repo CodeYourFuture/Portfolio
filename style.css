@@ -70,35 +70,6 @@ body {
   cursor: pointer;
 }
 
-/* Each bar in the menu icon */
-.menu-icon div {
-  display: none;
-  width: 35px;
-  height: 4px;
-  background-color: var(--dark-grey-text);
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.menu-icon:hover div {
-  background-color: var(--medium-grey);
-}
-
-/* Rotate the first bar */
-.menu-icon.change .bar1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-/* Hide the second bar */
-.menu-icon.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate the third bar */
-.menu-icon.change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
 /* Social Media Icons */
 .social-media-icons {
   display: flex;
@@ -323,6 +294,7 @@ hr {
   color: var(--background-color);
   font-weight: 400;
   margin-top: 15px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .personal-data-form h3 {
   font-size: 1.7rem;
@@ -442,14 +414,55 @@ footer {
 /* Responsive Styles for Tablets and Small Laptops (max-width: 768px) */
 @media (max-width: 768px) {
   .header-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
-
+  .nav-lists {
+    display: none;
+  }
   .nav-lists ul {
     flex-direction: column; /* Stack nav items vertically */
     align-items: flex-start; /* Align nav items to the start */
     gap: 1rem; /* Adjust gap */
+  }
+  .social-media-icons {
+    display: none;
+  }
+  /*menu icon*/
+  /* Container for the menu icon */
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* Each bar in the menu icon */
+  .menu-icon div {
+    width: 20px;
+    height: 2px;
+    background-color: var(--dark-grey-text);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .menu-icon:hover div {
+    background-color: var(--dark-grey-text);
+  }
+  /* Rotate the first bar */
+  .menu-icon.change .bar1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  /* Hide the second bar */
+  .menu-icon.change .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate the third bar */
+  .menu-icon.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .menu-toggle:checked + .menu-icon + .nav-lists {
+    display: block; /* Show the nav when the checkbox is checked */
   }
 
   /* Adjust Profile Section for smaller screens */
@@ -475,15 +488,18 @@ footer {
   }
 
   .about-me-section p {
-    font-size: 1.3rem; /* Adjust font size */
+    font-size: 0.7rem;
     text-align: justify;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   /* Adjust Skills Section */
   .skill-section p {
-    width: 90%; /* Increase width for smaller screens */
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1rem;
     text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   /* Project Section Adjustments */
@@ -506,7 +522,8 @@ footer {
   }
 
   .hire-me-btn {
-    font-size: 1rem; /* Adjust button font size */
+    font-size: 1rem;
+    background: linear-gradient(90deg, #4e3629, #a3c6c4);
   }
 
   /* Footer Adjustments */
@@ -527,76 +544,129 @@ footer {
 
 /* Responsive Styles for Smartphones (max-width: 480px) */
 @media (max-width: 480px) {
-  /* Adjust Profile Section for smartphones */
+  /*profile section*/
   .profile-section {
-    padding: 2rem 1rem; /* Reduce padding */
+    padding: 2rem 1rem;
   }
 
   .profile-section h3 {
-    font-size: 2rem; /* Reduce heading size */
+    font-size: 2rem;
   }
 
   .profile-section p {
-    font-size: 1.2rem; /* Reduce paragraph size */
+    margin-top: 12px;
+    font-size: 1.2rem;
   }
 
   /* About Me Section */
   .about-me-section {
-    grid-template-columns: 1fr; /* Stack sections vertically */
+    grid-template-columns: 1fr;
   }
 
   .about-me-section h2 {
-    font-size: 2.5rem; /* Adjust heading size */
+    font-size: 2.5rem;
   }
 
   .about-me-section p {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.1rem;
   }
 
   /* Skill Section */
   .skill-section h2 {
-    font-size: 2rem; /* Adjust heading size */
+    font-size: 2rem;
   }
 
   .skill-section p {
-    width: 100%; /* Take full width */
-    font-size: 1rem; /* Adjust font size */
+    width: 95%;
+    font-size: 1rem;
   }
 
   /* Project Section */
   .project-grid {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(120px, 1fr)
-    ); /* Reduce grid item size */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    height: 100px;
   }
 
   .project-item {
     padding: 1rem;
   }
+  /*hire me section*/
+  .personal-data-form {
+    margin-top: 100px;
+  }
 
+  .personal-data-form h3 {
+    font-size: 1.2rem;
+  }
   /* Form Section Adjustments */
   .grid-layout {
-    grid-template-columns: 1fr; /* Stack form fields vertically */
+    grid-template-columns: 1fr;
   }
 
   .hire-me-btn {
-    font-size: 1rem; /* Adjust button size */
+    font-size: 1rem;
   }
 
   /* Footer Section */
   footer {
-    padding: 1rem; /* Reduce padding */
+    padding: 1rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   .footer-section p {
-    font-size: 0.9rem; /* Reduce footer text size */
+    font-size: 0.9rem;
   }
 
   .footer-social-media-icon a {
-    font-size: 0.8rem; /* Reduce social icon size */
+    font-size: 0.8rem;
   }
+}
+
+/*menu html*/
+/*nav-lists-menu*/
+.nav-lists-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  font-size: var(--about);
+  margin-top: 5rem;
+}
+
+.nav-lists-menu li a {
+  text-decoration: none;
+  color: var(--dark-grey-text);
+}
+
+.nav-lists-menu a:hover {
+  transition: color 0.3s ease;
+  color: var(--medium-grey);
+}
+/*Style for X icon (same as before)*/
+.menu-icon-2 {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 250px;
+}
+.menu-icon-2 div {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+/* Display the "X" icon */
+.change div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change div:nth-child(2) {
+  opacity: 0;
+}
+.change div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
