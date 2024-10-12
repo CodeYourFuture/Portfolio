@@ -1,5 +1,5 @@
 :root {
-  --heading-text: "playfair display", serif;
+  --heading-text: "Playfair Display", serif;
   --body-text: "EB Garamond", serif;
   --background-color: #1c1c1c;
   --text-color: #ffffff;
@@ -14,25 +14,30 @@
   );
   --text: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.3824)), 2rem);
   --logo: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.434)), 2.5rem);
+  --about: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 1.912)), 3.5rem);
 }
-/*General section*/
+
+/* General section */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*Body*/
+
+/* Body */
 body {
   font-family: var(--body-text);
   margin-inline: auto;
 }
-/*Header Section*/
+
+/* Header Section */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 2rem;
 }
+
 .nav-lists ul {
   display: flex;
   justify-content: space-evenly;
@@ -40,26 +45,32 @@ body {
   gap: 2rem;
   list-style: none;
 }
+
 .nav-lists li a {
   text-decoration: none;
   color: var(--dark-grey-text);
 }
+
 .nav-lists a:hover {
   transition: color 0.3s ease;
   color: var(--medium-grey);
 }
+
 .logo {
   font-size: var(--logo);
   font-family: var(--heading-text);
   color: var(--background-color);
 }
+
 .social-media-icons {
   display: flex;
   align-items: center;
   gap: 0.7rem;
 }
-/*main-section*/
-/*profile-section*/
+
+/* Main Section */
+
+/* Profile Section */
 .profile-section {
   background-image: url(https://i.pinimg.com/564x/7a/4c/eb/7a4ceb1cd0cff641d54b310fccb80537.jpg);
   background-repeat: no-repeat;
@@ -71,25 +82,323 @@ body {
   gap: 4rem;
   padding: var(--section-padding);
 }
+
 .profile-section h3 {
   color: var(--text-color);
   font-size: var(--heading);
 }
+
 .profile-section p {
   color: var(--text-color);
   font-size: 2rem;
 }
+
 .contact-btn {
   margin-top: 3.2rem;
   margin-left: 0.5rem;
 }
+
 .contact-btn a {
   text-decoration: none;
   border: 2px solid var(--text-color);
   color: var(--text-color);
   padding: 5px 15px;
 }
+
 .contact-btn a:hover {
   transition: color 0.3s ease;
   color: var(--medium-grey);
+}
+
+/* About Me Section */
+.about-me-section {
+  display: grid;
+  grid-template-columns: minmax(0, 250px) minmax(0, 70%);
+  margin-top: 3rem;
+}
+
+.about-me-section h2 {
+  font-size: var(--about);
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: var(--dark-grey-text);
+}
+
+.about-me-section p {
+  list-style: 1.7;
+  color: var(--dark-grey-text);
+}
+
+.download-resume-btn {
+  margin-top: 2.5rem;
+}
+
+.download-resume-btn a {
+  text-decoration: none;
+  border: 2px solid var(--dark-grey-text);
+  background-color: var(--dark-grey-text);
+  color: var(--text-color);
+  padding: 8px 20px;
+}
+
+.download-resume-btn a:hover {
+  transition: color 0.3s ease;
+  color: var(--medium-grey);
+}
+
+/* Skill Section */
+.skill-section {
+  background-color: var(--background-color);
+  margin-top: 2.5rem;
+}
+
+.skill-section h2 {
+  text-align: center;
+  font-size: var(--about);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.skill-section p {
+  color: var(--text-color);
+  width: 50%;
+  text-align: justify;
+  margin: 1rem auto;
+  list-style: 1.7;
+  font-size: 1rem; /* Change to a responsive font size */
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(0, 45%) minmax(0, 45%);
+  gap: 20px;
+  margin-top: 3rem;
+}
+
+.skill-bar,
+.skill-info {
+  color: var(--text-color);
+  padding: 10px;
+}
+
+.skill-info {
+  margin: 0 auto;
+}
+
+.skill-info ul {
+  list-style: none;
+  line-height: 2.3;
+  font-size: 1.3rem;
+}
+
+.skill-section h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.progress-bar {
+  background-color: var(--text-color);
+  overflow: hidden;
+}
+
+.progress {
+  background-color: var(--medium-grey);
+  height: 30px;
+}
+
+/* Project Section */
+.project-section h3 {
+  font-weight: 500;
+  font-size: var(--about);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: var(--dark-grey-text);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Responsive grid */
+  gap: 3rem;
+  margin: 20px;
+  height: 200px;
+}
+
+.project-item {
+  border: 1px solid var(--dark-grey-text);
+  text-align: center;
+  padding-top: 3rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-item:nth-child(1),
+.project-item:nth-child(3) {
+  background-color: #4e3629;
+}
+
+.project-item:nth-child(2),
+.project-item:nth-child(4) {
+  background-color: #a3c6c4;
+}
+
+.project-item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.project-item a:hover {
+  transition: color 0.3s ease;
+  color: var(--medium-grey);
+}
+
+.project-section hr {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+/*Hire Me section*/
+
+.personal-data-form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 40px;
+}
+.personal-data-form h2 {
+  font-size: var(--about);
+  color: var(--background-color);
+  font-weight: 400;
+  margin-top: 15px;
+}
+.personal-data-form h3 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  color: var(--dark-grey-text);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: var(--background-color);
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--background-color);
+  padding: 10px 5px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  margin-top: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  accent-color: var(--medium-grey);
+  width: auto;
+  margin-right: 10px;
+}
+
+.hire-me-btn {
+  background: linear-gradient(90deg, var(--medium-grey), var(--light-gray));
+  border: none;
+  color: var(--text-color);
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.hire-me-btn:hover {
+  background: linear-gradient(90deg, #4e3629, #a3c6c4);
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+/*footer*/
+footer {
+  display: flex;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-lists ul {
+    flex-direction: row; /* Stack nav items vertically */
+    align-items: flex-start; /* Align nav items to the start */
+    gap: 1rem; /* Adjust gap */
+  }
+
+  .profile-section {
+    flex-direction: column; /* Stack profile content vertically */
+    height: auto; /* Allow height to adjust */
+    padding: 3rem 1rem; /* Adjust padding */
+  }
+
+  .about-me-section {
+    grid-template-columns: 1fr; /* Stack sections on small screens */
+  }
+
+  .skill-section p {
+    width: 90%; /* Increase width for smaller screens */
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); /* Responsive grid */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-btn a,
+  .download-resume-btn a {
+    padding: 10px 15px; /* Adjust padding for buttons */
+  }
+
+  .project-section h3 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
 }
