@@ -421,9 +421,9 @@ footer {
     display: none;
   }
   .nav-lists ul {
-    flex-direction: column; /* Stack nav items vertically */
-    align-items: flex-start; /* Align nav items to the start */
-    gap: 1rem; /* Adjust gap */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
   .social-media-icons {
     display: none;
@@ -467,24 +467,24 @@ footer {
 
   /* Adjust Profile Section for smaller screens */
   .profile-section {
-    flex-direction: column; /* Stack profile content vertically */
-    height: auto; /* Allow height to adjust */
-    padding: 3rem 1rem; /* Adjust padding */
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 1rem;
   }
 
   .profile-section h3 {
-    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    font-size: 2.5rem;
     text-align: center;
   }
 
   .profile-section p {
-    font-size: 1.5rem; /* Adjust paragraph size */
+    font-size: 1.5rem;
     text-align: center;
   }
 
   /* About Me Section */
   .about-me-section {
-    grid-template-columns: 1fr; /* Stack sections on small screens */
+    grid-template-columns: 1fr;
   }
 
   .about-me-section p {
@@ -504,28 +504,27 @@ footer {
 
   /* Project Section Adjustments */
   .project-grid {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(150px, 1fr)
-    ); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   /* Form Section Adjustments */
   .grid-layout {
-    grid-template-columns: 1fr; /* Stack form fields vertically */
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
   .input-field input,
   .input-field textarea {
-    font-size: 1rem; /* Adjust input font size for smaller screens */
+    font-size: 1rem;
   }
 
   .hire-me-btn {
     font-size: 1rem;
     background: linear-gradient(90deg, #4e3629, #a3c6c4);
   }
-
+  hire-me-btn:hover {
+    background: linear-gradient(90deg, var(--medium-grey), var(--light-gray));
+  }
   /* Footer Adjustments */
   footer {
     flex-direction: column;
@@ -539,6 +538,9 @@ footer {
 
   .footer-social-media-icon {
     justify-content: center;
+  }
+  .footer-anchor a {
+    display: none;
   }
 }
 
@@ -620,7 +622,10 @@ footer {
   }
 
   .footer-social-media-icon a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .footer-text {
+    font-size: 0.9rem;
   }
 }
 
@@ -656,7 +661,7 @@ footer {
 .menu-icon-2 div {
   width: 100%;
   height: 4px;
-  background-color: black;
+  background-color: var(--background-color);
   margin: 5px 0;
   transition: 0.4s;
 }
