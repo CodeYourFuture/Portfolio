@@ -7,16 +7,14 @@
   --light-gray: #d3d3d3;
   --medium-grey: #b8b8b8;
   --dark-grey-text: #2c2c2c;
-  --heading: clamp(2.2rem, calc(2.2rem + ((1vw - 0.32rem) * 3.6329)), 6rem);
+  --heading: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 3.6329)), 6rem);
   --section-padding: clamp(
     5rem,
     calc(5rem + ((1vw - 0.32rem) * 4.7801)),
     10rem
   );
   --text: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.3824)), 2rem);
-  --logo: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.434)), 2.5rem);
-  --about: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 1.912)), 3.5rem);
-  --two-colors: linear-gradient(90deg, #4e3629, #a3c6c4);
+  --about: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.912)), 3.5rem);
   --dark-cyan: #006666;
 }
 
@@ -43,7 +41,7 @@ body {
 
 /* Logo styles */
 .logo h1 {
-  font-size: var(--logo);
+  font-size: var(--heading);
   font-family: var(--heading-text);
   color: var(--background-color);
 }
@@ -104,12 +102,12 @@ body {
 }
 
 .profile-section h2 {
-  color: var(--light-cyan);
+  color: var(--text-color);
   font-size: var(--heading);
 }
 
 .profile-section h3 {
-  color: var(--light-cyan);
+  color: var(--text-color);
   font-size: 2rem;
 }
 
@@ -121,7 +119,7 @@ body {
 .contact-btn a {
   text-decoration: none;
   border: 2px solid var(--text-color);
-  color: var(--light-cyan);
+  color: var(--text-color);
   padding: 5px 15px;
 }
 
@@ -234,11 +232,14 @@ hr {
 }
 
 /* Project Section */
-.project-section h3 {
+.project-section h2 {
   font-weight: 500;
   font-size: var(--about);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   color: var(--dark-grey-text);
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .project-grid {
@@ -454,7 +455,7 @@ footer {
     transition: 0.4s;
   }
 
-  .menu-icon:hover div {
+  .menu-icon:hover di .menu-icon:hover div {
     background-color: var(--dark-grey-text);
   }
   /* Rotate the first bar */
@@ -482,12 +483,12 @@ footer {
     padding: 3rem 1rem;
   }
 
-  .profile-section h3 {
+  .profile-section h2 {
     font-size: 2.5rem;
     text-align: center;
   }
 
-  .profile-section p {
+  .profile-section h3 {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -503,7 +504,9 @@ footer {
     margin-left: 6px;
     margin-right: 6px;
   }
-
+  .download-resume-btn {
+    margin-left: 10px;
+  }
   /* Adjust Skills Section */
   .skill-section p {
     font-size: 1rem;
@@ -532,7 +535,7 @@ footer {
     font-size: 1rem;
     background: linear-gradient(90deg, #4e3629, #a3c6c4);
   }
-  hire-me-btn:hover {
+  .hire-me-btn:hover {
     background: linear-gradient(90deg, var(--medium-grey), var(--light-gray));
   }
   /* Footer Adjustments */
@@ -545,7 +548,9 @@ footer {
   .footer-section p {
     margin: 10px 0;
   }
-
+  .footer-section span {
+    color: var(--text-color);
+  }
   .footer-social-media-icon {
     justify-content: center;
   }
@@ -701,19 +706,24 @@ footer {
 }
 
 /* Header and General Text */
-h2 {
+.blog h2 {
   text-align: center;
   font-size: var(--about);
-  color: var(--dark-cyan);
+  color: var(--background-color);
   font-weight: 400;
 }
-h3 {
-  color: var(--dark-cyan);
+.grid-item h3 {
+  color: var(--background-color);
 }
-
-p {
+.blog-heading {
+  font-size: 1.9rem;
+  color: var(--background-color);
+  font-weight: 600;
+}
+.blog-container p {
   margin: 1rem 0;
   line-height: 1.6;
+  font-size: 1.3rem;
 }
 
 /* Grid Layout for TV Series */
@@ -745,12 +755,12 @@ p {
 .grid-item h3 {
   margin-top: 1rem;
   font-size: 1.3rem;
-  color: var(--dark-cyan);
+  color: var(--background-color);
 }
 .blog-h3 {
   margin-top: 1rem;
-  font-size: 1.9rem;
-  color: var(--dark-cyan);
+  font-size: 2rem;
+  color: var(--background-color);
 }
 
 .grid-item p {
@@ -760,7 +770,7 @@ p {
 }
 
 /* Link Styles */
-.blog-container ul {
+.blog ul {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -780,19 +790,27 @@ a:hover {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-  .blog-container ul {
+  .blog ul {
     flex-wrap: wrap;
+    font-size: 1.1rem;
   }
   .blog-grid-container {
     grid-template-columns: 1fr;
   }
+
   .blog-h3 {
     font-size: 1.3rem;
   }
+  .blog-container p {
+    font-size: 1.2rem;
+  }
+  .blog-heading {
+    font-size: 1.3rem;
+  }
+
   .grid-item img {
     height: auto;
   }
-
   .grid-item p {
     font-size: 1.2rem;
   }
@@ -809,6 +827,204 @@ a:hover {
   }
 
   .grid-item p {
+    font-size: 1.3rem;
+  }
+}
+/*mental health section*/
+.mental-health-section {
+  background: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: justify;
+  padding: 2rem;
+}
+.mental-health-section h3 {
+  font-size: var(--about);
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--background-color);
+}
+.mental-health-section h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.mental-health-section p {
+  margin: 1rem 0;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .mental-health-section {
+    padding: 1.5rem;
+  }
+  .mental-health-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .mental-health-section h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .mental-health-section p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mental-health-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .mental-health-section h4 {
+    font-size: 1rem;
+  }
+
+  .mental-health-section p {
+    font-size: 1rem;
+    line-height: normal;
+  }
+}
+@media (max-width: 1024px) {
+  .mental-health-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .mental-health-section h4 {
+    font-size: 1.3rem;
+    color: var(--background-color);
+    font-weight: 500;
+  }
+
+  .mental-health-section p {
+    font-size: 1.2rem;
+  }
+}
+/*Anime Section*/
+.anime-section {
+  padding: 20px;
+}
+.anime-section h2 {
+  font-size: var(--about);
+  color: var(--background-color);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.anime-section p {
+  font-size: 1.3rem;
+  text-align: center;
+  width: 90%;
+  margin-left: 2.2rem;
+}
+/* Anime Grid */
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+  grid-template-rows: auto;
+  gap: 3rem;
+  margin: 3rem 0;
+  margin-left: 8rem;
+}
+
+/* Grid Item Styles */
+.anime-grid {
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-right: 7rem;
+  margin-bottom: 4rem;
+}
+
+/* Hover Effect for Grid Items */
+.anime-grid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.anime-grid img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+}
+
+/* Title Styles */
+.anime-grid h3 {
+  font-size: 1.5em;
+  color: var(--dark-grey-text);
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Description Styles */
+.anime-grid p {
+  font-size: 1.1rem;
+  color: var(--dark-grey-text);
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.grid-1,
+.grid-2,
+.grid-3 {
+  margin-top: 2rem;
+}
+.grid-4,
+.grid-5,
+.grid-6 {
+  margin-bottom: 2rem;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .anime-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 0;
+  }
+  .anime-grid img {
+    width: 100%;
+  }
+
+  .anime-grid h3 {
+    font-size: 1.2rem;
+  }
+  .anime-grid p {
+    font-size: 1rem;
+  }
+  .anime-section p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .anime-section h2 {
+    font-size: 1.5rem;
+  }
+  .anime-section p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .anime-grid img {
+    width: 100%;
+  }
+
+  .anime-grid h3 {
+    font-size: 1.4rem;
+  }
+
+  .anime-section p {
     font-size: 1.3rem;
   }
 }
