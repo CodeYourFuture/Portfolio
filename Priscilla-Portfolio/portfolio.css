@@ -7,3 +7,28 @@
 body {
   background-color: hsl(36, 74%, 41%);
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.circles {
+  width: 150px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  list-style: none;
+
+  font-size: 27px;
+  font-family: "Questrial";
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
