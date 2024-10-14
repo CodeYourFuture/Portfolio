@@ -1,0 +1,58 @@
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(153, 75, 24);
+}
+
+/*----------------------HEADER-------------------------*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(36, 74%, 41%, 0.9);
+}
+
+.menu-icon {
+  display: none;
+}
+
+.circles {
+  width: 150px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  list-style: none;
+  padding-right: 30px;
+  padding-top: 30px;
+  font-size: 27px;
+  font-family: "Questrial";
+}
+
+.nav-list li {
+  color: rgb(250, 248, 243);
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.nav-list li:hover {
+  text-shadow: 3px 3px 5px black;
+  font-size: 30px;
+}
+
+.nav-list li:active {
+  text-shadow: 5px 5px 5px green;
+}
+
+.nav-list a {
+  color: wheat;
+  text-decoration: none;
+}
