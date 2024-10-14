@@ -202,9 +202,7 @@ header {
 
 .html div,
 .css div,
-.javascript div,
-.react div,
-.node div {
+.javascript div {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -232,10 +230,57 @@ header {
   );
 }
 
-.react div {
-  background: conic-gradient(rgb(255, 255, 255) 0% 100%);
+/*----------------------SECTION 3  -------------------------*/
+
+.section-3 h2 {
+  font-size: 40px;
+  margin-top: 50px;
+  padding-top: 60px;
+
+  text-align: center;
 }
 
-.node div {
-  background: conic-gradient(rgb(255, 255, 255) 0% 100%);
+.project-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  row-gap: 50px;
+  margin-top: 70px;
+}
+
+.project-box img {
+  width: 500px;
+}
+/*----------------------SECTION 4  -------------------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking {
+  height: 100vh;
+}
+
+.booking h2 {
+  margin: 50px;
+  text-align: center;
+}
+
+input {
+  margin-top: 100px;
+  height: 50px;
+  width: 500px;
+}
+
+label {
+  font-size: 25px;
+}
+
+.submit {
+  width: 200px;
+  height: 70px;
+  font-size: 25px;
 }
