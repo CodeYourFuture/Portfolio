@@ -61,8 +61,8 @@ header {
 
 .section-1 {
   background-color: rgb(80, 85, 7, 0.9);
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  overflow: hidden;
   height: 100vh;
 }
 
@@ -82,8 +82,9 @@ header {
 }
 
 .title-box h1 {
-  font-size: 67px;
+  font-size: 60px;
   padding-bottom: 20px;
+  text-wrap: wrap;
 }
 .title-box h3 {
   font-size: 30px;
@@ -99,7 +100,6 @@ header {
 }
 
 .profile-pic-box img {
-  width: 800px;
   background-color: hsl(36, 74%, 41%);
   opacity: 80%;
 }
@@ -356,7 +356,7 @@ footer h2 {
   column-gap: 20px;
 }
 
-/*--------------------  SMALL SCREENS ------------------------*/
+/*--------------------  SMALL SCREENS ----------------------- */
 
 @media only screen and (max-width: 768px) {
   body {
@@ -368,6 +368,7 @@ footer h2 {
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
+    padding-bottom: 30px;
   }
 
   .nav-list li {
@@ -393,7 +394,7 @@ footer h2 {
   }
 
   .section-1 {
-    height: 200vh;
+    height: 180vh;
   }
 
   .section-1 h1 {
@@ -449,7 +450,7 @@ footer h2 {
   /*--------------------  SECTION 2------------------------*/
   .section-2 {
     width: 100%;
-    height: 400vh;
+    height: 200vh;
     margin: 0px;
     padding: 0px;
   }
@@ -487,16 +488,17 @@ footer h2 {
   /*--------------------SECTION 3------------------------*/
 
   .section-3 {
-    height: 250vh;
+    height: 180vh;
     padding: 0px;
     margin: 0px;
   }
 
   .project-box {
-    height: 120vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 150px;
   }
 
   .project-box img {
@@ -512,9 +514,10 @@ footer h2 {
   /*--------------------SECTION 4------------------------*/
   .booking-form {
     padding: 0px;
+    padding-top: 30px;
     margin: 0px;
     row-gap: 0px;
-    height: 250vh;
+    height: 100vh;
   }
 
   form {
