@@ -462,17 +462,17 @@ footer h2 {
   }
 
   .section-2 p {
-    width: 80%;
+    width: 90%;
     font-size: 25px;
-    text-align: left;
-    padding: 10px;
+    text-align: center;
     overflow: hidden;
     text-wrap: wrap;
   }
 
   /*--------------------VALUES------------------------*/
   .values {
-    font-size: 25px;
+    margin-top: 50px;
+    font-size: 30px;
     text-align: center;
   }
 
