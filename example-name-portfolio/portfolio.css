@@ -153,3 +153,99 @@ header {
 .chat-box p:hover {
   font-size: 25px;
 }
+
+/*----------------------SECTION 2  -------------------------*/
+
+.section-2 {
+  height: 120vh;
+  margin: 90px;
+  padding: 50px;
+  background-color: rgba(177, 177, 29, 0.3);
+}
+
+.section-2 h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.section-2 p {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Questrial";
+  margin-top: 30px;
+  padding: 50px;
+  text-wrap: wrap;
+  margin: 20px;
+  color: white;
+}
+
+.values {
+  font-size: 35px;
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+
+.values-list {
+  font-size: 25px;
+  font-family: "questrial";
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  list-style: none;
+}
+
+.values-list li {
+  padding-bottom: 20px;
+}
+
+.tech-skills {
+  font-size: 35px;
+  margin: 90px;
+  text-align: center;
+  color: white;
+}
+
+.pie-chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pie-chart h4 {
+  font-size: 30px;
+  color: black;
+  position: relative;
+  bottom: 45px;
+}
+
+.html div,
+.css div,
+.javascript div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.html div {
+  background: conic-gradient(
+    rgb(153, 75, 24) 0% 95%,
+    rgb(255, 255, 255) 95% 100%
+  );
+}
+
+.css div {
+  background: conic-gradient(
+    rgb(153, 119, 24) 0% 85%,
+    rgb(255, 255, 255) 85% 100%
+  );
+}
+
+.javascript div {
+  background: conic-gradient(
+    rgb(55, 21, 117) 0% 5%,
+    rgb(255, 255, 255) 5% 100%
+  );
+}
