@@ -10,6 +10,7 @@
   --logo: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.912)), 4rem);
   --about: clamp(2.3rem, calc(2.3rem + ((1vw - 0.32rem) * 0.8604)), 3.2rem);
   --heading: clamp(2.2rem, calc(2.2rem + ((1vw - 0.32rem) * 2.6769)), 5rem);
+  --padding: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.912)), 3rem);
 }
 
 /* General section */
@@ -43,11 +44,12 @@ body {
 /* Navigation Menu */
 .nav-lists ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   list-style: none;
   font-size: 1.6rem;
+  margin-right: 2rem;
 }
 
 .nav-lists li a {
@@ -70,7 +72,7 @@ body {
 .social-media-icons {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 2rem;
 }
 
 .social-media-icons a {
@@ -254,13 +256,13 @@ hr {
 .project-item {
   border: 1px solid var(--dark-grey-text);
   text-align: center;
-  padding-top: 3rem;
+  padding-top: var(--padding);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .project-item2 {
   border: 1px solid var(--dark-grey-text);
   text-align: center;
-  padding-top: 3rem;
+  padding-top: var(--padding);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -286,12 +288,81 @@ hr {
   transition: color 0.3s ease;
   color: var(--medium-grey);
 }
-
+.project-grid p {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+}
+.project-item {
+  color: var(--text-color);
+}
+.project-item2 {
+  color: var(--dark-grey-text);
+}
 .project-section hr {
   width: 80%;
   margin: 0 auto;
   margin-top: 1.5rem;
 }
+
+/*Github Styling*/
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.github-section h2 {
+  font-weight: 500;
+  padding: 30px 0;
+  font-size: var(--about);
+  margin-left: 20px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: var(--dark-grey-text);
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  padding: 20px;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  color: var(--background-color);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: var(--dark-grey-text);
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* GitHub Button Styling */
+.github-button {
+  display: inline-block;
+  background-color: var(--dark-grey-text);
+  color: var(--text-color);
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #444d56;
+}
+
 /*Hire Me section*/
 
 .personal-data-form {
@@ -395,6 +466,9 @@ footer {
 .footer-section p:nth-child(2) {
   margin-bottom: 8px;
 }
+.footer-section i {
+  margin-right: 0.8rem;
+}
 .footer-anchor a {
   text-decoration: none;
   border: 2px solid var(--dark-grey-text);
@@ -409,7 +483,7 @@ footer {
 }
 .footer-social-media-icon {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 .footer-social-media-icon a {
   color: var(--background-color);
@@ -519,7 +593,25 @@ footer {
   .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+  .project-section h2 {
+    text-align: center;
+  }
 
+  /*Github section*/
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .github-section h2 {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .github-button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+  #btn-github {
+    margin-top: 50px;
+  }
   /* Form Section Adjustments */
   .grid-layout {
     grid-template-columns: 1fr;
@@ -610,9 +702,20 @@ footer {
   .project-item2 {
     padding: 1rem;
   }
+  /*Github section*/
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .github-section h2 {
+    margin-top: 310px;
+    margin-left: 5px;
+  }
+  #btn-github {
+    margin-top: 20px;
+  }
   /*hire me section*/
   .personal-data-form {
-    margin-top: 100px;
+    margin-top: 30px;
   }
 
   .personal-data-form h3 {
@@ -706,7 +809,14 @@ footer {
 }
 
 /* Header and General Text */
+#header {
+  background-color: var(--light-gray);
+}
+#header a:hover {
+  color: var(--medium-grey);
+}
 .blog h2 {
+  margin-top: 3rem;
   text-align: center;
   font-size: var(--about);
   color: var(--background-color);
@@ -832,7 +942,7 @@ a:hover {
 }
 /*mental health section*/
 .mental-health-section {
-  background: var(--text-color);
+  background: var(--medium-grey);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
@@ -940,6 +1050,7 @@ a:hover {
   transition: transform 0.2s, box-shadow 0.2s;
   margin-right: 7rem;
   margin-bottom: 4rem;
+  background-color: var(--medium-grey);
 }
 
 /* Hover Effect for Grid Items */
@@ -1212,23 +1323,6 @@ button:hover {
 
 .whatsapp:hover {
   background-color: #1bb755;
-}
-
-/* Instagram */
-.instagram {
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  width: 100px;
-}
-
-.instagram:hover {
-  background-color: #d53057;
 }
 
 /* LinkedIn */
