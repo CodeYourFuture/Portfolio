@@ -56,3 +56,100 @@ header {
   color: wheat;
   text-decoration: none;
 }
+
+/*---------------------- MAIN  -------------------------*/
+
+.section-1 {
+  background-color: rgb(80, 85, 7, 0.9);
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+.profile-pic-and-text {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-box {
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title-box h1 {
+  font-size: 67px;
+  padding-bottom: 20px;
+}
+.title-box h3 {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.title-box p {
+  font-size: 23px;
+  text-align: left;
+  width: 80%;
+  line-height: 30px;
+  padding-top: 50px;
+}
+
+.profile-pic-box img {
+  width: 800px;
+  background-color: hsl(36, 74%, 41%);
+  opacity: 80%;
+}
+
+.profile-pic-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.connect-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 50px;
+  margin-top: 60px;
+  padding: 50px;
+  border: 1px inset hsl(67, 12%, 15%);
+  width: 900px;
+}
+
+.connect-icons img {
+  width: 70px;
+  border-radius: 24px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.chat-box img {
+  width: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat-box img:hover {
+  width: 115px;
+}
+
+.chat-box p {
+  position: fixed;
+  bottom: 112px;
+  right: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.chat-box p:hover {
+  font-size: 25px;
+}
