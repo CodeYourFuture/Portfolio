@@ -157,7 +157,7 @@ header {
 /*----------------------SECTION 2  -------------------------*/
 
 .section-2 {
-  height: 120vh;
+  height: 140vh;
   margin: 90px;
   padding: 50px;
   background-color: rgba(177, 177, 29, 0.3);
@@ -211,6 +211,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-bottom: 50px;
 }
 
 .pie-chart h4 {
@@ -256,6 +257,7 @@ header {
   margin: 90px;
   background-color: hsla(36, 40%, 42%, 0.9);
   padding-bottom: 70px;
+  height: 100vh;
 }
 
 .section-3 h2 {
@@ -336,7 +338,7 @@ footer {
   margin-top: 100px;
 }
 
-footer h5 {
+footer h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 50px;
