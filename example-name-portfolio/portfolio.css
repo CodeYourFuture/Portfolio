@@ -249,3 +249,82 @@ header {
     rgb(255, 255, 255) 5% 100%
   );
 }
+
+/*----------------------SECTION 3  -------------------------*/
+
+.section-3 {
+  margin: 90px;
+  background-color: hsla(36, 40%, 42%, 0.9);
+  padding-bottom: 70px;
+}
+
+.section-3 h2 {
+  font-size: 40px;
+  margin-top: 50px;
+  padding-top: 60px;
+
+  text-align: center;
+}
+
+.project-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  row-gap: 50px;
+  margin-top: 70px;
+}
+
+.project-box img {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 5px 6px 5px black;
+}
+
+.project-box img:hover {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 6px 5px white;
+}
+/*----------------------SECTION 4  -------------------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.booking-form {
+  height: 120vh;
+  margin: 90px;
+  padding-top: 30px;
+  background-color: rgb(87, 86, 47);
+}
+
+.booking-form h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+input {
+  margin-top: 100px;
+  height: 50px;
+  width: 500px;
+}
+
+label {
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.submit {
+  width: 200px;
+  height: 70px;
+  font-size: 25px;
+  padding-right: 20px;
+  border-radius: 20px;
+  border-radius: 5px solid brown;
+}
