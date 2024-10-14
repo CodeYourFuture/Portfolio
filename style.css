@@ -7,8 +7,9 @@
   --light-gray: #d3d3d3;
   --medium-grey: #b8b8b8;
   --dark-grey-text: #2c2c2c;
-  --heading: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 3.6329)), 6rem);
-  --about: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.912)), 3.5rem);
+  --logo: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.912)), 4rem);
+  --about: clamp(2.3rem, calc(2.3rem + ((1vw - 0.32rem) * 0.8604)), 3.2rem);
+  --heading: clamp(2.2rem, calc(2.2rem + ((1vw - 0.32rem) * 2.6769)), 5rem);
 }
 
 /* General section */
@@ -34,7 +35,7 @@ body {
 
 /* Logo styles */
 .logo h1 {
-  font-size: var(--heading);
+  font-size: var(--logo);
   font-family: var(--heading-text);
   color: var(--background-color);
 }
@@ -46,6 +47,7 @@ body {
   align-items: center;
   gap: 2rem;
   list-style: none;
+  font-size: 1.6rem;
 }
 
 .nav-lists li a {
@@ -97,16 +99,18 @@ body {
 .profile-section h2 {
   color: var(--text-color);
   font-size: var(--heading);
+  margin-left: 2rem;
 }
 
 .profile-section h3 {
   color: var(--text-color);
   font-size: 2rem;
+  margin-left: 2rem;
 }
 
 .contact-btn {
   margin-top: 3.2rem;
-  margin-left: 0.5rem;
+  margin-left: 2rem;
 }
 
 .contact-btn a {
@@ -940,7 +944,6 @@ a:hover {
 
 /* Hover Effect for Grid Items */
 .anime-grid:hover {
-  transform: translateY(-5px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -1151,5 +1154,124 @@ button:hover {
   .conclusion p {
     font-size: 1.2rem;
     width: 90%;
+  }
+}
+
+/* Contact Section Styling */
+.contact-section {
+  padding: 50px 20px;
+  background-color: var(--text-color);
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: var(--heading);
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+}
+
+/* Contact Icons Container */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual Contact Icon Styling */
+.contact-icon {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-icon i {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.contact-icon span {
+  font-size: 1rem;
+}
+
+/* WhatsApp */
+.whatsapp {
+  background-color: #25d366;
+}
+
+.whatsapp:hover {
+  background-color: #1bb755;
+}
+
+/* Instagram */
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  width: 100px;
+}
+
+.instagram:hover {
+  background-color: #d53057;
+}
+
+/* LinkedIn */
+.linkedin {
+  background-color: #0077b5;
+  width: 100px;
+}
+
+.linkedin:hover {
+  background-color: #005d93;
+}
+
+/* Slack */
+.slack {
+  background-color: #4a154b;
+  width: 100px;
+}
+
+.slack:hover {
+  background-color: #39103d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-icon {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .contact-icon i {
+    font-size: 1.8rem;
+  }
+  .contact-section p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  .contact-icon span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-icon {
+    width: 100%;
   }
 }
