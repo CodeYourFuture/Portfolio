@@ -547,6 +547,17 @@ footer h2 {
     margin-bottom: 35px;
   }
 
+  #date {
+    color: black;
+    font-size: 18px;
+    width: 200px;
+    padding: 5px;
+  }
+
+  .submit {
+    color: black;
+  }
+
   .footer-icons img {
     width: 50px;
   }
