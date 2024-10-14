@@ -609,9 +609,7 @@ footer {
     padding: 5px 10px;
     font-size: 0.9rem;
   }
-  #btn-github {
-    margin-top: 50px;
-  }
+
   /* Form Section Adjustments */
   .grid-layout {
     grid-template-columns: 1fr;
@@ -710,9 +708,7 @@ footer {
     margin-top: 310px;
     margin-left: 5px;
   }
-  #btn-github {
-    margin-top: 20px;
-  }
+
   /*hire me section*/
   .personal-data-form {
     margin-top: 30px;
