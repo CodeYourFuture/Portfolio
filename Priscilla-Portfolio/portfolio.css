@@ -320,6 +320,8 @@ label {
   height: 70px;
   font-size: 25px;
   padding-right: 20px;
+  border-radius: 20px;
+  border-radius: 5px solid brown;
 }
 
 /*----------------------FOOTER-------------------------*/
@@ -332,7 +334,7 @@ footer {
 footer h5 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .footer-icons img {
