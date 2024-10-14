@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: hsl(36, 46%, 45%);
+  background-color: rgb(153, 75, 24);
 }
 
 /*----------------------HEADER-------------------------*/
@@ -151,6 +151,13 @@ header {
 }
 /*----------------------SECTION 2  -------------------------*/
 
+.section-2 {
+  height: 120vh;
+  margin: 90px;
+  padding: 50px;
+  background-color: rgba(177, 177, 29, 0.3);
+}
+
 .section-2 h2 {
   font-size: 50px;
   text-align: center;
@@ -181,6 +188,7 @@ header {
   text-align: center;
   margin-top: 20px;
   color: white;
+  list-style: none;
 }
 
 .values-list li {
@@ -189,7 +197,7 @@ header {
 
 .tech-skills {
   font-size: 35px;
-  margin: 70px;
+  margin: 90px;
   text-align: center;
   color: white;
 }
@@ -198,6 +206,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.pie-chart h4 {
+  font-size: 30px;
+  color: black;
+  position: relative;
+  bottom: 45px;
 }
 
 .html div,
@@ -232,6 +247,12 @@ header {
 
 /*----------------------SECTION 3  -------------------------*/
 
+.section-3 {
+  margin: 90px;
+  background-color: hsla(36, 40%, 42%, 0.9);
+  padding-bottom: 70px;
+}
+
 .section-3 h2 {
   font-size: 40px;
   margin-top: 50px;
@@ -251,6 +272,14 @@ header {
 
 .project-box img {
   width: 500px;
+  border-radius: 15px;
+  box-shadow: 5px 6px 5px black;
+}
+
+.project-box img:hover {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 6px 5px white;
 }
 /*----------------------SECTION 4  -------------------------*/
 
@@ -258,15 +287,21 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
-.booking {
-  height: 100vh;
+.booking-form {
+  height: 120vh;
+  margin: 90px;
+  padding-top: 30px;
+  background-color: rgb(87, 86, 47);
 }
 
-.booking h2 {
-  margin: 50px;
+.booking-form h2 {
+  margin-top: 50px;
   text-align: center;
+  font-size: 30px;
+  color: white;
 }
 
 input {
@@ -277,10 +312,37 @@ input {
 
 label {
   font-size: 25px;
+  padding-right: 10px;
 }
 
 .submit {
   width: 200px;
   height: 70px;
   font-size: 25px;
+  padding-right: 20px;
+}
+
+/*----------------------FOOTER-------------------------*/
+
+footer {
+  height: 30vh;
+  margin-top: 100px;
+}
+
+footer h5 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-icons img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
 }
