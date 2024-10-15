@@ -255,9 +255,9 @@ header {
 
 .section-3 {
   margin: 90px;
-  background-color: hsla(36, 40%, 42%, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 70px;
-  height: 100vh;
+  height: 190vh;
 }
 
 .section-3 h2 {
@@ -268,13 +268,47 @@ header {
   text-align: center;
 }
 
+.section-3 h2 {
+  color: beige;
+}
+
 .project-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  row-gap: 50px;
+  row-gap: 100px;
   margin-top: 70px;
+}
+
+.Project-1,
+.Project-2,
+.Project-3,
+.Project-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(83, 87, 76, 0.2);
+  margin: 20px;
+  padding-top: 50px;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 25px;
+  color: rgb(175, 123, 46);
+}
+
+.project-description {
+  width: 80%;
+  font-size: 25px;
+  padding: 20px;
+  color: floralwhite;
+  line-height: 30px;
+}
+
+.project-description b {
+  color: mistyrose;
 }
 
 .project-box img {
@@ -504,9 +538,13 @@ footer h2 {
   /*--------------------SECTION 3------------------------*/
 
   .section-3 {
-    height: 210vh;
+    height: 350vh;
     padding: 0px;
     margin: 0px;
+  }
+
+  .section-3 h2 {
+    color: beige;
   }
 
   .project-box {
@@ -515,8 +553,35 @@ footer h2 {
     flex-direction: column;
     align-items: center;
     row-gap: 90px;
+    margin-top: 100px;
   }
 
+  .Project-1,
+  .Project-2,
+  .Project-3,
+  .Project-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(83, 87, 76, 0.2);
+  }
+
+  .project-title {
+    font-size: 30px;
+    margin-top: 25px;
+    color: rgb(175, 123, 46);
+  }
+
+  .project-description {
+    font-size: 20px;
+    padding: 20px;
+    color: floralwhite;
+    line-height: 30px;
+  }
+
+  .project-description b {
+    color: mistyrose;
+  }
   .project-box img {
     width: 300px;
   }
