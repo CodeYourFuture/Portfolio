@@ -525,7 +525,9 @@ footer h2 {
     width: 100%;
     height: 350vh;
     margin: 0px;
+
     padding: 0px;
+    background-color: rgb(80, 85, 7, 0.3);
   }
 
   .section-2 h2 {
@@ -571,6 +573,7 @@ footer h2 {
     height: 450vh;
     padding: 0px;
     margin: 0px;
+    background-color: rgb(80, 85, 7, 0.9);
   }
 
   .section-3 h2 {
@@ -623,12 +626,15 @@ footer h2 {
   }
 
   /*--------------------SECTION 4------------------------*/
+
   .booking-form {
     padding: 0px;
     padding-top: 30px;
     margin: 0px;
+    margin-top: 50px;
     row-gap: 0px;
     height: 170vh;
+    background-color: rgb(80, 85, 7, 0.9);
   }
 
   form {
