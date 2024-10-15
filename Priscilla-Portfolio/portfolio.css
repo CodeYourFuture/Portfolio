@@ -7,6 +7,7 @@
 
 body {
   background-color: rgb(153, 75, 24);
+  background-color: hsl(39, 74%, 36%);
 }
 
 /*----------------------HEADER-------------------------*/
@@ -160,17 +161,18 @@ header {
   height: 140vh;
   margin: 90px;
   padding: 50px;
-  background-color: rgba(177, 177, 29, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .section-2 h2 {
   font-size: 50px;
   text-align: center;
+  color: white;
 }
 
 .section-2 p {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 50px;
   text-align: center;
   font-family: "Questrial";
   margin-top: 30px;
@@ -184,6 +186,7 @@ header {
   font-size: 35px;
   text-align: center;
   margin: 20px;
+  margin-top: 40px;
   color: white;
 }
 
@@ -308,7 +311,7 @@ header {
 }
 
 .project-description b {
-  color: mistyrose;
+  color: rgb(224, 204, 202);
 }
 
 .project-box img {
@@ -335,7 +338,7 @@ form {
   height: 120vh;
   margin: 90px;
   padding-top: 30px;
-  background-color: rgb(87, 86, 47);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .booking-form h2 {
@@ -349,6 +352,18 @@ input {
   margin-top: 100px;
   height: 50px;
   width: 500px;
+  color: #f6f6f7;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 9px;
+  background-color: hsl(39, 74%, 36%);
+  padding: 10px;
+}
+
+textarea {
+  background-color: hsl(39, 74%, 36%);
+  padding-left: 10px;
+  border-radius: 9px;
 }
 
 label {
@@ -362,6 +377,7 @@ label {
   font-size: 25px;
   padding-right: 20px;
   border-radius: 20px;
+  background-color: rgb(245, 241, 239);
   border-radius: 5px solid brown;
 }
 
