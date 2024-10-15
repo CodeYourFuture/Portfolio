@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: hsl(39, 74%, 36%);
+  background-color: hsl(34, 31%, 63%);
 }
 
 /*----------------------HEADER-------------------------*/
@@ -15,7 +15,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: hsl(36, 74%, 41%, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu-icon {
@@ -60,7 +60,7 @@ header {
 /*---------------------- MAIN  -------------------------*/
 
 .section-1 {
-  background-color: rgb(80, 85, 7, 0.9);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   overflow: hidden;
   height: 100vh;
@@ -100,14 +100,16 @@ header {
 }
 
 .profile-pic-box img {
-  background-color: hsl(36, 74%, 41%);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 80%;
+  width: 400;
+  height: 500;
 }
 
 .profile-pic-box {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .connect-icons {
   display: flex;
@@ -117,11 +119,11 @@ header {
   margin-top: 60px;
   padding: 50px;
   border: 1px inset hsl(67, 12%, 15%);
-  width: 900px;
+  width: 450px;
 }
 
 .connect-icons img {
-  width: 70px;
+  width: 50px;
   border-radius: 24px;
 }
 
@@ -157,7 +159,7 @@ header {
 /*----------------------SECTION 2  -------------------------*/
 
 .section-2 {
-  height: 140vh;
+  height: 250vh;
   margin: 90px;
   padding: 50px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -226,8 +228,8 @@ header {
 .html div,
 .css div,
 .javascript div {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 2px solid black;
 }
@@ -259,7 +261,7 @@ header {
   margin: 90px;
   background-color: rgba(0, 0, 0, 0.4);
   padding-bottom: 70px;
-  height: 190vh;
+  height: 350vh;
 }
 
 .section-3 h2 {
@@ -279,7 +281,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  row-gap: 100px;
+  row-gap: 80px;
   margin-top: 70px;
 }
 
@@ -297,13 +299,13 @@ header {
 
 .project-title {
   font-size: 30px;
-  margin-top: 25px;
+  margin-top: 20px;
   color: rgb(175, 123, 46);
 }
 
 .project-description {
   width: 80%;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
   color: floralwhite;
   line-height: 30px;
@@ -314,16 +316,16 @@ header {
 }
 
 .project-box img {
-  width: 500px;
+  width: 320px;
   border-radius: 15px;
   box-shadow: 5px 6px 5px black;
 }
 
 .project-box img:hover {
-  width: 600px;
-  border-radius: 10px;
-  box-shadow: 5px 6px 5px white;
+  width: 340px;
+  box-shadow: 5px 6px 5px rgb(250, 250, 250);
 }
+
 /*----------------------SECTION 4  -------------------------*/
 
 form {
@@ -334,7 +336,7 @@ form {
 }
 
 .booking-form {
-  height: 120vh;
+  height: 200vh;
   margin: 90px;
   padding-top: 30px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -351,16 +353,13 @@ input {
   margin-top: 100px;
   height: 50px;
   width: 500px;
-  color: #f6f6f7;
   font-size: 20px;
   border: 2px solid black;
   border-radius: 9px;
-  background-color: hsl(39, 74%, 36%);
   padding: 10px;
 }
 
 textarea {
-  background-color: hsl(39, 74%, 36%);
   border: 2px solid black;
   padding-left: 10px;
   border-radius: 9px;
@@ -413,6 +412,7 @@ footer h2 {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    background-color: hsl(36, 74%, 41%);
   }
 
   header {
@@ -422,6 +422,7 @@ footer h2 {
     width: 100%;
     padding-bottom: 30px;
     padding-left: 5px;
+    background-color: hsl(36, 74%, 41%);
   }
 
   .nav-list {
@@ -454,20 +455,30 @@ footer h2 {
   }
 
   /*--------------------  SECTION 1------------------------*/
+
   .profile-pic-box {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
   .profile-pic-box img {
     width: 100%;
+    background-color: hsl(36, 74%, 41%);
+    opacity: 80%;
   }
 
   .profile-pic-and-text {
     display: block;
+    height: 100vh;
   }
 
   .section-1 {
     height: 180vh;
+    background-color: rgb(80, 85, 7, 0.9);
+    width: 100%;
+    overflow: hidden;
   }
 
   .section-1 h1 {
@@ -476,14 +487,6 @@ footer h2 {
     text-wrap: wrap;
     text-align: center;
     padding-top: 20px;
-    width: 80%;
-  }
-
-  .title-box h1 {
-    width: 100%;
-  }
-
-  .title-box {
     width: 100%;
   }
 
@@ -494,27 +497,30 @@ footer h2 {
     padding: 20px;
   }
 
-  .section-1 p {
-    display: block;
-    text-align: center;
-    font-size: 17px;
-    text-wrap: wrap;
+  .title-box {
     width: 100%;
-    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
   }
 
   .connect-icons img {
+    border-radius: 24px;
     width: 30px;
   }
 
   .connect-icons {
-    border: none;
     width: 100%;
-    column-gap: 10px;
+    column-gap: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px inset hsl(67, 12%, 15%);
   }
 
   .chat-box {
