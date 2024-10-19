@@ -1,41 +1,61 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
-  --gap: 20px;
-  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+  --paper: hsla(251, 28%, 88%, 0.99); /* Background color */
+  --ink: hsla(244, 16%, 17%, 0.95);   /* Text color */
+  --brand: hsla(0, 79%, 63%, 0.9);    /* Accent color */
+  --font: "Raleway", system-ui, sans-serif; /* Font stack */
+  --gap: 20px;  /* Base gap for layout */
+  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px); /* Max width for container */
+  --radius: 10px; /* Border radius */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+  --transition: all 0.3s ease-in-out; /* Transition effect */
+  --heading-size: clamp(1.8rem, 2.5vw, 2.5rem); /* Responsive headings */
 }
+
 /* General Styles */
 html,
 body {
   scroll-behavior: smooth;
-  background: var(--paper);
+  background: rgb(63, 62, 139);
   color: var(--ink);
   font-family: var(--font);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
-body {
+  h1 {
+  margin-left: 20px;
+  }
+body {  
+     
+
+
   display: grid;
   margin: auto;
   min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
 }
+
+h2 {
+  margin-left: 20px;
+  }
 a,
 a:any-link {
-  color: currentColor;
+  color: var(--ink);
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  transition: border-color ease-in-out 0.3s;
+  transition: var(--transition);
 }
+
 a:hover,
 a:focus {
   color: var(--brand);
-  border-color: currentColor;
+  border-color: var(--brand);
 }
+
 /* Site header and navigation */
-body > header {
+header {
   background: var(--paper);
   display: flex;
   justify-content: space-between;
@@ -43,15 +63,120 @@ body > header {
   position: sticky;
   top: 0;
   z-index: 1;
+  padding: 10px 0;
+  box-shadow: var(--shadow);
 }
+
+header h1 {
+  font-size: var(--heading-size);
+  font-weight: 800;
+}
+
 nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  padding: 0;
+  margin: 20px;
 }
 
-/* Text readability */
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 10px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: var(--brand);
+  color: var(--paper);
+}
+
+/* Main content */
+main section {
+  padding: 60px 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--gap);
+  background: white;
+}
+
+section h2 {
+  font-size: var(--heading-size);
+  margin-bottom: 20px;
+}
+
 section p {
-  line-height: 1.5;
-  max-width: 55ch;
+  line-height: 1.7;
+  margin: 20px;
+}
+
+/* Project Section */
+.project-item {
+  padding: 20px;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  margin: 20px;
+}
+
+.project-item:hover {
+  border-color: var(--brand);
+  box-shadow: var(--shadow);
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  color: var(--brand);
+}
+
+.project-item a {
+  font-weight: bold;
+  color: var(--brand);
+  border-bottom: 2px solid transparent;
+}
+
+.project-item a:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* Footer Styles */
+footer {
+  background: var(--paper);
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+}
+
+footer svg {
+  fill: var(--ink);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  main section {
+    padding: 40px 15px;
+  }
 }
