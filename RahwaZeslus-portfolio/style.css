@@ -10,12 +10,14 @@
 /* General Styles */
 html,
 body {
+  
   scroll-behavior: smooth;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font);
 }
 body {
+  background: linear-gradient(to bottom,  #1dcd9f, #feb47b);
   display: grid;
   margin: auto;
   min-height: 100vh;
