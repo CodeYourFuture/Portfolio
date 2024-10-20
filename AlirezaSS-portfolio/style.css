@@ -1,0 +1,127 @@
+/* Design tokens */
+:root {
+  --paper: hsla(0, 0%, 99%, 0.99);
+  --ink: hsla(244, 16%, 17%, 0.95);
+  --brand: hsla(0, 79%, 63%, 0.9);
+  --font: "Raleway", system-ui, sans-serif;
+  --gap: 20px;
+  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+}
+
+/* General Styles */
+html, body {
+  scroll-behavior: smooth;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+}
+body {
+  display: grid;
+  margin: auto;
+  min-height: 100vh;
+  gap: var(--gap);
+  max-width: var(--container);
+  padding: var(--gap);
+}
+a, a:any-link {
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color ease-in-out 0.3s;
+}
+a:hover, a:focus {
+  color: var(--brand);
+  border-color: currentColor;
+}
+
+/* Site header and navigation */
+body > header {
+  background: var(--paper);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: var(--gap) 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--gap);
+}
+
+nav ul li {
+  font-weight: 800;
+}
+
+nav ul li a {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: var(--brand);
+  color: var(--paper);
+}
+
+/* Main section styling */
+main {
+  padding-top: var(--gap);
+}
+
+h2 {
+  margin-bottom: var(--gap);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+section p {
+  line-height: 1.5;
+  max-width: 55ch;
+  margin-bottom: var(--gap);
+}
+
+/* Projects section */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: var(--gap);
+  font-size: 1.1rem;
+}
+
+/* Contact section styling */
+#contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#contact i {
+  color: var(--brand);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: var(--gap);
+  padding: var(--gap);
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+footer h3 a {
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+footer h3 a:hover {
+  color: var(--brand);
+}
