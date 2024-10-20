@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsla(36, 100%, 84%, 0.7);
+}
+
+header {
+  background-color: rgba(10, 10, 10, 0.3);
+}
+
+main {
+  background-color: hsla(36, 100%, 84%, 0.7);
+}
+/*---------------- NAVIGATION SECTION -----------*/
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.nav-list li:hover {
+  text-shadow: 3px 3px 5px black;
+  font-size: 19px;
+}
+
+.nav-list li:active {
+  text-shadow: 5px 5px 5px green;
+}
+
+/*---------------- SECTION 1-----------*/
+
+.section-1 {
+  background-color: rgba(111, 128, 128, 0.3);
+}
+
+p {
+  font-family: "Questrial";
+  line-height: 30px;
+}
+
+.profile-pic {
+  width: 190px;
+}
+
+.profile-pic-and-text-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading-and-icon h1 {
+  font-size: 23px;
+  line-height: 20px;
+}
+
+.heading-and-icon h2 {
+  font-size: 16px;
+  padding-top: 9px;
+}
+
+/*---------------- TITLE SECTION -----------*/
+
+.title-box {
+  display: flex;
+  row-gap: 100px;
+  align-items: flex-end;
+  padding: 10px;
+}
+/*---------------- CONNECT SECTION -----------*/
+
+.connect-icons {
+  padding-top: 40px;
+}
+
+.connect-icons a {
+  text-decoration: none;
+}
+
+.connect-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/*---------------- SECTION 2 -----------*/
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: rgba(10, 10, 10, 0.3);
+}
+
+.about {
+  background-color: rgba(10, 10, 10, 0.3);
+  margin-bottom: 40px;
+  padding: 15px;
+}
+
+.values-tech-skills {
+  background-color: rgba(10, 10, 10, 0.3);
+  padding: 15px;
+}
+
+.section-2 h2,
+.section-2 h3,
+.section-2 h4 {
+  align-self: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*---------------- VALUES-----------*/
+.values-list li {
+  align-self: center;
+  list-style: none;
+  line-height: 25px;
+}
+
+.values {
+  margin-top: 30px;
+}
+
+/*---------------- TECH SKILLS-----------*/
+
+.tech-skills {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(14, 13, 13);
+  margin-top: 50px;
+}
+
+.pie-chart {
+  display: flex;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.pie-chart h4 {
+  font-size: 17px;
+  display: inline;
+  color: black;
+  position: relative;
+  bottom: 30px;
+}
+
+.html div,
+.css div,
+.javascript div {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-left: 30px;
+}
+
+.html div {
+  margin-left: 0px;
+}
+
+.html div {
+  background: conic-gradient(
+    rgb(153, 75, 24) 0% 95%,
+    rgb(255, 255, 255) 95% 100%
+  );
+}
+
+.css div {
+  background: conic-gradient(
+    rgb(153, 119, 24) 0% 85%,
+    rgb(255, 255, 255) 85% 100%
+  );
+}
+
+.javascript div {
+  background: conic-gradient(
+    rgb(55, 21, 117) 0% 5%,
+    rgb(255, 255, 255) 5% 100%
+  );
+}
+
+.CV {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.CV button {
+  width: 170px;
+  height: 50px;
+  font-size: 21px;
+  background-color: rgba(10, 10, 10, 0.3);
+  color: whitesmoke;
+  border: 2px solid grey;
+}
+
+.CV a {
+  text-decoration: none;
+}
+
+/*---------------- SECTION 3 -----------*/
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 0.3);
+}
+
+.section-3 h2 {
+  text-align: center;
+}
+
+.Project-1,
+.Project-2,
+.Project-3,
+.Project-4 {
+  margin-top: 30px;
+  padding: 7px;
+  background-color: rgba(10, 10, 10, 0.3);
+  padding: 15px;
+}
+
+.Project-1 img,
+.Project-2 img,
+.Project-3 img,
+.Project-4 img {
+  width: 320px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.project-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-description {
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+  line-height: 40px;
+}
+
+b {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.github-and-website-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.github-and-website-link a {
+  text-decoration: none;
+}
+
+.github-and-website-link button {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  background-color: rgba(10, 10, 10, 0.3);
+  color: whitesmoke;
+  border: 2px solid grey;
+}
+
+.github-and-website-link:hover {
+  box-shadow: 3px 5px 5px rgb(252, 250, 250);
+}
+
+.github-and-website-link button:hover {
+  box-shadow: 3px 5px 5px rgb(252, 250, 250);
+}
+
+/*---------------- BOOKING FORM-----------*/
+
+.booking-form {
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 0.3);
+}
+
+.booking-form h2 {
+  text-align: center;
+}
+
+.booking-form h3 {
+  font-size: 15px;
+  font-family: "Questrial";
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+label {
+  font-family: "questrial";
+}
+
+input,
+textarea {
+  margin-bottom: 30px;
+  height: 30px;
+  width: 260px;
+}
+
+.submit {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 50px;
+}
+
+/*---------------- FOOTER-----------*/
+
+footer {
+  height: 30vh;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+footer h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.follow-us {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.footer-icons img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+  column-gap: 20px;
+}
+
+/*---------------- MEDIUM SCREEN--------------*/
+
+@media only screen and (min-width: 700px) {
+  /*---------------- SECTION 1 -----------*/
+
+  .title-box {
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  .title-box h1 {
+    font-size: 40px;
+    width: 350px;
+    line-height: 40px;
+  }
+
+  .title-box h2 {
+    font-size: 25px;
+  }
+
+  .profile-pic {
+    width: 350px;
+  }
+
+  .connect-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /*---------------- SECTION 2 -----------*/
+  .section-2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .about {
+    padding-bottom: 44px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .values {
+    font-size: 30px;
+  }
+
+  .tech-skills {
+    font-size: 25px;
+  }
+
+  /*---------------- SECTION 3 -----------*/
+  .section-3 h2 {
+    font-size: 30px;
+  }
+
+  /*---------------- BOOKING FORM-----------*/
+  input {
+    width: 70%;
+    height: 30px;
+  }
+
+  .booking-form h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    height: 70vh;
+  }
+}
+
+/*---------------- LARGE SCREENS-----------*/
+
+@media only screen and (min-width: 900px) {
+  .nav-list {
+    column-gap: 50px;
+    font-size: 25px;
+  }
+
+  /*---------------- SECTION 1 -----------*/
+
+  .profile-pic-and-text-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
+
+  .title-box {
+    display: flex;
+    row-gap: 100px;
+    padding: 10px;
+    padding-right: 100px;
+    align-items: center;
+  }
+
+  .title-box h1 {
+    font-size: 55px;
+    width: 350px;
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+
+  .profile-pic {
+    width: 450px;
+  }
+
+  /*---------------- SECTION 2 -----------*/
+  .section-2 {
+    display: block;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about h2 {
+    font-size: 50px;
+  }
+  .about p {
+    font-size: 24px;
+    line-height: 50px;
+    width: 75%;
+  }
+
+  .value-box-h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .values {
+    text-align: center;
+    width: 80%;
+  }
+
+  .value-box {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .pie-chart {
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .project-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+    padding: 35px;
+  }
+
+  /*---------------- BOOKING FORM-----------*/
+
+  input,
+  textarea {
+    width: 70%;
+    height: 50px;
+    margin: 50px;
+    margin-top: 0px;
+  }
+  label {
+    margin-left: 50px;
+    padding-bottom: 30px;
+  }
+
+  .submit {
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+}

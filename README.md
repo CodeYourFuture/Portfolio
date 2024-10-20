@@ -1,16 +1,24 @@
 # Portfolio
 
-Module 1 iteration of your portfolio. We've got a lot of new concepts here so you might want to work through this in your study group, or bring to class for help.
+<<<<<<< HEAD
+Module 2 iteration of your portfolio. We're adding a new case study for another project you've worked on. You can choose anything.
 
 _Keep your changes simple!_
 
-We are using a different type of pull request workflow from your main coursework. We're doing this because we need lots of practice with Git to be ready to contribute to shared repos like professional developers. In previous cohorts, we only opened PRs to main all the way through the course, and then in Final Projects it was really hard to learn real branching and merging. So let's practice a different workflow now.
+We are going to use the same Git workflow as Module 1, which you can read by checking out the `Module-HTML-CSS` branch or by going to the [tree view on Github](https://github.com/CodeYourFuture/Portfolio/tree/Module-HTML-CSS).
+=======
+This is a Website of My Portfolio
+It consist of a header section with a navigation bar to navigate the page,a hero section with name and contact details.
+It has subsections which emphasizes on the necessary soft skills and technical skills.
+A project section which consist of projects with the technologies and description of each project and a form
+>>>>>>> Module-HTML-CSS
 
-## Learning Objectives
+Below is a link to the POrtfolio
 
+<<<<<<< HEAD
 - [ ] Branch from a branch in Git
-- [ ] PR from a branch to a branch in GitHub
-- [ ] Create a personal case study for a project
+- [ ] Merge a branch into another branch in Git
+- [ ] Create a second personal case study for a project
 
 ## Requirements
 
@@ -18,16 +26,15 @@ Your case study should be a short description of the project, including: the pro
 
 Explain the problem and your solution in your own words, and don't just copy and paste the project brief. The point of a portfolio is to make _you stand out_, so write in your own voice. It's fine to choose something that you didn't work on all by yourself, but make sure you explain what part you did.
 
-## Git Ready: Putting our code in the right place
+## Git Ready: Getting our code together
 
-The instructions here are given for the command line, but you could just as easily do this in GitHub Desktop or GitKraken.
+Our changes have disappeared! That's because we made them on another branch. We're going to grab those changes and put them on our new branch.
 
-1. Switch into the branch called `git checkout Module-HTML-CSS` to access this Readme
-1. From `Module-HTML-CSS`, create a new branch `git checkout -b your-name-portfolio`
-1. Make a new directory `mkdir your-name-portfolio`
-1. Move your starter files into this directory `mv index.html style.css your-name-portfolio`
-1. Change into the new directory `cd your-name-portfolio`
-1. Check you are in the right branch `git branch --show-current`
+1. Checkout the `Module-JS-1` branch `git checkout Module-JS-1`
+1. Make a new branch `git checkout -b your-name-portfolio-js-1`
+1. Merge your changes from your last branch `git merge your-name-portfolio`
+
+Whoa! Did your README disappear? That's because you overwrote it. But you can access specific files in the terminal any time you like, like this: `git checkout Module-HTML-CSS README.md`. Or you can do this in your Git GUI.
 
 ## Git Set: Making changes
 
@@ -35,14 +42,14 @@ The instructions here are given for the command line, but you could just as easi
 1. Make your changes
 1. Check your changes with `git status`
 1. Add your files to the staging area `git add index.html style.css` . _Remember, don't `git add .` or you could add files you don't mean to._
-1. Commit your changes often `git commit -m "YOUR COMMIT MESSAGE"`
+1. Commit your changes often `git commit -m "YOUR COMMIT MESSAGE"` Do not wait until your PR is done to commit. Commit early and often.
 
 ## Git Go: Making a pull request
 
 1. Stage your files: `git add index.html style.css` . _Remember, don't `git add .` or you could add files you don't mean to._
 1. Commit your changes `git commit -m "YOUR COMMIT MESSAGE"`
-1. Push your changes to GitHub `git push origin your-name-portfolio`
-1. Open a pull request to merge your branch into `Module-HTML-CSS` . If you have the [GitHub CLI](https://cli.github.com/manual/gh_pr_create) installed, you can do this with `gh pr create --base Module-HTML-CSS --head your-name-portfolio`. Otherwise do it in the GitHub UI or your Git client.
+1. Push your changes to GitHub `git push origin your-name-portfolio-js1`
+1. Open a pull request to merge your branch into `Module-JS-1`. _Add a link to your deployed project in the description._
 
 ## Acceptance Criteria
 
@@ -51,11 +58,14 @@ The instructions here are given for the command line, but you could just as easi
 - [ ] Each project is linked to my code on Github and the deployed project
 - [ ] I have published my professional contact information on my portfolio
 - [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
+- [ ] My portfolio is deployed and I have included the link in my pull request
 - [ ] I have replaced this README with one that describes my own portfolio
 
 ## Resources
 
-- [Powerful Git Completion with ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-- [GitKraken](https://www.gitkraken.com/)
+- [GitHub Desktop Merge](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch#merging-another-branch-into-your-project-branch)
+- [GitKraken Merge](https://www.youtube.com/watch?v=mS8oUqqc2G8)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens/)
+=======
+https://portfolio-by-pris.netlify.app/
+>>>>>>> Module-HTML-CSS
