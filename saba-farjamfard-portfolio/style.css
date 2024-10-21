@@ -1,0 +1,73 @@
+/* Design tokens */
+:root {
+  --paper: hsla(251, 28%, 88%, 0.99);
+  --ink: hsla(244, 16%, 17%, 0.95);
+  --brand: hsla(0, 79%, 63%, 0.9);
+  --font: "Raleway", system-ui, sans-serif;
+  --gap: 20px;
+  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+}
+/* General Styles */
+html,
+body {
+  scroll-behavior: smooth;
+  background:#f0f0f0;
+  color: var(--ink);
+  font-family: var(--font);
+}
+body {
+  display: grid;
+  margin: auto;
+  min-height: 100vh;
+  gap: var(--gap);
+  max-width: var(--container);
+}
+
+
+}
+a,
+a:any-link {
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color ease-in-out 0.3s;
+}
+a:hover,
+a:focus {
+  color: var(--brand);
+  border-color: currentColor;
+}
+/* Site header and navigation */
+body > header {
+  background:burlywood;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-left: 2rem;
+  padding-right:2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--gap);
+  color: blue;
+}
+
+#about h2, #projects h2 , #contact h2{
+font-size: :2rem;
+margin-bottom 1rem;
+color: var(--brand);
+
+}
+
+
+/* Text readability */
+section p {
+  line-height: 1.5;
+  max-width: 55ch;
+}
+
