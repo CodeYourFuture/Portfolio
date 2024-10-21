@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" case study of T-shirt order form  " />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preload" href="./img/aleppo.jpeg" as="image" type="image/jpeg" />
+    <link rel="preload" href="./img/photo-1.png" as="image" type="image/png" />
+    <link rel="preload" href="./img/photo-2.JPG" as="image" type="image/jpeg" />
+    <link
+      rel="preload"
+      href="./img/photo-3.jpeg"
+      as="image"
+      type="image/jpeg"
+    />
+    <link
+      rel="preload"
+      href="./img/order-form.png"
+      as="image"
+      type="image/png"
+    />
+    <link rel="preload" href="./img/logo.png" as="image" type="image/png" />
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-bar">
+          <div class="logo-box">
+            <img src="./img/logo.png" class="logo" alt="logo-image" />
+          </div>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <nav class="main-nav phone-nav">
+            <ul class="main-nav-list">
+              <li><a href="#" class="main-nav-link active-link">home</a></li>
+              <li>
+                <a href="#section-about" class="main-nav-link">about me</a>
+              </li>
+
+              <li>
+                <a href="#section-project" class="main-nav-link">projects</a>
+              </li>
+              <li>
+                <a href="#section-contact" class="main-nav-link">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="text-box">
+          <h1 class="title">
+            <span class="title-main">Ali Qassab</span>
+            <span class="title-sub">trying to do my best</span>
+          </h1>
+          <a href="#section-project" class="btn btn-white btn-animation"
+            >Project Showcase</a
+          >
+        </div>
+      </section>
+
+      <section id="section-about">
+        <div class="container">
+          <h2 class="section-title">got to know me a bit better</h2>
+          <div class="row">
+            <div class="col-2">
+              <h3>MY PROFESSIONAL EXPERIENCE</h3>
+              <p>
+                I am a seasoned accountant and successful food retail business
+                owner with a passion for web development. With 10 years of
+                experience in accounting and two years of online studies in
+                HTML, CSS, and JavaScript, I offer a unique combination of
+                technical and business skills.
+
+                <label for="popup1" class="popup-label">Read more</label>
+              </p>
+              <input type="checkbox" id="popup1" class="popup-toggle" />
+              <div class="popup-content">
+                <label for="popup1" class="close-popup">X</label>
+                <h3>MY PROFESSIONAL EXPERIENCE</h3>
+
+                <p>
+                  I am a seasoned accountant and successful food retail business
+                  owner with a passion for web development. With 10 years of
+                  experience in accounting and one year of online studies in
+                  HTML, CSS, and JavaScript, I offer a unique combination of
+                  technical and business skills.
+                </p>
+                <p>
+                  In my accounting role, I have developed strong analytical and
+                  problem-solving skills. I am also proficient in using various
+                  accounting software programs. In my business ownership role, I
+                  have gained experience in managing all aspects of a business,
+                  including marketing, sales, and customer service.
+                </p>
+                <p>
+                  I am passionate about web development because I believe it is
+                  a powerful tool that can be used to create positive change in
+                  the world. I am excited to use my skills to create websites
+                  that are both visually appealing and efficient.
+                </p>
+              </div>
+              <label for="popup1" class="overlay overlay-1"></label>
+
+              <h3>WHAT I HOPE TO ACHIEVE IN THE FUTURE</h3>
+              <p>
+                My goal is to become a full-stack developer. I am excited to
+                learn the skills necessary to build and maintain complex web
+                applications. I believe that my combination of technical and
+                business skills will make me a valuable asset to any team.
+
+                <label for="popup2" class="popup-label">Read more</label>
+              </p>
+              <input type="checkbox" id="popup2" class="popup-toggle" />
+
+              <div class="popup-content">
+                <label for="popup2" class="close-popup">X</label>
+                <h3>WHAT I HOPE TO ACHIEVE IN THE FUTURE</h3>
+
+                <p>
+                  My goal is to become a full-stack developer. I am excited to
+                  learn the skills necessary to build and maintain complex web
+                  applications. I believe that my combination of technical and
+                  business skills will make me a valuable asset to any team.
+                </p>
+                <p>
+                  I am also interested in starting my own web development
+                  business. I am passionate about helping businesses succeed
+                  online, and I believe that my skills and experience would be
+                  valuable to any client.
+                </p>
+                <p>
+                  I am confident that I have the skills and dedication to be a
+                  successful web developer. I am eager to learn new things and
+                  to challenge myself. I am also excited to use my skills to
+                  make a positive impact on the world.
+                </p>
+              </div>
+              <label for="popup2" class="overlay overlay-2"></label>
+            </div>
+            <div class="col-2 image-container">
+              <div class="photo-wrapper">
+                <img class="photo" src="./img/photo-3.jpeg" alt="photo-3 " />
+
+                <img class="photo" src="./img/photo-2.JPG" alt="photo-2" />
+
+                <img class="photo" src="./img/photo-1.png" alt="photo-1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-project">
+        <div class="container">
+          <h2 class="section-title">check out my projects</h2>
+          <div class="row">
+            <div class="project">
+              <img
+                src="./img/order-form.png"
+                class="project-img"
+                alt="order form"
+              />
+
+              <div class="back-project b-c-1">
+                <div class="back-project-details">
+                  <p class="back-text">check it out</p>
+                  <a
+                    href="https://github.com/CodeYourFuture/Module-User-Focused-Data/pull/176"
+                    class="btn btn-white"
+                    >Showcase</a
+                  >
+                  <p class="back-text">check the code</p>
+                  <a
+                    href="https://github.com/AliQassab/Module-User-Focused-Data/tree/feature/form-controls/Form-Controls"
+                    class="btn btn-white"
+                    >github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-showcase">
+              <h3>project showcase</h3>
+              <p>
+                This project was a T-shirt order form, built using HTML and CSS.
+                It involved creating a form where users could submit their
+                information to order a T-shirt. Through this project, I honed my
+                understanding of form handling in web development, especially
+                focusing on how to validate user input to ensure the data is
+                correctly formatted.
+              </p>
+              <p>
+                I learned how to apply regular expressions
+                <a href="https://regexr.com/">(regex)</a> to enforce constraints
+                on input fields, such as ensuring that the name field contains a
+                minimum of two characters. Additionally, I practiced using
+                modern form attributes for validation, ensuring a smooth user
+                experience. The project was designed to meet strict standards
+                for performance, requiring a perfect score in
+                <a href="https://developer.chrome.com/docs/lighthouse/overview/"
+                  >Lighthouse</a
+                >
+                and clean, accessible code.
+              </p>
+              <p>
+                Throughout the development, I made extensive use of Chrome
+                <a href="https://developer.chrome.com/docs/devtools/"
+                  >DevTools</a
+                >
+                to test and debug my code. I also used Lighthouse to analyze the
+                performance and accessibility of the form, ensuring it was both
+                lightweight and efficient. This experience helped me optimize my
+                CSS, keeping it minimal and targeted, which contributed to a
+                more refined and polished final product.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-contact">
+        <div class="container">
+          <h2 class="section-title">get in touch</h2>
+
+          <div class="row">
+            <div class="contact-text">
+              <h3>let's talk</h3>
+              <p>
+                I'm always looking for new opportunities to collaborate with
+                other professionals and businesses.<br />
+                Whether you have a project that you'd like to discuss or just
+                want to say hello, I'd love to hear from you.
+              </p>
+            </div>
+            <div class="contact-links">
+              <p>
+                You can also find me on
+                <a href="https://www.linkedin.com/in/alaa-qassab-524a78244/"
+                  >LinkedIn</a
+                >
+              </p>
+              <p>or on <a href="https://github.com/AliQassab">GitHub</a></p>
+            </div>
+          </div>
+          <a href="mailto:aliqassab@gmail.com" class="btn btn-white"
+            >send a message</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2024 Ali Qassab. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
