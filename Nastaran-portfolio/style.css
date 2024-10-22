@@ -1,0 +1,97 @@
+:root {
+  --paper: hsla(0, 0%, 100%, 0.644);
+  --ink: hsla(226, 40%, 19%, 0.95);
+  --brand: hsla(60, 70%, 45%, 0.9);
+  --font: "Raleway", system-ui, sans-serif;
+  --gap: 20px;
+  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+  --tap-target: 50px;
+  --box: clamp(280px, 50vw + 2px, 530px);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  max-width: var(--container);
+  display: grid;
+  margin: auto;
+  min-height: 100vh;
+  gap: var(--gap);
+}
+a,
+a:any-link {
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color ease-in-out 0.3s;
+}
+a:hover,
+a:focus {
+  color: var(--brand);
+  border-color: currentColor;
+}
+body > header {
+  background: var(--paper);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: var(--gap) 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--gap);
+}
+main {
+  padding-top: var(--gap);
+}
+section p {
+  line-height: 1.5;
+  max-width: 55ch;
+  margin-bottom: var(--gap);
+}
+nav ul,
+li {
+  font-weight: 600;
+}
+#contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#contact i {
+  color: var(--brand);
+}
+/* Footer */
+footer {
+  margin-top: var(--gap);
+  padding: var(--gap);
+  background-color: var(--ink);
+  color: var(--paper);
+  width: 100%;
+  height: 50%;
+}
+footer h3 a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--paper);
+}
+footer h3 a:hover {
+  color: var(--brand);
+}
+h2 {
+  margin-bottom: var(--gap);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--font);
+}
