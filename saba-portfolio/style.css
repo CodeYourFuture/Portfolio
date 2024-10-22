@@ -11,7 +11,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  background: var(--paper);
+  background:light burlywood;
   color: var(--ink);
   font-family: var(--font);
 }
@@ -36,20 +36,26 @@ a:focus {
 }
 /* Site header and navigation */
 body > header {
-  background: var(--paper);
+  background: burlywood;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
+  padding-left: 2rem;
+  padding-right:2rem;
 }
 nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  color: rgb(255, 0, 17);
 }
-
+#about h2, #projects h2 , #contact h2{
+  font-size: :2rem;
+  margin-bottom 1rem;
+  color: var(--brand);
 /* Text readability */
 section p {
   line-height: 1.5;
