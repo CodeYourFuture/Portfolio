@@ -11,7 +11,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  background: var(--paper);
+  background: blue;
   color: var(--ink);
   font-family: var(--font);
 }
@@ -36,7 +36,7 @@ a:focus {
 }
 /* Site header and navigation */
 body > header {
-  background: var(--paper);
+  background:blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
