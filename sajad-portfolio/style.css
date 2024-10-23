@@ -6,6 +6,7 @@
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+  --margin-btm: 5px;
 }
 /* General Styles */
 html,
@@ -54,4 +55,12 @@ nav ul {
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+
+main ul li {
+  margin-bottom: var(--margin-btm);
+}
+
+span {
+  font-weight: bold;
 }

@@ -1,31 +1,42 @@
-# Portfolio
+# Sajad Soornisofla Portfolio
 
-Your starting portfolio, to iterate on.
+Welcome to my portfolio! This website showcases my work and skills as a front-end web developer, emphasizing my expertise in HTML and CSS.
 
-## Learning Objectives
+## Table of Contents
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Contact Information](#contact-information)
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+## Overview
 
-## Requirements
+This portfolio is designed to present my projects and demonstrate my abilities in front-end development using HTML and CSS. It serves as a platform for potential employers and collaborators to explore my work.
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
+## Technologies Used
 
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+- HTML5
+- CSS3
 
-## Acceptance Criteria
+## Features
 
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
+- **Responsive Design:** The portfolio is optimized for both mobile and desktop devices.
+- **Clean and Modern Layout:** Showcases a visually appealing interface.
+- **Project Showcase:** Displays selected projects with descriptions.
 
-## Resources
+## Getting Started
 
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+To view my portfolio, visit the following link:
+
+[Live Portfolio](https://sajad-soornisofla-portfolio.netlify.app/)
+
+## Contact Information
+
+Feel free to reach out if you have any questions or would like to discuss potential opportunities!
+
+- **Email:** [sajadsoorni@gmail.com](mailto:sajadsoorni@gmail.com)
+- **GitHub:** [github.com/sajadsoorni](https://github.com/sajadsoorni)
+- **LinkedIn:** [linkedin.com/in/sajad-soornisofla-88674a25a](https://www.linkedin.com/in/sajad-soornisofla-88674a25a/)
+
+
+Thank you for visiting my portfolio!
