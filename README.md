@@ -36,5 +36,7 @@ Feel free to reach out if you have any questions or would like to discuss potent
 
 - **Email:** [sajadsoorni@gmail.com](mailto:sajadsoorni@gmail.com)
 - **GitHub:** [github.com/sajadsoorni](https://github.com/sajadsoorni)
+- **LinkedIn:** [linkedin.com/in/sajad-soornisofla-88674a25a](https://www.linkedin.com/in/sajad-soornisofla-88674a25a/)
+
 
 Thank you for visiting my portfolio!
