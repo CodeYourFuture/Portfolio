@@ -7,6 +7,7 @@
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 }
+
 /* General Styles */
 html,
 body {
@@ -15,6 +16,7 @@ body {
   color: var(--ink);
   font-family: var(--font);
 }
+
 body {
   display: grid;
   margin: auto;
@@ -22,6 +24,7 @@ body {
   gap: var(--gap);
   max-width: var(--container);
 }
+
 a,
 a:any-link {
   color: currentColor;
@@ -29,11 +32,13 @@ a:any-link {
   border-bottom: 2px solid transparent;
   transition: border-color ease-in-out 0.3s;
 }
+
 a:hover,
 a:focus {
   color: var(--brand);
   border-color: currentColor;
 }
+
 /* Site header and navigation */
 body > header {
   background: var(--paper);
@@ -44,6 +49,7 @@ body > header {
   top: 0;
   z-index: 1;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -54,4 +60,64 @@ nav ul {
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+
+.fa-linkedin {
+  font-size: 1.3rem;
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.fa-linkedin:hover {
+  color: #005582;
+}
+
+.fa-github {
+  font-size: 1.7rem;
+}
+
+.fa-github:hover {
+  color: #333;
+  transform: scale(1.1);
+}
+
+.fas {
+  font-size: 1.3rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.fas:hover {
+  color: #555;
+}
+
+h6 {
+  font-size: 0.9rem;
+  margin: 1% 0;
+}
+
+h3 {
+  color: ;
+}
+
+.internet-icon {
+  font-size: 1.7rem;
+  color: #3498db;
+  margin: 10px;
+  transition: color 0.3s ease;
+}
+
+.internet-icon:hover {
+  filter: brightness(1.2);
+}
+
+#contact {
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  color: white;
 }
