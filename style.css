@@ -55,3 +55,51 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+.contact-links {
+  text-align: center;
+  margin: 1.5em 0;
+  font-family: Arial, sans-serif;
+}
+
+.contact-links p {
+  margin: 0.3em 0;
+  color: #333333;
+}
+
+.contact-links strong {
+  font-weight: bold;
+  color: #555555;
+}
+
+.contact-links a {
+  color: #006
+}
+
+
+ ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ li {
+  background-color: hwb(0 98% 2% / 0.317);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+ li:hover {
+  background-color: #e0e0e0;
+}
+
+ a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+ a:hover {
+  text-decoration: underline;
+}
