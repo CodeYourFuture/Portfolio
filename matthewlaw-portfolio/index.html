@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="The technical portfolio of trainee name"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- suppress FOUC-->
+    <style>
+      html {
+        animation: fade-in 1s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1><a href="#name" class="logo"><span>Matt</span>hew</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container" tabindex="0">
+      <div class="title">        
+        <img src="background.jpg" alt="background image of a book, cup, coffee maker, tablet and magazines scatters around a table"/>
+        <div class="text">
+          <span>Hello;</span>
+          <span>I'm Matthew. I am Learner Developer.</span>
+          <a id="down-arrow" href="#about" aria-label="continue">
+            <i class="fa-solid fa-chevron-down" style="font-size:80px"></i>
+          </a>
+        </div>      
+      </div>
+
+      <div class="sections">
+        <section id="about">
+          <header><h1>About Me</h1></header>
+          <p>
+            I craft seamless digital experiences that connect with users by combining design and technology.
+          </p>
+        </section>
+        <section id="projects">
+          <header><h2>Projects Showcase</h2></header>
+          <div class="project-container">  
+            <h2>
+              Welcome to London
+            </h2>
+            <p>
+              A simple travel guide to showcase the highlights of my hometown london.
+            </p>
+            <button onclick="location.href = 'https://matthewlawhometown.netlify.app/'">View Project</a>
+          </div>
+          
+          <div class="project-container">  
+            <h2>
+              T-shirt order form
+            </h2>
+            <p>
+              A form for created for used to order their T-shirt color, T-shirt size and delivery date.
+            </p>
+            <button onclick="location.href = 'https://deploy-preview-256--cyf-ufd.netlify.app/form-controls/'">View Project</button>
+          </div>
+        </section>
+        
+        <section id="contact">
+          <section class="contact-form" id="contact">
+            <h2 class="contact-me">Contact Me</h2>
+            <form action="#">
+      
+              <div class="input-box">
+                <input type="text" placeholder="Full Name" />
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Subject" />
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+              </div>
+              <input type="submit" value="Send Message" class="btn" />
+            </form>
+        </section>
+      </div>        
+    </main>
+    <footer>
+      <h3>Get in touch with me!</h3>
+          <a href="matthew.lt.law@gmail.com">E-mail</a>
+          <a href="https://hk.linkedin.com/in/matthew-law-01185a182">Linkedin</a>
+    </footer>
+  </body>
+</html>

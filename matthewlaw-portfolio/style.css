@@ -1,0 +1,218 @@
+/* Design tokens */
+:root {
+  --paper: hsla(251, 28%, 88%, 0.99);
+  --ink: hsla(244, 16%, 17%, 0.95);
+  --brand: orangered;
+  --font: "Raleway", system-ui, sans-serif;
+  --titleFont: "EB Garamond", serif;
+  --gap: 20px;
+  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+  --backgroundColor: rgba(0, 0, 0, 0.8);
+}
+/* General Styles */
+html,
+body {
+  scroll-behavior: smooth;
+  background: #F8EDED;
+  color: var(--ink);
+  font-family: var(--font);
+}
+
+body {
+  display: grid;
+  margin: auto;
+  min-height : 100vh;
+}
+
+.container .title {
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  font-family: var(--font);
+}
+
+.container .sections {
+  padding: 0px 12%;
+}
+
+.title .text span:first-child {
+  font-family: var(--titleFont);
+  font-size: 210px;
+  line-height: 1.1em;
+  text-shadow: 3px 3px 7px white;
+}
+
+.title img {
+  width: 100%;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+}
+
+.title .text {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 10%;
+}
+
+section {
+  margin-top: 60px;
+  scroll-margin-top: 130px;
+  text-align: center;
+}
+
+a#down-arrow {
+  color: var(--backgroundColor);
+  margin-top: 20px;
+}
+a:not(#down-arrow) {
+  color: white;
+  text-decoration: none;
+}
+
+a:not(#down-arrow):hover,
+a:focus {
+  color: var(--brand);
+  transform: scale(1.2)translateY(-10px);
+}
+
+.project-container {
+  margin-bottom: 30px;
+}
+
+/* Site header and navigation */
+/* This means, all header children within a body tag */
+body > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 15px 12%;
+  color: white;
+  background: var(--backgroundColor);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  box-shadow: 6px 8px 14px 7px rgb(0 0 0 / 21%);
+}
+
+.logo span {
+  color: var(--brand);
+}
+
+.logo {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: orangered;
+  text-shadow: 0 0 25px orangered,
+               0 0 50px orangered;
+  transform: scale(1.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--gap);
+}
+
+::-webkit-scrollbar {
+  width: 15px; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.606);
+  width: 50px;
+}
+
+/* Text readability */
+section p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* Form */
+.contact-form h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+}
+.contact-form form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.contact-form form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 14px;
+  color: black;
+  background: white;
+  border-radius: .8rem;
+  margin: 1rem 0;
+  resize: none;
+}
+.contact-form form .btn{ 
+  margin-top: 2em;
+}
+
+/* Buttons */
+button {
+  width: 150px;
+  background: var(--backgroundColor);
+  color: white;
+  height: 40px;
+  border: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: var(--brand);
+  transform: scale(1.2);
+  transition: transform 0.2s ease-out;
+}
+
+.btn {
+  padding: 15px 28px;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+footer {
+  background: var(--backgroundColor);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
