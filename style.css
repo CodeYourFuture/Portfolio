@@ -1,57 +1,122 @@
-/* Design tokens */
-:root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
-  --font: "Raleway", system-ui, sans-serif;
-  --gap: 20px;
-  --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* General Styles */
-html,
+/* Base Styles */
 body {
-  scroll-behavior: smooth;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--font);
-}
-body {
-  display: grid;
-  margin: auto;
-  min-height: 100vh;
-  gap: var(--gap);
-  max-width: var(--container);
-}
-a,
-a:any-link {
-  color: currentColor;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color ease-in-out 0.3s;
-}
-a:hover,
-a:focus {
-  color: var(--brand);
-  border-color: currentColor;
-}
-/* Site header and navigation */
-body > header {
-  background: var(--paper);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: var(--gap);
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.8;
+  background-color: yellow;
+  color: blue;
 }
 
-/* Text readability */
-section p {
-  line-height: 1.5;
-  max-width: 55ch;
+header, footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+header nav a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+header nav a:focus,
+header nav a:hover {
+  outline: 3px dashed #fff;
+  outline-offset: 3px;
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: darkblue;
+  margin-bottom: 1rem;
+}
+
+.project-item {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.project-item h3 {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: darkblue;
+}
+
+.project-item a.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #1a1a1a;
+  color: #f8f8f8;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project-item a.button:hover {
+  background-color: #333;
+}
+
+footer a {
+  color: #f8f8f8;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer svg {
+  margin-right: 0.5rem;
+  transition: transform 0.3s;
+}
+
+footer a:hover svg {
+  transform: scale(1.1);
+}
+
+/* Focus and Hover Effects for Accessibility */
+a:focus, button:focus, .button:focus {
+  outline: 3px dashed #555;
+  outline-offset: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
 }
