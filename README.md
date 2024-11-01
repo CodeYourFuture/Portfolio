@@ -26,6 +26,6 @@ Every module, you will _iterate_ on your portfolio, adding a new project and imp
 
 ## Resources
 
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+Google searches
+Searching different tutorial websites
+Some Tutorial videos on youtube
