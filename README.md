@@ -1,31 +1,30 @@
-# Portfolio
+# Fatma Arslantas - Portfolio
 
-Your starting portfolio, to iterate on.
+📜 Overview
 
-## Learning Objectives
+The portfolio showcases my journey as a developer, my projects, and a bit about me.
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+🖥️ Project Structure
 
-## Requirements
+The portfolio is divided into the following sections:
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
+About Me - A brief introduction to my background, interests, and skills.
+Projects Showcase - A collection of projects I’ve worked on, including descriptions and links to live demos.
+Contact Information - Details on how to reach me, including my email and LinkedIn profile.
 
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+🛠️ Technologies Used
 
-## Acceptance Criteria
+HTML
+CSS
+Git
 
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
+🚀 How to Run Locally
 
-## Resources
+Clone the repository:
+git clone https://github.com/AFatmaa/Portfolio
 
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+Open index.html in your web browser to view the portfolio locally.
+
+🤝 Contributing
+
+Feedback and contributions are welcome! If you’d like to suggest improvements or report issues, feel free to open an issue or submit a pull request.
