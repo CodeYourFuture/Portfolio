@@ -11,7 +11,8 @@
 html,
 body {
   scroll-behavior: smooth;
-  background: var(--paper);
+  /* background: var(--paper); */
+  background: #fff;
   color: var(--ink);
   font-family: var(--font);
 }
@@ -36,7 +37,7 @@ a:focus {
 }
 /* Site header and navigation */
 body > header {
-  background: var(--paper);
+  /* background: var(--paper); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,10 +45,24 @@ body > header {
   top: 0;
   z-index: 1;
 }
+
+nav{
+  background: var(--paper);
+  border-radius: 20px;
+  padding: 8px 40px 8px 4px;
+  margin-top: 10px;
+}
 nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  border-radius: 20px;
+}
+nav .current a{
+  background: #ffffff;
+  border-radius: 100px;
+  width: 20%;
+  padding: 8px 20px ;
 }
 
 /* Text readability */
