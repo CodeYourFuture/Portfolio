@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="The technical portfolio of trainee name"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- suppress FOUC-->
+    <style>
+      html {
+        animation: fade-in 1s;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="header__title">Rashaad Ebrahim</h1>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a class="nav__link hover-effect" href="#about">About Me</a>
+            </li>
+            <li>
+              <a class="nav__link hover-effect" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="nav__link hover-effect" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main tabindex="0" class="">
+      <section class="section section-hero" id="hero">
+        <div class="section-hero__content">
+          <div class="section-hero__text">
+            <h1 class="section-hero__title">Rashaad Ebrahim</h1>
+            <p class="section-hero__subtitle">Web Developer</p>
+          </div>
+          <div class="section-hero__quote">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="section-hero__quote-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+              />
+            </svg>
+            <p class="section-hero__quote-text">
+              I build stuff for the web and I love it.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="section-hero__quote-icon--flip"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+              />
+            </svg>
+          </div>
+          <div class="section-hero__contacts">
+            <div class="contacts">
+              <ul class="contacts__links">
+                <li>
+                  <a class="contacts__link" aria-label="Email Rashaad" href="mailto:rmebrahim@gmail.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                      />
+                      <path
+                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="contacts__link"
+                    href="https://www.linkedin.com/in/rashaad-ebrahim-12711747/"
+                    target="_blank"
+                    aria-label="Connect on LinkedIn"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="contacts__link"
+                    href="https://github.com/Rashaad-Ebrahim"
+                    target="_blank"
+                    aria-label="Connect on GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="icon"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-about" id="about">
+        <div class="section-about__content">
+          <header class="section-about__header">
+            <h2 class="section__header section-about__title">About Me</h2>
+          </header>
+          <div class="section-about__summary">
+            <div class="section-about__get-to-know">
+              <h3 class="section-about__heading">Get to know me</h3>
+              <p class="section-about__text">
+                I'm am fueled by curiosity and the thrill of bringing visions to
+                life on the web.
+                <br /><br />
+                I aim to create sites and applications that look great, feel
+                amazing and perform phenomincally.
+                <br /><br />
+                I'm excited about future opportunities to grow and create
+                impactful work!
+                <br /><br />
+                For me, coding isn't just about problem-solving - it's about
+                crafting experiences people will remember.
+              </p>
+            </div>
+            <div class="section-about__skills">
+              <div class="skills">
+                <h3 class="skills__heading">My Skills</h3>
+                <ul class="skills__lists">
+                  <li class="skills__item">HTML</li>
+                  <li class="skills__item">CSS</li>
+                  <li class="skills__item">SASS</li>
+                  <li class="skills__item">JavaScript</li>
+                  <li class="skills__item">Git</li>
+                  <li class="skills__item">Github</li>
+                  <li class="skills__item">Responsive Design</li>
+                  <li class="skills__item">Terminal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="projects__content">
+
+          <header class="section-header">
+            <h2 class="section__header project__title">Projects</h2>
+          </header>
+
+          <div class="projects-tabs">
+
+            <div class="projects-tabs__btns-container">
+
+              <button
+                class="projects-tabs__btn projects-tabs__btn-1 projects-tabs__btn--active"
+                data-btn="1"
+              >
+                My Hometown
+              </button>
+
+              <button class="projects-tabs__btn projects-tabs__btn-2" data-btn="2">
+                Form Controls
+              </button>
+
+              <button class="projects-tabs__btn projects-tabs__btn-3" data-btn="3">
+                Bose Landing Page
+              </button>
+
+            </div>
+  
+            <div class="project-tabs__contents-container">
+
+              <div
+                class="project-card project-card-1 project-card--active project-card--active2"
+              >
+                <div class="project-card__summary">
+                  <img
+                    class="project-card__img"
+                    src="img/hometown.jpg"
+                    alt="Snippet of My Hometown website"
+                  />
+                  <div class="project-card__information">
+                    <p>
+                      A webpage detailing some information about my hometown,
+                      Johannesburg. The page features an image carousel implemented
+                      with JavaScript.
+                    </p>
+                    <div class="skills">
+                      <ul class="skills__lists">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Github</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="project-card__links">
+                  <li>
+                    <a
+                      class="project-card__link project-card__link--view"
+                      href="https://rashaad-myhometown.netlify.app/"
+                      target="_blank"
+                    >
+                      View
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="icon"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
+                        />
+                        <path
+                          d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="project-card__link"
+                      href="https://github.com/Rashaad-Ebrahim/my-hometown"
+                      target="_blank"
+                    >
+                      Code
+                      <svg
+                        focusable="false"
+                        role="presentation"
+                        viewbox="0 0 98 96"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card project-card-2">
+                <div class="project-card__summary">
+                  <img
+                    class="project-card__img"
+                    src="img/form-controls.jpg"
+                    alt="Snippet of a e-commerce form"
+                  />
+                  <div class="project-card__information">
+                    <p>
+                      An desktop-first e-commerce form for custom t-shirt orders.
+                      Includes form validation, and JavaScript elements.
+                    </p>
+                    <div class="skills">
+                      <ul class="skills__lists">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Responsive Design</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="project-card__links">
+                  <li>
+                    <a
+                      class="project-card__link project-card__link--view"
+                      href="https://rashaad-formcontrols.netlify.app/"
+                      target="_blank"
+                    >
+                      View
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="icon"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
+                        />
+                        <path
+                          d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="project-card__link"
+                      href="https://github.com/Rashaad-Ebrahim/Module-User-Focused-Data/tree/feature/Form-Controls/Form-Controls"
+                      target="_blank"
+                    >
+                      Code
+                      <svg
+                        focusable="false"
+                        role="presentation"
+                        viewbox="0 0 98 96"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-card project-card-3">
+                <div class="project-card__summary">
+                  <img
+                    class="project-card__img"
+                    src="img/bose.jpg"
+                    alt="Snippet of Bose landing website"
+                  />
+                  <div class="project-card__information">
+                    <p>
+                      Bose landing page showcasing responsive design and SASS.
+                    </p>
+                    <div class="skills">
+                      <ul class="skills__lists">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS</li>
+                        <li class="skills__item">SASS</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Responsive Design</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="project-card__links">
+                  <li>
+                    <a
+                      class="project-card__link project-card__link--view"
+                      href="https://rashaad-boselanding.netlify.app/"
+                      target="_blank"
+                    >
+                      View
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="icon"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"
+                        />
+                        <path
+                          d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="project-card__link"
+                      href="https://github.com/Rashaad-Ebrahim/Bose_landing_page"
+                      target="_blank"
+                    >
+                      Code
+                      <svg
+                        focusable="false"
+                        role="presentation"
+                        viewbox="0 0 98 96"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="section section-contact" id="contact">
+        <div class="section-contact__contacts">
+          <div class="contacts">
+            <ul class="contacts__links">
+              <li>
+                <a class="contacts__link" aria-label="Email Rashaad" href="mailto:rmebrahim@gmail.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                    />
+                    <path
+                      d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="contacts__link"
+                  href="https://www.linkedin.com/in/rashaad-ebrahim-12711747/"
+                  target="_blank"
+                  aria-label="Connect on LinkedIn"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="contacts__link"
+                  href="https://github.com/Rashaad-Ebrahim"
+                  target="_blank"
+                  aria-label="Connect on GitHub"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy 2024 - Rashaad Ebrahim - All Rights Reserved</p>
+        <div class="read-me">
+          <svg
+            focusable="false"
+            role="presentation"
+            viewbox="0 0 98 96"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+              fill="currentColor"
+            />
+          </svg>
+          <a
+            class="read-me-link"
+            href="https://github.com/CodeYourFuture/Portfolio"
+            ><p class="read-me-text">Read me</p></a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
