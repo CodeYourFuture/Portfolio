@@ -51,12 +51,14 @@ p {
 .project-three {
   justify-content: center;
   align-self: center;
+  width: 90%;
+  text-align: center;
 }
 
 .project-one img,
 .project-two img,
 .project-three img {
-  width: 50em;
+  max-width: 100%;
 }
 
 .project-one img:hover,
