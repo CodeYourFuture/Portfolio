@@ -3,6 +3,8 @@ html {
 }
 body {
   background-color: #d6e41d6c;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul {
@@ -32,4 +34,9 @@ h2,
 }
 .icon {
   padding: 2em;
+}
+
+p {
+  width: 80%;
+  margin: 0 auto;
 }
