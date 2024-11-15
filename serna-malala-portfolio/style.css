@@ -1,3 +1,12 @@
 html {
   font-family: "Varela Round", serif;
 }
+
+nav ul {
+  display: flex;
+  justify-content: right;
+}
+
+.icon {
+  height: 100px;
+}
