@@ -3,26 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio</title>
+    <title>My Portfolio💻</title>
     <meta
       name="description"
       content="The technical portfolio of trainee name"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
-    <style>
-      html {
-        animation: fade-in 1s;
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
     <link
       rel="stylesheet"
       href="style.css"
@@ -31,14 +17,16 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <h1>My Name</h1>
+      <h1>Serna Malala</h1>
       <nav>
         <ul>
           <li><a href="#about">About Me</a></li>
@@ -49,36 +37,62 @@
     </header>
     <main tabindex="0">
       <section id="about">
-        <header><h2>About Me</h2></header>
+        <header>
+          <h2>
+            About Me
+            <img
+              src="./images/woman-icon.svg"
+              class="icon"
+              alt="An icon of a woman"
+            />
+          </h2>
+        </header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
+          Hi! I'm Serna and I am an aspiring Software Developer. I am currently
+          a CYF learner and a CPUT student, learning the tools needed to master
+          software development and electronics. My software skills right now are
+          limited to HTML, CSS and a bit of JavaScript with some ability in
+          using Git but I endeavour to learn more!
         </p>
       </section>
       <section id="projects">
         <header><h2>Projects Showcase</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <div class="project-one">
+          <a href="https://serna-malala-hometown-page.netlify.app/"
+            ><img src="./images/hometown.png" alt="Serna Hometown page"
+          /></a>
+          <h3>Hometown Page</h3>
+        </div>
+        <div class="project-two">
+          <a href=""
+            ><img src="./images/Wireframe.png" alt="Serna Wireframe page"
+          /></a>
+          <h3>Wireframe Page</h3>
+        </div>
+        <div class="project-three">
+          <a
+            href="https://deploy-preview-249--cyf-ufd.netlify.app/form-controls/"
+            ><img src="./images/forms.png" alt="Serna Forms Control Page"
+          /></a>
+          <h3>Forms Control Page</h3>
+        </div>
       </section>
       <section id="contact">
-        <header><h2>Contact me</h2></header>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi
-          excepturi quidem, eum rem doloribus quam aspernatur hic enim eligendi
-          commodi minima ullam necessitatibus, cumque blanditiis, nihil magni
-          amet consectetur?
-        </p>
+        <header><h2 class="contact">Contact me ☎️</h2></header>
+
+        <address>
+          <h3>Email:</h3>
+          <a href="mailto:sm.sernamalala@gmail.com">sm.sernamalala@gmail.com</a>
+          <br />
+          <h3>Cellphone Number:</h3>
+          <a href="tel:+27626838542">+27 62 683 8542</a>
+        </address>
       </section>
     </main>
     <footer>
       <h3>
-        <a href="https://github.com/CodeYourFuture/Portfolio"
+        <a
+          href="https://github.com/sernamalala/Portfolio/tree/serna-malala-portfolio"
           ><svg
             focusable="false"
             role="presentation"
@@ -94,7 +108,7 @@
               fill="currentColor"
             />
           </svg>
-          Read me</a
+          PORTFOLIO READ ME</a
         >
       </h3>
     </footer>

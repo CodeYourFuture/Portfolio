@@ -1,0 +1,100 @@
+html {
+  font-family: "Varela Round", serif;
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #d6e41d6c;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+}
+nav ul li {
+  padding: 0.8em;
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  padding-left: 1em;
+}
+h1:hover,
+nav ul li a:hover {
+  color: rgb(255, 170, 11);
+}
+h2 {
+  display: flex;
+}
+h2,
+.icon {
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  padding: 2em;
+}
+
+p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-one,
+.project-two,
+.project-three {
+  justify-content: center;
+  align-self: center;
+  width: 90%;
+  text-align: center;
+}
+
+.project-one img,
+.project-two img,
+.project-three img {
+  max-width: 100%;
+}
+
+.project-one img:hover,
+.project-two img:hover,
+.project-three img:hover {
+  border: 5px solid orange;
+}
+address,
+.contact {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+address h3 {
+  display: inline-block;
+  padding: 0.4em;
+}
+
+footer {
+  display: flex;
+  background-color: #616706;
+}
+svg {
+  color: white;
+  padding: 1em;
+}
+
+footer a,
+footer {
+  color: white;
+  text-decoration: none;
+}
