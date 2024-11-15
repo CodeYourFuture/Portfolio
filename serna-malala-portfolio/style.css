@@ -40,3 +40,27 @@ p {
   width: 80%;
   margin: 0 auto;
 }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-one,
+.project-two,
+.project-three {
+  justify-content: center;
+  align-self: center;
+}
+
+.project-one img,
+.project-two img,
+.project-three img {
+  width: 50em;
+}
+
+.project-one img:hover,
+.project-two img:hover,
+.project-three img:hover {
+  border: 5px solid orange;
+}
