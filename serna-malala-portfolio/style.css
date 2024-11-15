@@ -92,3 +92,9 @@ svg {
   color: white;
   padding: 1em;
 }
+
+footer a,
+footer {
+  color: white;
+  text-decoration: none;
+}
