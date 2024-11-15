@@ -1,12 +1,35 @@
 html {
   font-family: "Varela Round", serif;
 }
+body {
+  background-color: #d6e41d6c;
+}
 
 nav ul {
   display: flex;
   justify-content: right;
 }
-
+nav ul li {
+  padding: 0.8em;
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+h1:hover,
+nav ul li a:hover {
+  color: rgb(255, 170, 11);
+}
+h2 {
+  display: flex;
+}
+h2,
 .icon {
-  height: 100px;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  padding: 2em;
 }
