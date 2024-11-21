@@ -1,31 +1,15 @@
 # Portfolio
+Welcome to My Portfolio!
+Hello, I'm Seerat Fatima, and I’m thrilled to share my journey in the world of web development and coding. As a beginner, I am passionate about learning new technologies, tackling problems, and building solutions that matter.
 
-Your starting portfolio, to iterate on.
+In this portfolio, you’ll find a collection of my projects, each showcasing my evolving skills in HTML, CSS, JavaScript, and web design. I'm especially focused on creating responsive, user-friendly designs that are both functional and aesthetically pleasing.
 
-## Learning Objectives
+What You’ll Find Here:
+About Me: A little bit about who I am and my journey so far.
+Projects: A selection of projects I've worked on, ranging from simple webpages to interactive applications. Each project includes a brief description and a link to try it out or view the code.
+Contact: Feel free to reach out for collaboration, feedback, or just to say hello.
+I believe in continuous learning and would love to connect with others in the tech community to exchange ideas and grow together. If you’re interested in working together, check out my contact information, and don’t hesitate to get in touch.
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+Thank you for visiting!
 
-## Requirements
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
-
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
-
-## Acceptance Criteria
-
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
-
-## Resources
-
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
