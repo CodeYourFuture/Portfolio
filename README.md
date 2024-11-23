@@ -1,5 +1,7 @@
 # Portfolio
 
+_You **must** have completed the [first iteration](https://github.com/CodeYourFuture/Portfolio/tree/Module-HTML-CSS) of this coursework before starting this coursework._
+
 Module 2 iteration of your portfolio. We're adding a new case study for another project you've worked on. You can choose anything.
 
 _Keep your changes simple!_
