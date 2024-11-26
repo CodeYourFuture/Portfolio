@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   gap: var(--gap);
   max-width: var(--container);
+
 }
 a,
 a:any-link {
@@ -54,4 +55,7 @@ nav ul {
 section p {
   line-height: 1.5;
   max-width: 55ch;
+}
+#projects{
+  display: flexbox;
 }
