@@ -1,31 +1,28 @@
-# Portfolio
+# Nadika Zavodovska's Portfolio
 
-Your starting portfolio, to iterate on.
+Welcome to my portfolio! This repository showcases my web development projects and skills.
 
-## Learning Objectives
+## Live Demo
+[Visit the Live Portfolio](https://nadika-zavodovska-portfolio.netlify.app/)
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+## Features
+- Project showcase with images and descriptions
+- Responsive design
+- User-friendly navigation
+- Integration with GitHub for version control
 
-## Requirements
+## Technologies Used
+- HTML
+- CSS
+- Web design
+- GitHub Pages or Netlify for deployment
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
+## Installation
+To view the project locally, clone the repository:
+git clone https://github.com/nadika-zavodovska/Portfolio.git
 
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+## Usage
+Open index.html in your web browser to see the portfolio.
 
-## Acceptance Criteria
-
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
-
-## Resources
-
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+## Contribution
+Feel free to fork this repository and submit pull requests.
