@@ -15,7 +15,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-size: 16px;
-  font-family: var(--font); 
+  font-family: var(--font);
 }
 
 body {
@@ -75,7 +75,7 @@ nav ul {
 /* #region About me section */
 .author-img {
   max-width: 15%;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 /* #endregion About me section */
