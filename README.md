@@ -1,31 +1,29 @@
-# Portfolio
+# Danial Bashirzadeh's Portfolio
 
-Your starting portfolio, to iterate on.
+Welcome to my GitHub portfolio! Here you’ll find highlights of my work, skills, and ways to get in touch.
 
-## Learning Objectives
+## About Me
 
-- Customise the starting portfolio with your professional details
-- Iterate on your portfolio every module
-- Review your colleague's portfolio
+Hello! I’m Danial Bashirzadeh, a dedicated Web Developer with a passion for creating innovative and efficient solutions. I specialise in:
+- Web and software development
+- Full-stack applications
+- Cloud technologies
 
-## Requirements
+I’m committed to continuous learning and delivering impactful results.
 
-At Code Your Future, we expect everyone to graduate with a unique professional portfolio. Begin building this portfolio as soon as you begin our Software Development Course. At first, your portfolio will be a simple HTML/CSS page deployed to Github Pages or Netlify. This is your MVP.
+## Projects
 
-Every module, you will _iterate_ on your portfolio, adding a new project and improving your design and presentation. By the time you apply to Final Projects, your portfolio will help you show you are ready to be accepted on to a Final Projects team.
+Explore my portfolio for projects showcasing skills in:
+- Software development
+- Web technologies
+- Cloud-based solutions
 
-## Acceptance Criteria
+Each project reflects my problem-solving approach and focus on usability. Visit my repositories for details.
 
-- [ ] My portfolio introduces me and my work
-- [ ] The design and code is my own, not a template or tutorial
-- [ ] Each project is linked to my code on Github and the deployed project
-- [ ] I have published my professional contact information on my portfolio
-- [ ] My Accessibility and SEO scores are 100 on Lighthouse
-- [ ] My portfolio is deployed
-- [ ] I have replaced this README with one that describes my own portfolio
+## Contact
 
-## Resources
+Let’s connect! 
+- **Email**: [Get in touch](mailto:bashirzadehdanial@gmail.com)
+- **GitHub**: [My Profile](https://github.com/bashirzadehdanial)
 
-- [Josh Comeau on building your early career profile](https://www.youtube.com/watch?v=OXiaEXfkAec)
-- [How to Build an Effective Dev Portfolio](https://www.joshwcomeau.com/effective-portfolio/)
-- [CYF Graduate Module](https://module-graduates.codeyourfuture.io/)
+Thanks for visiting!
