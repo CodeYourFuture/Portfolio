@@ -1,0 +1,181 @@
+/* General Styles */
+body,
+html {
+    background-color: lightcyan;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    height: 100%;
+    color: #414a4c;
+    font-weight: lighter;
+}
+
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* Hero Image and Text */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero_img.jpg");
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+}
+
+/* Navbar */
+.navbar {
+    text-align: right;
+}
+
+.navbar a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+/* Section */
+section {
+    padding: 1em 5vw;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-item {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-align: left;
+    font-size: small;
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p,
+h4 {
+    padding: 1em;
+}
+
+/* Contact Section */
+#contact {
+    line-height: 1.5;
+    padding-bottom: 3em;
+}
+
+#contact_links a {
+    color: blue;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: green;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: #232b2b;
+
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    background-color: lightcyan;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1.5rem;
+        padding: 0 1em;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .projects {
+        gap: 15px;
+    }
+
+    .project-item {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 120px;
+        height: 35px;
+        font-size: medium;
+    }
+}
